@@ -1,0 +1,836 @@
+{
+  "version": "0.1",
+  "toolInfo": {
+    "toolName": "Compilador de Microsoft (R) Visual C#",
+    "productVersion": "1.0.0",
+    "fileVersion": "1.0.0"
+  },
+  "issues": [
+    {
+      "ruleId": "CS0657",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 791,
+                "startColumn": 9,
+                "endLine": 791,
+                "endColumn": 17
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "'assembly' no es una ubicación de atributos válida para esta declaración. Las ubicaciones de atributos válidas son 'type'. Todos los atributos de este bloque se omitirán.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "No hay ninguna ubicación de atributo válida para esta declaración",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0657",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1937,
+                "startColumn": 9,
+                "endLine": 1937,
+                "endColumn": 17
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "'assembly' no es una ubicación de atributos válida para esta declaración. Las ubicaciones de atributos válidas son 'type'. Todos los atributos de este bloque se omitirán.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "No hay ninguna ubicación de atributo válida para esta declaración",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0657",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1948,
+                "startColumn": 9,
+                "endLine": 1948,
+                "endColumn": 17
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "'assembly' no es una ubicación de atributos válida para esta declaración. Las ubicaciones de atributos válidas son 'type'. Todos los atributos de este bloque se omitirán.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "No hay ninguna ubicación de atributo válida para esta declaración",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0657",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1960,
+                "startColumn": 9,
+                "endLine": 1960,
+                "endColumn": 17
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "'assembly' no es una ubicación de atributos válida para esta declaración. Las ubicaciones de atributos válidas son 'type'. Todos los atributos de este bloque se omitirán.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "No hay ninguna ubicación de atributo válida para esta declaración",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0168",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 366,
+                "startColumn": 29,
+                "endLine": 366,
+                "endColumn": 30
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "La variable 'e' se ha declarado pero nunca se usa",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "3",
+        "defaultSeverity": "Warning",
+        "title": "La variable está declarada pero nunca se usa",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS1058",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 387,
+                "startColumn": 12,
+                "endLine": 387,
+                "endColumn": 17
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Una cláusula catch previa ya detecta todas las excepciones. Las no excepciones producidas se incluirán en System.Runtime.CompilerServices.RuntimeWrappedException.",
+      "fullMessage": "Esta advertencia se produce cuando un bloque catch() no tiene especificado un tipo de excepción después de un bloque catch (System.Exception e). La advertencia avisa de que el bloque catch() no abarcará ninguna excepción.
+
+Un bloque catch() después de un bloque catch (System.Exception e) puede abarcar excepciones que no sean CLS si RuntimeCompatibilityAttribute se establece como falso en el archivo AssemblyInfo.cs: [assembly: RuntimeCompatibilityAttribute(WrapNonExceptionThrows = false)]. Si este atributo no se establece explícitamente como falso, todas las excepciones que no sean CLS lanzadas se ajustarán como Excepciones y el bloque catch (System.Exception e) las abarcará.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Una cláusula catch ya abarca todas las excepciones",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0168",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 382,
+                "startColumn": 29,
+                "endLine": 382,
+                "endColumn": 30
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "La variable 'e' se ha declarado pero nunca se usa",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "3",
+        "defaultSeverity": "Warning",
+        "title": "La variable está declarada pero nunca se usa",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0618",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 515,
+                "startColumn": 12,
+                "endLine": 515,
+                "endColumn": 26
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "'CodeAccessPermission.Deny()' está obsoleto: 'Deny is obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "2",
+        "defaultSeverity": "Warning",
+        "title": "El tipo o el miembro están obsoletos",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0168",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2079,
+                "startColumn": 42,
+                "endLine": 2079,
+                "endColumn": 54
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "La variable 'uriException' se ha declarado pero nunca se usa",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "3",
+        "defaultSeverity": "Warning",
+        "title": "La variable está declarada pero nunca se usa",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0649",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1207,
+                "startColumn": 23,
+                "endLine": 1207,
+                "endColumn": 36
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.EquivilentStructResuelto.CriticalField' nunca se asigna y siempre tendrá el valor predeterminado 0",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "4",
+        "defaultSeverity": "Warning",
+        "title": "El campo nunca se asigna y siempre tendrá su valor predeterminado",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0649",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 661,
+                "startColumn": 34,
+                "endLine": 661,
+                "endColumn": 58
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.protectedReadOnlyPointer' nunca se asigna y siempre tendrá el valor predeterminado ",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "4",
+        "defaultSeverity": "Warning",
+        "title": "El campo nunca se asigna y siempre tendrá su valor predeterminado",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0169",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1942,
+                "startColumn": 18,
+                "endLine": 1942,
+                "endColumn": 25
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.Type2.m_field' nunca se usa",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "3",
+        "defaultSeverity": "Warning",
+        "title": "Nunca se usa el campo",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0649",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 654,
+                "startColumn": 25,
+                "endLine": 654,
+                "endColumn": 41
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.protectedPointer' nunca se asigna y siempre tendrá el valor predeterminado ",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "4",
+        "defaultSeverity": "Warning",
+        "title": "El campo nunca se asigna y siempre tendrá su valor predeterminado",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0649",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1186,
+                "startColumn": 23,
+                "endLine": 1186,
+                "endColumn": 36
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.EquivilentStruct.CriticalField' nunca se asigna y siempre tendrá el valor predeterminado 0",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "4",
+        "defaultSeverity": "Warning",
+        "title": "El campo nunca se asigna y siempre tendrá su valor predeterminado",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0649",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 660,
+                "startColumn": 32,
+                "endLine": 660,
+                "endColumn": 53
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.publicReadOnlyPointer' nunca se asigna y siempre tendrá el valor predeterminado ",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "4",
+        "defaultSeverity": "Warning",
+        "title": "El campo nunca se asigna y siempre tendrá su valor predeterminado",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0169",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1954,
+                "startColumn": 27,
+                "endLine": 1954,
+                "endColumn": 34
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.Type2Resuelto1.m_field' nunca se usa",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "3",
+        "defaultSeverity": "Warning",
+        "title": "Nunca se usa el campo",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0169",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 1964,
+                "startColumn": 27,
+                "endLine": 1964,
+                "endColumn": 34
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.Type2Resuelto2.m_field' nunca se usa",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "3",
+        "defaultSeverity": "Warning",
+        "title": "Nunca se usa el campo",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "CS0649",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 653,
+                "startColumn": 23,
+                "endLine": 653,
+                "endColumn": 36
+              }
+            }
+          ]
+        }
+      ],
+      "fullMessage": "El campo 'Program.publicPointer' nunca se asigna y siempre tendrá el valor predeterminado ",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "4",
+        "defaultSeverity": "Warning",
+        "title": "El campo nunca se asigna y siempre tendrá su valor predeterminado",
+        "category": "Compiler",
+        "isEnabledByDefault": "True",
+        "customTags": "Compiler;Telemetry"
+      }
+    },
+    {
+      "ruleId": "S2386",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2205,
+                "startColumn": 35,
+                "endLine": 2205,
+                "endColumn": 64
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Use an immutable collection or reduce the accessibility of this field.",
+      "fullMessage": "public static mutable fields of classes which are accessed directly should be protected to the degree possible. This can be done by reducing the accessibility of the field or by changing the return type to an immutable type.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Mutable fields should not be "public static"",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2386",
+        "isEnabledByDefault": "True"
+      }
+    },
+    {
+      "ruleId": "S2228",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 369,
+                "startColumn": 16,
+                "endLine": 369,
+                "endColumn": 33
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this logging statement.",
+      "fullMessage": "Debug statements are always useful during development. But include them in production code - particularly in code that runs client-side - and you run the risk of inadvertently exposing sensitive information.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Console logging should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2228",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2228",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 385,
+                "startColumn": 16,
+                "endLine": 385,
+                "endColumn": 33
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this logging statement.",
+      "fullMessage": "Debug statements are always useful during development. But include them in production code - particularly in code that runs client-side - and you run the risk of inadvertently exposing sensitive information.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Console logging should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2228",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2228",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 390,
+                "startColumn": 16,
+                "endLine": 390,
+                "endColumn": 33
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this logging statement.",
+      "fullMessage": "Debug statements are always useful during development. But include them in production code - particularly in code that runs client-side - and you run the risk of inadvertently exposing sensitive information.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Console logging should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2228",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2228",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 638,
+                "startColumn": 16,
+                "endLine": 638,
+                "endColumn": 33
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this logging statement.",
+      "fullMessage": "Debug statements are always useful during development. But include them in production code - particularly in code that runs client-side - and you run the risk of inadvertently exposing sensitive information.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Console logging should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2228",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2228",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 624,
+                "startColumn": 16,
+                "endLine": 624,
+                "endColumn": 33
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this logging statement.",
+      "fullMessage": "Debug statements are always useful during development. But include them in production code - particularly in code that runs client-side - and you run the risk of inadvertently exposing sensitive information.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Console logging should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2228",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2228",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2130,
+                "startColumn": 12,
+                "endLine": 2130,
+                "endColumn": 29
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this logging statement.",
+      "fullMessage": "Debug statements are always useful during development. But include them in production code - particularly in code that runs client-side - and you run the risk of inadvertently exposing sensitive information.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Console logging should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2228",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S1313",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2181,
+                "startColumn": 21,
+                "endLine": 2181,
+                "endColumn": 32
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Make this IP '127.0.0.1' address configurable.",
+      "fullMessage": "Hardcoding an IP address into source code is a bad idea for several reasons:",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "IP addresses should not be hardcoded",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S1313",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2070",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2260,
+                "startColumn": 36,
+                "endLine": 2260,
+                "endColumn": 60
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Use a stronger hashing/asymmetric algorithm.",
+      "fullMessage": "The MD5 algorithm and its successor, SHA-1, are no longer considered secure, because it is too easy to create hash collisions with them. That is, it takes too little computational effort to come up with a different input that produces the same MD5 or SHA-1 hash, and using the new, same-hash value gives an attacker the same access as if he had the originally-hashed value. This applies as well to the other Message-Digest algorithms: MD2, MD4, MD6.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "SHA-1 and Message-Digest hash algorithms should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2070",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2070",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2261,
+                "startColumn": 32,
+                "endLine": 2261,
+                "endColumn": 60
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Use a stronger hashing/asymmetric algorithm.",
+      "fullMessage": "The MD5 algorithm and its successor, SHA-1, are no longer considered secure, because it is too easy to create hash collisions with them. That is, it takes too little computational effort to come up with a different input that produces the same MD5 or SHA-1 hash, and using the new, same-hash value gives an attacker the same access as if he had the originally-hashed value. This applies as well to the other Message-Digest algorithms: MD2, MD4, MD6.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "SHA-1 and Message-Digest hash algorithms should not be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2070",
+        "isEnabledByDefault": "False"
+      }
+    },
+    {
+      "ruleId": "S2278",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs",
+              "region": {
+                "startLine": 2231,
+                "startColumn": 39,
+                "endLine": 2231,
+                "endColumn": 69
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Use the recommended AES (Advanced Encryption Standard) instead.",
+      "fullMessage": "According to the US National Institute of Standards and Technology (NIST), the Data Encryption Standard (DES) is no longer considered secure:",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Neither DES (Data Encryption Standard) nor DESede (3DES) should be used",
+        "category": "Sonar Vulnerability",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=5.10.1.1411&ruleId=S2278",
+        "isEnabledByDefault": "True"
+      }
+    }
+  ]
+}

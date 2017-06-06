@@ -1,0 +1,224 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>es.efron</groupId>
+    <artifactId>Q19</artifactId>
+    <version>2.5.0</version>
+    <name>Cuadernos Bancarios</name>
+
+    <organization>
+        <name>EFRON Consulting</name>
+        <url>http://www.efronconsulting.com/</url>
+    </organization>
+
+    <!-- PROPERTIES -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <jdk.version>1.6</jdk.version>
+		
+<!-- ********************* S O N A R Q U B E ********************* -->
+
+	<!-- Propiedades a introducir en la línea de comando o en la configuración global de Maven -->
+<!-- 
+		<sonar.jdbc.url>jdbc:mysql://localhost:3306/sonarqube5?useUnicode=true&amp;characterEncoding=utf8</sonar.jdbc.url>
+        <sonar.jdbc.username>sonar</sonar.jdbc.username>
+        <sonar.jdbc.password>sonar</sonar.jdbc.password>
+
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>admin</sonar.password>
+ --> 
+
+	<!-- Propiedades propias del proyecto -->
+		<sonar.projectKey>es.efron.banca:cuadernos</sonar.projectKey>
+		<sonar.projectName>CuadernosBancarios_Q19</sonar.projectName>
+		<sonar.projectVersion>2.4.0-SNAPSHOT</sonar.projectVersion>
+
+		<sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+		
+		<!-- path to source directories (required) -->
+		<sonar.sources>src/main/java</sonar.sources>
+		<!-- path to test source directories (optional) -->
+		<sonar.tests>src/test/java</sonar.tests>
+
+		<!-- path to project binaries (optional), for example directory of Java bytecode -->
+		<sonar.binaries>target/classes</sonar.binaries> 
+		<!-- Ruta de los binarios de las clases de Java (necesario para FindBugs) -->
+		<!-- ¡¡OJO!! La ruta para esta propiedad debe ser ABSOLUTA. No admite rutas relativas. -->
+		<sonar.java.binaries>C:/PACOLMOS/Clientes/OMC/SVN/OMC/trunk/Q19/target/classes</sonar.java.binaries>
+		
+		<!-- Import tests execution reports (JUnit XML format). -->
+		<!-- Set the property to the path of the directory containing all the XML reports. -->
+		<sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
+
+		<!-- either jacoco or cobertura or clover -->
+		<sonar.java.coveragePlugin>cobertura</sonar.java.coveragePlugin>   
+		
+		<!-- Import Cobertura code coverage report. -->
+		<!-- Set the property to the path of the Cobertura .ser report. -->
+		<sonar.cobertura.reportPath>target/site/cobertura/coverage.xml</sonar.cobertura.reportPath>
+		
+		<!-- For versions of the Java plugin prior to 2.2, the following properties have to be set as well. -->
+		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.surefire.reportsPath>target/surefire-reports</sonar.surefire.reportsPath>
+
+<!-- ********************************************************* -->
+		
+    </properties>
+
+
+    <!-- CONSTRUCCION -->
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Maven Compiler: http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                <encoding>${project.build.sourceEncoding}</encoding>
+                <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+
+                    <compilerArgument>-nowarn</compilerArgument>
+                    <failOnError>true</failOnError>
+
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+        <pluginManagement>
+        	<plugins>
+        		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        		<plugin>
+        			<groupId>org.eclipse.m2e</groupId>
+        			<artifactId>lifecycle-mapping</artifactId>
+        			<version>1.0.0</version>
+        			<configuration>
+        				<lifecycleMappingMetadata>
+        					<pluginExecutions>
+        						<pluginExecution>
+        							<pluginExecutionFilter>
+        								<groupId>
+        									org.apache.maven.plugins
+        								</groupId>
+        								<artifactId>
+        									maven-dependency-plugin
+        								</artifactId>
+        								<versionRange>
+        									[2.1,)
+        								</versionRange>
+        								<goals>
+        									<goal>
+        										copy-dependencies
+        									</goal>
+        								</goals>
+        							</pluginExecutionFilter>
+        							<action>
+        								<ignore></ignore>
+        							</action>
+        						</pluginExecution>
+        						<pluginExecution>
+        							<pluginExecutionFilter>
+        								<groupId>
+        									org.codehaus.mojo
+        								</groupId>
+        								<artifactId>
+        									aspectj-maven-plugin
+        								</artifactId>
+        								<versionRange>
+        									[1.4,)
+        								</versionRange>
+        								<goals>
+        									<goal>compile</goal>
+        								</goals>
+        							</pluginExecutionFilter>
+        							<action>
+        								<ignore></ignore>
+        							</action>
+        						</pluginExecution>
+        					</pluginExecutions>
+        				</lifecycleMappingMetadata>
+        			</configuration>
+        		</plugin>
+        	</plugins>
+        </pluginManagement>
+    </build>
+
+
+    <distributionManagement>
+
+        <repository>
+            <id>internal</id>
+            <url>http://intranet.efronconsulting.com/archiva/repository/internal/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://intranet.efronconsulting.com/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+
+    <!-- Repositorios -->
+    <repositories>
+        <repository>
+            <id>efron</id>
+            <name>Efron Repository Group</name>
+            <url>http://intranet.efronconsulting.com/archiva/repository/main</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>efron</id>
+            <name>Efron Plugins Repository</name>
+            <url>http://intranet.efronconsulting.com/archiva/repository/main/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!-- Dependencias -->
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>        
+	
+	</dependencies>
+     
+</project>    

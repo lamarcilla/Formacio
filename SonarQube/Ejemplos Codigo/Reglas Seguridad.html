@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Reglas de Seguridad</title>
+    </head>
+    <body>
+        <label>CODIGO: </label>Web:AvoidHtmlCommentCheck<br>
+        <label>REGLA: </label>HTML comments should not be used<br>
+        <label>SEVERIDAD: </label>Menor<br>
+        
+        <label>EJEMPLO DE INCUMPLIMIENTO:</label><br>
+            <%
+                out.write("<!-- ${username} -->");  // Noncompliant
+            %>
+            <!-- <% out.write(userId) %> -->  // Noncompliant
+            <!-- #{userPhone} -->  // Noncompliant
+            <!-- ${userAddress} --> // Noncompliant
+
+            <!-- Replace 'world' with name --> // Noncompliant
+            <h2>Hello world!</h2>
+            
+        <label>RESOLUCIÓN DE INCUMPLIMIENTO:</label><br>
+            <%-- Replace 'world' with name --%>  // Compliant
+            <h2>Hello world!</h2>
+            
+        <hr>
+    </body>
+</html>

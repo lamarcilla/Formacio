@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Code analysis settings. -->
+  <PropertyGroup>
+    <!-- Code analysis settings. -->
+    <CodeAnalysisCulture>en-US</CodeAnalysisCulture>
+
+    <!-- change this so it points to your ruleset or remove it entirely -->
+    <!-- <CodeAnalysisRuleSet>$(SourcesDir)Custom.ruleset</CodeAnalysisRuleSet> -->
+
+    <!-- this must refer to the source control directory where you copied FxCopCommand.exe (and the rest of the FxCop files and directories...) to -->
+    <CodeAnalysisPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Static Analysis Tools\FxCop\</CodeAnalysisPath>
+
+    <!-- this must refer to the source control directory where you copied fxcoptask.dll, Microsoft.CodeAnalysis.Targets, Microsoft.VisualStudio.CodeaAnalysis.dll and Microsoft.VisualStudio.CodeaAnalysis.Sdk.dll to -->
+    <CodeAnalysisTargets>C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\CodeAnalysis\Microsoft.CodeAnalysis.Targets</CodeAnalysisTargets>
+  </PropertyGroup>
+  <!-- configure this according to your wishes -->
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+
+  <!-- Report code analysis results to TeamCity -->
+  <Target Name="ReportCodeAnalysisResults" AfterTargets="RunCodeAnalysis" Condition="'$(RunCodeAnalysis)' == 'true' And '$(IsRunningOnTeamCity)' == 'true'">
+    <Message Text="##teamcity[importData type='FxCop' path='$(CodeAnalysisLogFile)']" Importance="High" />
+  </Target>
+
+</Project>

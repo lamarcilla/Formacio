@@ -1,0 +1,5 @@
+projectKey=es.gfi:reglasseguridad_resto
+serverUrl=http://localhost:9004
+dashboardUrl=http://localhost:9004/dashboard/index/es.gfi:reglasseguridad_resto
+ceTaskId=AVxcNMkK6b2z8g_YkjZC
+ceTaskUrl=http://localhost:9004/api/ce/task?id=AVxcNMkK6b2z8g_YkjZC

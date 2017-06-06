@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalysisInput>
+  <Settings>
+    <Setting>
+      <Key>sonar.cs.ignoreHeaderComments</Key>
+      <Value>true</Value>
+    </Setting>
+    <Setting>
+      <Key>sonar.sourceEncoding</Key>
+      <Value>UTF-8</Value>
+    </Setting>
+  </Settings>
+  <Rules>
+    <Rule>
+      <Key>S2228</Key>
+    </Rule>
+    <Rule>
+      <Key>S1104</Key>
+    </Rule>
+    <Rule>
+      <Key>S2070</Key>
+    </Rule>
+    <Rule>
+      <Key>S1313</Key>
+    </Rule>
+    <Rule>
+      <Key>S2386</Key>
+    </Rule>
+    <Rule>
+      <Key>S2278</Key>
+    </Rule>
+  </Rules>
+  <Files>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.cs</File>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Properties\AssemblyInfo.cs</File>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Reglas Seguridad\CA1054.cs</File>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Reglas Seguridad\Class1.cs</File>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</File>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</File>
+    <File>C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</File>
+  </Files>
+</AnalysisInput>

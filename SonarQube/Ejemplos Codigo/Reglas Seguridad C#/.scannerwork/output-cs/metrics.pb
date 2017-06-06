@@ -1,0 +1,113 @@
+‚
+qC:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Program.csb~ {8~@ÍH~R 0=0;5=0;10=0;20=0;30=0;60=0;90=1Z1=120;2=3;4=0;6=0;8=0;10=0;12=0j»	+,/014567=>ABCDEKLMNOXY\]^efgqruvw|}~Š‹Ž•–—Ÿ¢£¨©ª²·¸¹¾¿ÀÈÉÌÍÎÖ×ÚÛÜãäåïðóôõûüý€ˆ‰ŒŽ˜™š¥¦©ª«²³´½¾ÁÂÃÊËÌÖ×ÚÛÜáåêëìñõú‚ƒ†‡ˆ”—š›Ÿ £¤¥¨©ª°±´µ¶¹º»ÅÆÉÊËÓÔÕâãæçèøùú„‹Œ‘›œ¦¬­°±²µ¶·¹½ÄÅÆÉÊËÍÑÛÜßàáæçèïðóôõöüý‰Š‹Œ’ ¡¤¥¦°µ¼ÁÂÃÍÒÙáâåæçíîóô÷øùüÿ€„Š‹Ž”—˜™š£¤§¨©·¸¹ÊËÎÏÐÕÛÜçèéîôƒ„‡ˆ‰Š‘’“žŸ ³´·¸¹ÂÉÊËÞßâãäéíñòóúþŠ‹Ž—˜™¤¥¨©ª¯¶»¼½ÌÍÐÑÒÓÞçìíî„	…	ˆ	‰	Š	’	“	—	˜	™	£	¤	©	ª	«	É	Ê	Í	Î	Ï	×	Ù	á	â	ã	ö	÷	ú	û	ü	ÿ	†
+‡
+ˆ
+”
+•
+˜
+™
+š
+ž
+Ÿ
+ 
+§
+¨
+©
+µ
+¶
+¹
+º
+»
+¼
+½
+Ê
+Ë
+Ì
+Ü
+Ý
+à
+á
+â
+ì
+í
+ò
+ó
+ô
+…†‰Š‹‘žŸ³´·¸¹ÇÈÉÊËÎÏÐÑÒÕÖ×ØÙÞßàúûþÿ€‰Š‹ŒŽ“”•¥¦©ª«®¯¶·¸ÃÄÇÈÉÌÓÔÕâãæçèíîóôõ‚…†‡Š‹’“” ¡¤¥¦¬­®¯¹º»ÀÁÂÃÉÊËèéìíîñòóôõýþÿ€†‡ˆ™šžŸ¨­®¯ÀÁÄÅÆÉÊÌÏÐÑÔÕØÛÜÝßàâèéìíîñòóùúýþÿˆ“”•©ª­®¯¿ÀÁÙÚÝÞßäçèéîùúýþÿ‚ƒ„Š‹Ž“”•›œŸ ¡¤¥¦¬­°±²µ¶·½¾ÁÂÃÆÇÈrü	
+ !"#%&'28FGHIPQRS_`abchijklxz€‚ƒ…‘’˜™š›œ ¡¤¥¦«¬­®¯°³´µ¶º»¼ÁÂÃÄÅÆÊËÏÐÑÝÞßàáæçèéêö÷øùþÿ‚ƒ‘“–›œ ¬­®¯°µ¶·¸¹ÄÅÆÇÈÍÎÏÐÑÝÞßàâãäæçèíîïðòóôö÷øùûüý‰Š‹ŒŽ’“•–˜¦«·¼½¾¿ÀÌÍÎÏÒÖ×ØÙÚÝéêëìïðñòóöûüýþ‚ƒ†’“”•–—™šžŸ ¡¢£¤³´»¾¿ÀÁÂÇÈÏÒÓÔÕÖâãéê÷øùúûþÿ‚ƒ„…†Ž‘“”–—˜™š›§¨©ª«¬­®±²³¶·¹º»½¾¿ÄÅÆÇÈÉÊËÎÏÐÓÔÖ×ØÚÛÜèéêëúûý‚ƒ…‘’“•›œžª«¬­¯°±²³´µº»¼½¿ÀÁÂÃÄÅÑÒÓÔÖ×ØÙÚÝÞßàáâãäåêëìíïðñòóõö÷øùúûüýþ‹ŒŽ•–—˜™›œ¡¢£¤¥§¨©ª«­®º»¼½¾ÀÁÃÄÅÆÇÌÍÎÏÐÒÓÔÕÖ×ØÙåæçèêëìîïôõö÷øùûüýÿ€‚ƒ„…‘’“”•š›œžŸ«¬­°±²´µ·¸¹¾¿ÀÁÂÄÅÆÇÔÕÖ×ØÙÛÜÝßàáãäåæèéêïðñòóõö÷øùûüýþÿ‹	Œ		Ž			‘	”	•	–	š	›	œ		ž	Ÿ	 	¡	¢	¥	¦	§	¬	­	®	¯	°	±	²	³	´	µ	¶	·	¸	¹	º	»	¼	½	¾	¿	À	Á	Â	Ã	Ä	Ð	Ñ	Ò	Ó	Ô	Õ	Ö	Ø	Ú	Û	Ü	Ý	Þ	ß	ä	å	æ	ç	è	é	ê	ë	ì	í	î	ï	ð	ñ	ý	þ	€
+
+‚
+ƒ
+„
+‰
+Š
+‹
+Œ
+
+Ž
+
+›
+œ
+
+¡
+¢
+£
+¤
+¥
+ª
+«
+¬
+­
+®
+¯
+°
+¾
+¿
+À
+Á
+Â
+Ã
+Ä
+Æ
+Ç
+Í
+Î
+Ï
+Ð
+Ñ
+Ò
+Ó
+Ô
+Ö
+×
+ã
+ä
+å
+æ
+ç
+è
+ê
+ë
+î
+ï
+ð
+õ
+ö
+÷
+ø
+ù
+ú
+ü
+ý
+þ
+ÿ
+€ŒŽ’“”•–—˜™š› ¡¢£¥¦§¨©ª«¬­®º»½¾¿ÀÂÃÅÆÌÓÚÛÜáâäåæçéêìíîïñóôõ‚ƒ„‡ˆ‘–—˜™›œžŸ ¬­°±²³´¹º»¼½¾ÊËÍÎÏÐÑÖ×ØÙÚÛÜÝéêëïðö÷øùûüˆ‰ŒŽ•–—˜™š›§¨©ª°±²´µ¶·¼½¾ÄÅÆÇÌÍÎÏÑÒÓÔÖ×ØÙÛÜÝÞàáâãïðö÷øùûü‚ƒ„‰Š‹Œ‘’“” ¡¢£¤¦§©ª«°±²³´¶·¸¹º»ÇÈÉÊËÌÍÒÓÔÕÖ×ØÙÞßàáâãïô€‚„…†‰ŠŒŽ‘–—˜š›œŸ ¡¢£¤°±²³µ¶·¹º»¼½ÂÃÄÅÇÈÉËÌÍÎÏÐÑÒÓÔàáâãäåêëìíîïðñòóôÎÏx~ç
+C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Properties\AssemblyInfo.csR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=0;2=0;4=0;6=0;8=0;10=0;12=0j !"r	
+#$’
+C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Reglas Seguridad\CA1054.cs 	8	@H	R 0=0;5=1;10=0;20=0;30=0;60=0;90=0Z1=9;2=0;4=0;6=0;8=0;10=0;12=0j	
+ '()./8r+!"#$%*+,01234679:<>?@ABCDxÔ
+C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\Reglas Seguridad\Class1.csR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=0;2=0;4=0;6=0;8=0;10=0;12=0r	
+ó
+¯C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.csR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=0;2=0;4=0;6=0;8=0;10=0;12=0ó
+¯C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.csR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=0;2=0;4=0;6=0;8=0;10=0;12=0ó
+¯C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.csR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=0;2=0;4=0;6=0;8=0;10=0;12=0

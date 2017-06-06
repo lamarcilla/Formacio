@@ -1,0 +1,176 @@
+Environment variables:
+  - =::=::\
+  - =C:=C:\Users\fmartinez.EFRON\Desktop
+  - ALLUSERSPROFILE=C:\ProgramData
+  - APPDATA=C:\Users\fmartinez.EFRON\AppData\Roaming
+  - COMPUTERNAME=FMARTINEZ-PC
+  - ComSpec=C:\WINDOWS\system32\cmd.exe
+  - CommonProgramFiles=C:\Program Files\Common Files
+  - CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+  - CommonProgramW6432=C:\Program Files\Common Files
+  - ERROR_CODE=0
+  - FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+  - FPS_BROWSER_USER_PROFILE_STRING=Default
+  - FP_NO_HOST_CHECK=NO
+  - HOMEDRIVE=C:
+  - HOMEPATH=\Users\fmartinez.EFRON
+  - JAVA_EXEC="C:\Program Files\sonar-scanner-3.0.3.778-windows\bin\..\jre\bin\java.exe"
+  - JAVA_HOME=C:\Program Files\sonar-scanner-3.0.3.778-windows\bin\..\jre
+  - LOCALAPPDATA=C:\Users\fmartinez.EFRON\AppData\Local
+  - LOGONSERVER=\\MATRIX
+  - NUMBER_OF_PROCESSORS=4
+  - OS=Windows_NT
+  - OneDrive=C:\Users\fmartinez.EFRON\OneDrive
+  - PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+  - PROCESSOR_ARCHITECTURE=AMD64
+  - PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+  - PROCESSOR_LEVEL=6
+  - PROCESSOR_REVISION=2a07
+  - PROJECT_HOME=C:\Users\fmartinez.EFRON\Desktop
+  - PROMPT=$P$G
+  - PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\PowerShell\Modules\
+  - PUBLIC=C:\Users\Public
+  - Path=C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Users\fmartinez.EFRON\AppData\Local\Microsoft\WindowsApps;
+  - ProgramData=C:\ProgramData
+  - ProgramFiles=C:\Program Files
+  - ProgramFiles(x86)=C:\Program Files (x86)
+  - ProgramW6432=C:\Program Files
+  - SESSIONNAME=Console
+  - SONAR_RUNNER_HOME=C:\Program Files (x86)\sonar-runner-2.4
+  - SONAR_SCANNER_HOME=C:\Program Files\sonar-scanner-3.0.3.778-windows\bin\..
+  - SONAR_SCANNER_OPTS=-Xmx4096m -XX:MaxPermSize=512m
+  - SystemDrive=C:
+  - SystemRoot=C:\WINDOWS
+  - TEMP=C:\Users\FMARTI~1.EFR\AppData\Local\Temp
+  - TMP=C:\Users\FMARTI~1.EFR\AppData\Local\Temp
+  - USERDNSDOMAIN=DNS.EFRONCONSULTING.COM
+  - USERDOMAIN=EFRON
+  - USERDOMAIN_ROAMINGPROFILE=EFRON
+  - USERNAME=fmartinez
+  - USERPROFILE=C:\Users\fmartinez.EFRON
+  - VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\
+  - VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\
+  - scriptdir=C:\Program Files\sonar-scanner-3.0.3.778-windows\bin
+  - use_embedded_jre=true
+  - windir=C:\WINDOWS
+  - windows_tracing_flags=3
+  - windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+System properties:
+  - awt.toolkit=sun.awt.windows.WToolkit
+  - file.encoding=Cp1252
+  - file.encoding.pkg=sun.io
+  - file.separator=\
+  - java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+  - java.awt.headless=true
+  - java.awt.printerjob=sun.awt.windows.WPrinterJob
+  - java.class.path=C:\Program Files\sonar-scanner-3.0.3.778-windows\bin\..\lib\sonar-scanner-cli-3.0.3.778.jar
+  - java.class.version=52.0
+  - java.endorsed.dirs=C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\endorsed
+  - java.ext.dirs=C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+  - java.home=C:\Program Files\sonar-scanner-3.0.3.778-windows\jre
+  - java.io.tmpdir=C:\Users\FMARTI~1.EFR\AppData\Local\Temp\
+  - java.library.path=C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Users\fmartinez.EFRON\AppData\Local\Microsoft\WindowsApps;;.
+  - java.runtime.name=Java(TM) SE Runtime Environment
+  - java.runtime.version=1.8.0_121-b13
+  - java.specification.name=Java Platform API Specification
+  - java.specification.vendor=Oracle Corporation
+  - java.specification.version=1.8
+  - java.vendor=Oracle Corporation
+  - java.vendor.url=http://java.oracle.com/
+  - java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+  - java.version=1.8.0_121
+  - java.vm.info=mixed mode
+  - java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+  - java.vm.specification.name=Java Virtual Machine Specification
+  - java.vm.specification.vendor=Oracle Corporation
+  - java.vm.specification.version=1.8
+  - java.vm.vendor=Oracle Corporation
+  - java.vm.version=25.121-b13
+  - line.separator=
+
+  - os.arch=amd64
+  - os.name=Windows 10
+  - os.version=10.0
+  - path.separator=;
+  - project.home=C:\Users\fmartinez.EFRON\Desktop
+  - scanner.home=C:\Program Files\sonar-scanner-3.0.3.778-windows\bin\..
+  - sun.arch.data.model=64
+  - sun.boot.class.path=C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\resources.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\rt.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\sunrsasign.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\jsse.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\jce.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\charsets.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\lib\jfr.jar;C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\classes
+  - sun.boot.library.path=C:\Program Files\sonar-scanner-3.0.3.778-windows\jre\bin
+  - sun.cpu.endian=little
+  - sun.cpu.isalist=amd64
+  - sun.desktop=windows
+  - sun.io.unicode.encoding=UnicodeLittle
+  - sun.java.command=org.sonarsource.scanner.cli.Main -Dsonar.host.url=http://localhost:9004 -Dsonar.login=admin -Dsonar.password=admin -Dsonar.projectBaseDir=C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1 -e -X
+  - sun.java.launcher=SUN_STANDARD
+  - sun.jnu.encoding=Cp1252
+  - sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+  - sun.os.patch.level=
+  - sun.stderr.encoding=cp850
+  - sun.stdout.encoding=cp850
+  - user.country=ES
+  - user.dir=C:\Users\fmartinez.EFRON\Desktop
+  - user.home=C:\Users\fmartinez.EFRON
+  - user.language=es
+  - user.name=fmartinez
+  - user.script=
+  - user.timezone=Europe/Paris
+  - user.variant=
+SonarQube plugins:
+  - Cobertura 1.7 (cobertura)
+  - CSS / SCSS / Less 3.1 (css)
+  - PMD 2.6 (pmd)
+  - Android 1.1 (android)
+  - Erlang 1.2-SNAPSHOT (erlang)
+  - SVN 1.4.0.522 (scmsvn)
+  - C# 5.10.1.1411 (csharp)
+  - SonarJava 4.9.0.9858 (java)
+  - LDAP 2.1.0.507 (ldap)
+  - Web 2.5.0.476 (web)
+  - Flex 2.3 (flex)
+  - SonarXML 1.4.2.885 (xml)
+  - Pitest 0.7 (pitest)
+  - Rules Compliance Index (RCI) 1.0.1 (rci)
+  - Checkstyle 3.6.1 (checkstyle)
+  - Generic Coverage 1.2 (genericcoverage)
+  - SonarPython 1.8.0.1496 (python)
+  - Spanish Pack 1.13 (l10nes)
+  - FxCop 1.0 (fxcop)
+  - AEM Rules for SonarQube 0.8 (aemrules)
+  - Google Analytics 1.1 (googleanalytics)
+  - jDepend 1.1.1 (jdepend)
+  - Widget Lab 1.8.1 (widgetlab)
+  - SonarJS 3.0.0.4962 (javascript)
+  - Puppet 1.4 (puppet)
+  - Findbugs 3.4.4 (findbugs)
+  - Groovy 1.5 (groovy)
+  - Git 1.2 (scmgit)
+  - SonarPHP 2.10.0.2087 (php)
+  - SoftVis3D 0.8.1 (softvis3d)
+  - Timeline 1.5 (timeline)
+Global properties:
+  - sonar.core.id=20170525093546
+  - sonar.core.startTime=2017-05-25T09:35:46+0200
+  - sonar.core.version=5.6.6
+  - sonar.dbcleaner.cleanDirectory=false
+  - sonar.permission.template.default=default_template
+  - sonar.preview.excludePlugins=buildstability,devcockpit,pdfreport,report,views,jira,buildbreaker,scmstats
+  - sonar.qualitygate=2
+  - sonar.svn.password.secured=******
+  - sonar.svn.username=fmartinez
+  - sonar.technicalDebt.developmentCost=30
+Settings for module: es.efron.gasnatural:reglasseguridad
+  - sonar.cs.fxcop.fxCopCmdPath=C:/Program Files (x86)/Microsoft Visual Studio 11.0/Team Tools/Static Analysis Tools/FxCop/FxCopCmd.exe
+  - sonar.host.url=http://localhost:9004
+  - sonar.login=******
+  - sonar.password=******
+  - sonar.projectBaseDir=C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1
+  - sonar.projectKey=es.efron.gasnatural:reglasseguridad
+  - sonar.projectName=Reglas_Seguridad
+  - sonar.projectVersion=1.0.0-SNAPSHOT
+  - sonar.sourceEncoding=UTF-8
+  - sonar.sources=.
+  - sonar.verbose=true
+  - sonar.visualstudio.enable=false
+  - sonar.visualstudio.skipIfNotBuilt=true
+  - sonar.working.directory=C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\.scannerwork

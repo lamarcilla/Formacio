@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe">
+   <Modules>
+    <Module Name="consoleapplication1.exe">
+     <Namespaces>
+      <Namespace Name="ConsoleApplication1">
+       <Types>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#DomainInformationResuelto()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="984">'Program.DomainInformationResuelto()' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.DomainInformationResuelto()' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnvironmentSetting(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="ReviewImperativeSecurity" Category="Microsoft.Security" CheckId="CA2103" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="25" Level="CriticalError" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="973">Revise lo siguiente en busca de una posible vulnerabilidad de seguridad: el parámetro 'environmentVariable' de 'Program.EnvironmentSetting(string)' se está pasando a un constructor 'EnvironmentPermission'.</Issue>
+            </Message>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="972">'Program.EnvironmentSetting(string)' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.EnvironmentSetting(string)' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnvironmentSettingResuelto(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="ReviewImperativeSecurity" Category="Microsoft.Security" CheckId="CA2103" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="25" Level="CriticalError" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="991">Revise lo siguiente en busca de una posible vulnerabilidad de seguridad: el parámetro 'environmentVariable' de 'Program.EnvironmentSettingResuelto(string)' se está pasando a un constructor 'EnvironmentPermission'.</Issue>
+            </Message>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="990">'Program.EnvironmentSettingResuelto(string)' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.EnvironmentSettingResuelto(string)' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveDirectory(System.String)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.RemoveDirectory(string)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#usoDeny()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="ReviewDenyAndPermitOnlyUsage" Category="Microsoft.Security" CheckId="CA2107" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="514">'Program.usoDeny()' utiliza un permiso Deny o PermitOnly. El uso de Deny y PermitOnly se debería revisar con atención.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#usoPermitOnly()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="ReviewDenyAndPermitOnlyUsage" Category="Microsoft.Security" CheckId="CA2107" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="507">'Program.usoPermitOnly()' utiliza un permiso Deny o PermitOnly. El uso de Deny y PermitOnly se debería revisar con atención.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+BaseWithSafeCriticalDefaultCtor" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1225">'Program.BaseWithSafeCriticalDefaultCtor.BaseWithSafeCriticalDefaultCtor()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+BaseWithSafeCriticalDefaultCtorResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1258">'Program.BaseWithSafeCriticalDefaultCtorResuelto.BaseWithSafeCriticalDefaultCtorResuelto()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+C" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.C.Beep(int, int)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning">'Program.C.Beep(int, int)', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+CallNativeCodeClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.CallNativeCodeClass.Beep(uint, uint)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+CallNativeCodeClassResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.CallNativeCodeClassResuelto.Beep(uint, uint)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CallNativeMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1922">'Program.CallNativeCodeClassResuelto.CallNativeMethod()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+CallSuppressUnmanagedCodeSecurityClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.CallSuppressUnmanagedCodeSecurityClass.Beep(uint, uint)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+CallSuppressUnmanagedCodeSecurityClassResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.CallSuppressUnmanagedCodeSecurityClassResuelto.Beep(uint, uint)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+CResuelto" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="2112">'Program.CResuelto.Beep(int, int)', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BeepPinvoke(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.CResuelto.BeepPinvoke(int, int)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+CriticalClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SafeCriticalMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1377">'Program.CriticalClass.SafeCriticalMethod()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+DerivedWithNoDefaultCtorResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1263">'Program.DerivedWithNoDefaultCtorResuelto.DerivedWithNoDefaultCtorResuelto()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+DerivedWithSafeCriticalDefaultCtor" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1249">'Program.DerivedWithSafeCriticalDefaultCtor.DerivedWithSafeCriticalDefaultCtor()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+DerivedWithTransparentDefaultCtorResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1268">'Program.DerivedWithTransparentDefaultCtorResuelto.DerivedWithTransparentDefaultCtorResuelto()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+EquivilentStruct" Kind="Struct" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="DependsOnFix">
+           <Issue Name="Type" Certainty="99" Level="CriticalError">'Program.EquivilentStruct' es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, 'Program.EquivilentStruct' debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CriticalField" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="TransparentMarkedCritical" Certainty="50" Level="Warning">'Program.EquivilentStruct.CriticalField', un miembro transparente para la seguridad, está marcado con una anotación crítica para la seguridad. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+EquivilentStructResuelto" Kind="Struct" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="DependsOnFix">
+           <Issue Name="Type" Certainty="99" Level="CriticalError">'Program.EquivilentStructResuelto' es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, 'Program.EquivilentStructResuelto' debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+HandleProcessCorruptedStateExceptionClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#NativeCode1()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.HandleProcessCorruptedStateExceptionClass.NativeCode1()' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+HandleProcessCorruptedStateExceptionClassResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#NativeCode2()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.HandleProcessCorruptedStateExceptionClassResuelto.NativeCode2()' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+ICriticalEquivilentInterface" Kind="Interface" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="DependsOnFix">
+           <Issue Name="Type" Certainty="99" Level="CriticalError">'Program.ICriticalEquivilentInterface' es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, 'Program.ICriticalEquivilentInterface' debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+ICriticalEquivilentInterfaceResuelto" Kind="Interface" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="DependsOnFix">
+           <Issue Name="Type" Certainty="99" Level="CriticalError">'Program.ICriticalEquivilentInterfaceResuelto' es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, 'Program.ICriticalEquivilentInterfaceResuelto' debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+ITestOverrides" Kind="Interface" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetFormat(System.Type)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning">'Program.ITestOverrides.GetFormat(Type)' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.ITestOverrides.GetFormat(Type)' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+ITestOverridesResuelto" Kind="Interface" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetFormat(System.Type)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning">'Program.ITestOverridesResuelto.GetFormat(Type)' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.ITestOverridesResuelto.GetFormat(Type)' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+ITransparentEquivilentInterface" Kind="Interface" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="DependsOnFix">
+           <Issue Name="Type" Certainty="99" Level="CriticalError">'Program.ITransparentEquivilentInterface' es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, 'Program.ITransparentEquivilentInterface' debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CriticalMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="SafeCriticalMarkedCritical" Certainty="50" Level="Warning">'Program.ITransparentEquivilentInterface.CriticalMethod()', un miembro crítico para la seguridad y disponible desde código transparente, está marcado con una anotación crítica para la seguridad. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+ITransparentEquivilentInterfaceResuelto" Kind="Interface" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="DependsOnFix">
+           <Issue Name="Type" Certainty="99" Level="CriticalError">'Program.ITransparentEquivilentInterfaceResuelto' es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, 'Program.ITransparentEquivilentInterfaceResuelto' debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+MethodsProtectedWithLinkDemandsClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#ProtectedMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1343">'Program.MethodsProtectedWithLinkDemandsClass.ProtectedMethod()' está protegido con un elemento LinkDemand para 'SecurityPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.MethodsProtectedWithLinkDemandsClass.ProtectedMethod()' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+MyClassWithTypeSecurity" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SetEnvironmentVariable(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.MyClassWithTypeSecurity.SetEnvironmentVariable(string, string)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+MyClassWithTypeSecurityResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SetEnvironmentVariable(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.MyClassWithTypeSecurityResuelto.SetEnvironmentVariable(string, string)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+NativeMethods1" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#RemoveDirectory(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.NativeMethods1.RemoveDirectory(string)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+NativeMethods2" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#RegCreateKey(System.IntPtr,System.String,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.NativeMethods2.RegCreateKey(IntPtr, string, out IntPtr)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro 'subKey' como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+NativeMethodsResuelto1" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#RemoveDirectory(System.String)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.NativeMethodsResuelto1.RemoveDirectory(string)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+NativeMethodsResuelto2" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#RegCreateKey2(System.IntPtr,System.String,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.NativeMethodsResuelto2.RegCreateKey2(IntPtr, string, out IntPtr)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+OverridesAndSecurityResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#ConsoleApplication1.Program+ITestOverridesResuelto.GetFormat(System.Type)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1036">'Program.OverridesAndSecurityResuelto.Program.ITestOverridesResuelto.GetFormat(Type)' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.OverridesAndSecurityResuelto.Program.ITestOverridesResuelto.GetFormat(Type)' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+SafeCriticalBase" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning">'Program.SafeCriticalBase', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+SafeCriticalBaseResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning">'Program.SafeCriticalBaseResuelto', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+SafeCriticalFromCritical" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning">'Program.SafeCriticalFromCritical', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+SafeNativeMethod2" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.SafeNativeMethod2.Beep(uint, uint)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+SafeNativeMethods2Resuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Puesto que es un método P/Invoke, se debe definir 'Program.SafeNativeMethods2Resuelto.Beep(uint, uint)' en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+SecuredTypeStructure" Kind="Struct" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="ReviewDeclarativeSecurityOnValueTypes" Category="Microsoft.Security" CheckId="CA2108" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Name="Type" Certainty="90" Level="Error">Quite Demand o LinkDemand de 'Program.SecuredTypeStructure', ya que no evitarán que se inicialice el struct. En lugar de eso, coloque la demanda en un constructor con parámetros y asegúrese de que el estado inicial de la estructura es detectablemente válido o no válido (el struct sólo se inicializará con los valores predeterminados si no se satisface la demanda de seguridad).</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(System.Double,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="ReviewDeclarativeSecurityOnValueTypes" Category="Microsoft.Security" CheckId="CA2108" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="Constructor" Certainty="90" Level="Error" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="555">Ni Demand ni LinkDemand en 'Program.SecuredTypeStructure.SecuredTypeStructure(double, double)' impiden que el struct se inicialice, pero este sólo se inicializará con los valores predeterminados si la petición de seguridad no se satisface. Asegúrese de que el estado inicial de la estructura es detectablemente válido o no válido.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+SecuredTypeWithFields" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="SecuredTypesShouldNotExposeFields" Category="Microsoft.Security" CheckId="CA2112" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="CriticalError">'Program.SecuredTypeWithFields' tiene un elemento LinkDemand o Demand, y expone el campo 'Program.SecuredTypeWithFields.xValue'. Los elementos LinkDemand y Demand no pueden proteger los campos. Para quitar esta vulnerabilidad, convierta el campo en privado y exponga una propiedad que tenga seguridad aplicada.</Issue>
+           <Issue Certainty="75" Level="CriticalError">'Program.SecuredTypeWithFields' tiene un elemento LinkDemand o Demand, y expone el campo 'Program.SecuredTypeWithFields.yValue'. Los elementos LinkDemand y Demand no pueden proteger los campos. Para quitar esta vulnerabilidad, convierta el campo en privado y exponga una propiedad que tenga seguridad aplicada.</Issue>
+          </Message>
+          <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalWarning">'Program.SecuredTypeWithFields' está protegido con un elemento LinkDemand para 'PermissionSetAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.SecuredTypeWithFields' como crítico para la seguridad.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+SecuredTypeWithFieldsResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalWarning">'Program.SecuredTypeWithFieldsResuelto' está protegido con un elemento LinkDemand para 'PermissionSetAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.SecuredTypeWithFieldsResuelto' como crítico para la seguridad.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+SerializationConstructorsRequireSecurity" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecureSerializationConstructors" Category="Microsoft.Security" CheckId="CA2120" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="Breaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="913">Se encontraron demandas de seguridad en 'Program.SerializationConstructorsRequireSecurity.SerializationConstructorsRequireSecurity()'. Marque al constructor de serializaciones de este tipo con la forma declarativa de la misma demanda.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+TransparentFromSafeCriticalResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning">'Program.TransparentFromSafeCriticalResuelto', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+TransparentMethodDemandClassResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#TransparentMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1696">'Program.TransparentMethodDemandClassResuelto.TransparentMethod()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+TransparentMethodSatisfiesLinkDemandsClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#LinkDemandMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1607">'Program.TransparentMethodSatisfiesLinkDemandsClass.LinkDemandMethod()' está protegido con un elemento LinkDemand para 'SecurityPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.TransparentMethodSatisfiesLinkDemandsClass.LinkDemandMethod()' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+TransparentMethodSatisfiesLinkDemandsClassResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#LinkDemandMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1628">'Program.TransparentMethodSatisfiesLinkDemandsClassResuelto.LinkDemandMethod()' está protegido con un elemento LinkDemand para 'SecurityPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.TransparentMethodSatisfiesLinkDemandsClassResuelto.LinkDemandMethod()' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+TransparentMethodsProtectedWithLinkDemandsClass" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#TransparentMethod()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1654">'Program.TransparentMethodsProtectedWithLinkDemandsClass.TransparentMethod()' está protegido con un elemento LinkDemand para 'PermissionSetAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.TransparentMethodsProtectedWithLinkDemandsClass.TransparentMethod()' como crítico para la seguridad.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+TransparentMethodsUseSecurityAssertsClassResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Members>
+          <Member Name="#ImperativeAssert()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+             <Issue Name="CriticalMarkedSafeCritical" Certainty="50" Level="Warning" Path="C:\Users\fmartinez.EFRON\Documents\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1" File="Program.cs" Line="1882">'Program.TransparentMethodsUseSecurityAssertsClassResuelto.ImperativeAssert()', un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program+TypesWithLinkDemands" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalWarning">'Program.TypesWithLinkDemands' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.TypesWithLinkDemands' como crítico para la seguridad.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program+TypesWithLinkDemandsResuelto" Kind="Class" Accessibility="Public" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135" Status="Active" Created="2017-05-31 01:49:07Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalWarning">'Program.TypesWithLinkDemandsResuelto' está protegido con un elemento LinkDemand para 'EnvironmentPermissionAttribute'. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque 'Program.TypesWithLinkDemandsResuelto' como crítico para la seguridad.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="CriticalTypesMustNotParticipateInTypeEquivalenceFxCopRule" Category="Microsoft.Security" CheckId="CA2131">
+   <Name>Los tipos críticos para la seguridad no pueden participar en la equivalencia de tipos.</Name>
+   <Description>La equivalencia de tipos requiere que todos los tipos participantes, así como todos los métodos y campos de esos tipos, sean transparentes o críticos para la seguridad y disponibles desde código transparente. CLR no podrá cargar ningún tipo que infrinja esta regla.</Description>
+   <Resolution Name="Type">{0} es un tipo crítico para la seguridad que participa también en la equivalencia de tipos. Para un uso correcto de la equivalencia de tipos, {0} debe convertirse en transparente o crítico para la seguridad y disponible desde código transparente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/dd997564(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="99">CriticalError</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Mueva P/Invokes a la clase NativeMethods</Name>
+   <Description>Este tipo contiene miembros con el atributo DllImport. Los miembros con el atributo DllImport deben estar contenidos en clases denominadas NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Puesto que es un método P/Invoke, se debe definir {0} en una clase con el nombre NativeMethods, SafeNativeMethods o UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewDeclarativeSecurityOnValueTypes" Category="Microsoft.Security" CheckId="CA2108">
+   <Name>Revisar la seguridad declarativa en los tipos de valores</Name>
+   <Description>Ni Demand ni LinkDemand en una estructura impiden la creación de una instancia de esa estructura.</Description>
+   <Resolution Name="Constructor">Ni Demand ni LinkDemand en {0} impiden que el struct se inicialice, pero este sólo se inicializará con los valores predeterminados si la petición de seguridad no se satisface. Asegúrese de que el estado inicial de la estructura es detectablemente válido o no válido.</Resolution>
+   <Resolution Name="Type">Quite Demand o LinkDemand de {0}, ya que no evitarán que se inicialice el struct. En lugar de eso, coloque la demanda en un constructor con parámetros y asegúrese de que el estado inicial de la estructura es detectablemente válido o no válido (el struct sólo se inicializará con los valores predeterminados si no se satisface la demanda de seguridad).</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182307(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="securityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewDenyAndPermitOnlyUsage" Category="Microsoft.Security" CheckId="CA2107">
+   <Name>Revisar el uso de Deny y PermitOnly</Name>
+   <Description>Revise el uso de Deny y PermitOnly. Debería considerarse la utilización de Deny y PermitOnly, dado que en algunos casos no son útiles. Por ejemplo, los permisos que se basan en una ruta de acceso (como FileIOPermission y RegistryPermission) no se deberían utilizar con Deny, porque distintas rutas de acceso podrían apuntar a la misma ubicación. Si se concede a los llamadores el derecho a conceder permisos mediante la directiva de seguridad, podrán terminar un recorrido de pila antes de que alcance Deny o PermitOnly. Si se concede a un llamador los permisos más importantes (como la posibilidad de llamar a código no administrado), al llamar a Deny o a PermitOnly realmente no se podrá impedir que haga lo que haya elegido. También hay que tener en cuenta que Deny y PermitOnly no afectan a LinkDemand. Por ejemplo, si deniega algún permiso P y llama al método con una LinkDemand para P, Deny no afectará al resultado de LinkDemand.</Description>
+   <Resolution Name="Default">{0} utiliza un permiso Deny o PermitOnly. El uso de Deny y PermitOnly se debería revisar con atención.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182308(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="25">CriticalWarning</MessageLevel>
+   <File Name="securityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewImperativeSecurity" Category="Microsoft.Security" CheckId="CA2103">
+   <Name>Revisar la seguridad imperativa</Name>
+   <Description>El uso de las peticiones imperativas puede conducir a problemas de seguridad imprevistos. Los valores utilizados para construir un permiso no deberían cambiar dentro del ámbito de la llamada de petición. Para algunos componentes el ámbito abarca desde la llamada de petición hasta la finalización del método; para otros, desde la llamada de petición hasta que se finaliza el componente. Si los valores utilizados para construir el permiso son campos o propiedades, éstos pueden cambiar dentro del ámbito de la llamada de petición. Lo anterior puede llevar a condiciones de carrera, matrices de solo lectura mutables y problemas con los tipos de valores a los que se ha aplicado la conversión boxing.</Description>
+   <Resolution Name="Parameter">Revise lo siguiente en busca de una posible vulnerabilidad de seguridad: el parámetro {0} de {1} se está pasando a un constructor {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182309(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="25">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SecureSerializationConstructors" Category="Microsoft.Security" CheckId="CA2120">
+   <Name>Proteger los constructores de serializaciones</Name>
+   <Description>Los tipos serializables que tienen un constructor protegido por una demanda de seguridad deben aplicar las mismas demandas al constructor de serializaciones. Aplique la demanda mediante una seguridad declarativa.</Description>
+   <Resolution Name="Default">Se encontraron demandas de seguridad en {0}. Marque al constructor de serializaciones de este tipo con la forma declarativa de la misma demanda.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182317(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SecuredTypesShouldNotExposeFields" Category="Microsoft.Security" CheckId="CA2112">
+   <Name>Los tipos seguros no deberían exponer campos</Name>
+   <Description>Los campos se deberían proteger con una comprobación de seguridad distinta a LinkDemand.</Description>
+   <Resolution Name="Default">{0} tiene un elemento LinkDemand o Demand, y expone el campo {1}. Los elementos LinkDemand y Demand no pueden proteger los campos. Para quitar esta vulnerabilidad, convierta el campo en privado y exponga una propiedad que tenga seguridad aplicada.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182318(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemandsFxCopRule" Category="Microsoft.Security" CheckId="CA2135">
+   <Name>Los ensamblados de nivel 2 no deben contener LinkDemands</Name>
+   <Description>Los LinkDemands están desusados en el conjunto de reglas de seguridad de nivel 2. En lugar de usar LinkDemands para exigir seguridad en tiempo JIT, deben usarse métodos, tipos y campos críticos para la seguridad.</Description>
+   <Resolution Name="Default">{0} está protegido con un elemento LinkDemand para {1}. En el conjunto de reglas de seguridad de nivel 2, debería protegerse haciéndolo crítico para la seguridad. Quite el elemento LinkDemand y marque {0} como crítico para la seguridad.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/dd997569(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalWarning</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Especifique cálculo de referencias para argumentos de cadena P/Invoke</Name>
+   <Description>Cuando se calculan las referencias de cadenas como ANSI (o Auto en Win9x), es posible que cambien algunos caracteres. Si está activada la asignación de ajuste perfecto, en las cadenas que aparecen diferentes en Unicode se calcularán las referencias como cadenas ANSI idénticas, lo que puede dar lugar a decisiones de seguridad incorrectas. Si se desactiva la asignación de ajuste perfecto, se reduce el riesgo, ya que a todos los caracteres sin equivalente se les asigna '?'. Asimismo, tenga en cuenta que CharSet.Ansi es el valor predeterminado para todos los cálculos de referencias de cadenas. El cálculo de referencias Unicode se debe especificar de forma explícita, ya sea con el valor CharSet de DllImport o StructLayout, o bien con el atributo MarshalAs con un tipo Unicode no administrado (o dependiente del sistema).</Description>
+   <Resolution Name="Parameter">Para reducir el riesgo de la seguridad, calcule las referencias del parámetro {0} como Unicode, estableciendo DllImport.CharSet en CharSet.Unicode, o bien calculando las referencias del parámetro de forma explícita como UnmanagedType.LPWStr. Si necesita calcular las referencias de esta cadena como ANSI o dependiente del sistema, establezca BestFitMapping=false. Para mayor seguridad, establezca también ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="TransparencyAnnotationsShouldNotConflictFxCopRule" Category="Microsoft.Security" CheckId="CA2136">
+   <Name>Los miembros no deben tener anotaciones de transparencia en conflicto.</Name>
+   <Description>Los atributos de transparencia se aplican desde ámbitos más amplios hacia dentro. Por ejemplo, si un tipo está marcado como totalmente crítico para la seguridad, todos los métodos introducidos por el tipo serán también críticos para la seguridad. Los miembros no deben tener anotaciones de seguridad que estén en conflicto con anotaciones de ámbitos más amplios, ya que las anotaciones de ámbitos más pequeños se omitirán en CLR y podrían malinterpretarse durante una revisión de código. Las anotaciones de los métodos no introducidos por su tipo, como los métodos virtuales que se invalidan desde un tipo base o los métodos de interfaz que se implementan, se consideran del conjunto de reglas de seguridad de nivel 2 y esta regla no considera estos métodos.</Description>
+   <Resolution Name="CriticalMarkedSafeCritical">{0}, un miembro crítico para la seguridad, está marcado con una anotación crítica para la seguridad y disponible desde código transparente. Esta anotación debe quitarse.</Resolution>
+   <Resolution Name="SafeCriticalMarkedCritical">{0}, un miembro crítico para la seguridad y disponible desde código transparente, está marcado con una anotación crítica para la seguridad. Esta anotación debe quitarse.</Resolution>
+   <Resolution Name="TransparentMarkedCritical">{0}, un miembro transparente para la seguridad, está marcado con una anotación crítica para la seguridad. Esta anotación debe quitarse.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264493(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de análisis del código</String>
+ </Localized>
+</FxCopReport>

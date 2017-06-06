@@ -1,0 +1,15 @@
+/* 
+   CODIGO: css:protocol-relative-url
+   REGLA: Protocol-relative URL should not be used
+   SEVERIDAD: Menor
+ */
+	/* Ejemplo de incumplimiento */
+	@font-face {
+	  src: url("//myfont");  /* Incumple */
+	}
+
+	/* Resolución del imcumplimiento */
+	@font-face-correcto {
+	  src: url("https://myfont"); /* Cumple */
+	}
+

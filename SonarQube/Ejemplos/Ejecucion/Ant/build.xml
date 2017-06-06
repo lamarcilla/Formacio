@@ -1,0 +1,59 @@
+<project name="Q19" default="sonar" basedir="." xmlns:sonar="antlib:org.sonar.ant">
+
+	<!-- Propiedades a introducir en la línea de comando -->
+<!--
+	<property name="sonar.jdbc.url" value="jdbc:mysql://localhost:3306/sonarqube5?useUnicode=true&amp;characterEncoding=utf8" />
+	<property name="sonar.jdbc.username" value="sonar" />
+	<property name="sonar.jdbc.password" value="sonar" />
+
+	<property name="sonar.host.url" value="http://localhost:9000" />
+	<property name="sonar.login" value="admin" />
+	<property name="sonar.password" value="admin" />
+--> 
+	
+	<!-- Propiedades propias del proyecto -->
+	<property name="sonar.projectKey" value="es.efron.banca:cuadernos" />
+	<property name="sonar.projectName" value="CuadernosBancarios_Q19" />
+	<property name="sonar.projectVersion" value="2.4.0-SNAPSHOT" />
+
+	<property name="sonar.sourceEncoding" value="UTF-8" />
+
+	<!-- path to source directories (required) -->
+	<property name="sonar.sources" value="src/main/java" />
+	<!-- path to test source directories (optional) -->
+	<property name="sonar.tests" value="src/test/java" />
+
+	<!-- path to project binaries (optional), for example directory of Java bytecode -->
+	<property name="sonar.binaries" value="target/classes" />
+	<!-- Ruta de los binarios de las clases de Java (necesario para FindBugs) -->
+	<!-- ¡¡OJO!! La ruta para esta propiedad debe ser ABSOLUTA. No admite rutas relativas. -->
+	<property name="sonar.java.binaries" value="C:/PACOLMOS/Clientes/OMC/SVN/OMC/trunk/Q19/target/classes" />
+	
+	<!-- Import tests execution reports (JUnit XML format). -->
+	<!-- Set the property to the path of the directory containing all the XML reports. -->
+	<property name="sonar.junit.reportsPath" value="target/surefire-reports" />
+
+	<!-- either jacoco or cobertura or clover -->
+	<property name="sonar.java.coveragePlugin" value="cobertura" />
+	
+	<!-- Import Cobertura code coverage report. -->
+	<!-- Set the property to the path of the Cobertura .ser report. -->
+	<property name="sonar.cobertura.reportPath" value="target/site/cobertura/coverage.xml" />
+	
+	<!-- For versions of the Java plugin prior to 2.2, the following properties have to be set as well. -->
+	<property name="sonar.dynamicAnalysis" value="reuseReports" />
+	<property name="sonar.surefire.reportsPath" value="target/surefire-reports" />
+
+
+<!-- Define the SonarQube target -->
+<target name="sonar">
+    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+        <!-- Update the following line, or put the "sonar-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+        <classpath path="path/to/sonar/ant/task/lib/sonar-ant-task-*.jar" />
+    </taskdef>
+ 
+    <!-- Execute the SonarQube analysis -->
+    <sonar:sonar />
+</target>
+	
+</project>
