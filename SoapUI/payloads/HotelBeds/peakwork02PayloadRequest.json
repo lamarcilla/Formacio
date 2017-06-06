@@ -1,0 +1,127 @@
+{
+  "agency" : {
+    "company" : "Company",
+    "office" : "Office",
+    "userAgent" : "Agent"
+  },
+  "paxes" : [ {
+    "addresses" : [ ],
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD",
+    "isChipped" : false
+  }, {
+    "addresses" : [ ],
+    "age" : 30,
+    "paxNumber" : 2,
+    "personType" : "AD",
+    "isChipped" : false
+  }, {
+    "addresses" : [ ],
+    "age" : 20,
+    "paxNumber" : 4,
+    "personType" : "AD",
+    "isChipped" : false
+  }, {
+    "addresses" : [ ],
+    "age" : 23,
+    "paxNumber" : 5,
+    "personType" : "AD",
+    "isChipped" : false
+  }, {
+    "addresses" : [ ],
+    "age" : 1,
+    "paxNumber" : 3,
+    "personType" : "CH",
+    "isChipped" : false
+  }, {
+    "addresses" : [ ],
+    "age" : 3,
+    "paxNumber" : 6,
+    "personType" : "CH",
+    "isChipped" : false
+  }, {
+    "addresses" : [ ],
+    "age" : 4,
+    "paxNumber" : 7,
+    "personType" : "CH",
+    "isChipped" : false
+  } ],
+  "market" : "Market",
+  "currency" : "GBP",
+  "totalPrice" : 553.18,
+  "transfers" : [ ],
+  "ancillaries" : [ ],
+  "seats" : [ ],
+  "flightHotelPackage" : {
+    "discountLine" : 0,
+    "flights" : [ {
+      "discountLine" : 0,
+      "itineraries" : [ {
+        "segments" : [ {
+          "airline" : "U2",
+          "arrivalAirportIATA" : "ALC",
+          "arrivalDateTime" : "2016-12-10T10:25",
+          "bookingClass" : "F",
+          "departureAirportIATA" : "MAN",
+          "segmentPrice" : 233.88,
+          "departureDateTime" : "2016-12-10T06:40",
+          "flightCode" : "MANALC",
+          "flightNumber" : "1917",
+          "tariffClass" : "Regular0",
+          "flightKey" : "1917",
+          "distance" : "1683",
+          "duration" : "165",
+          "stopOver" : 0
+        } ]
+      }, {
+        "segments" : [ {
+          "airline" : "U2",
+          "arrivalAirportIATA" : "MAN",
+          "arrivalDateTime" : "2016-12-17T12:55",
+          "bookingClass" : "F",
+          "departureAirportIATA" : "ALC",
+          "segmentPrice" : 0.0,
+          "departureDateTime" : "2016-12-17T11:00",
+          "flightCode" : "MANALC",
+          "flightNumber" : "1918",
+          "tariffClass" : "Regular0",
+          "flightKey" : "1917",
+          "distance" : "1683",
+          "duration" : "165",
+          "stopOver" : 0
+        } ]
+      } ]
+    } ],
+    "hotels" : [{
+				"code" : "string",
+				"description" : "EL MEJOR HOTEL",
+				"arrivalDate" : "2016-06-28",
+				"bookingCode" : "FFFFFF",
+				"destination" : "LGW",
+				"hotelCodes" : [],
+				"hotelProvider" : "Hotel Beds",
+				"lengthOfStay" : 3,
+				"price" : 600,
+				"rooms" : [{
+						"boardCode" : "Full Board",
+						"bookingCode" : 1,
+						"extraBeds" : 0,
+						"personAssignaments" : [1],
+						"roomCode" : "895",
+						"status": "ACTIVE",
+						"subStatus" : null,
+						"TOMABookingCode" : "string"
+					}
+				],
+				"reference" : "CERTAIN",
+				"hotelGroup" : null
+			}
+		],
+    "tourOperator" : "YEJHUK"
+  },
+  "bookingBeginningDate" : "2016-12-10",
+  "bookingEndDate" : "2016-12-17",
+  "origin" : "MAN",
+  "destination" : "ALC"
+}

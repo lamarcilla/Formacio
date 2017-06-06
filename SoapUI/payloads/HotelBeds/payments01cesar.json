@@ -1,0 +1,32 @@
+…/prebookings/{preBookingId}/pay
+ 
+"creditCardInfo" : {
+                "paymentTokenID" : "996914380443158625173",
+                "encryptedData" : "eyJhbGciOiJSU0EtT0FFUCIsImNvbS53b3JsZHBheS5hcGlWZXJzaW9uIjoiMS4wIiwiY29tLndvcmxk",
+                "formOfPayment" : {
+                               "paymentType" : "CC",
+                               "creditCardVendorCode" : "VI"
+                },
+                "cardHolderName" : "A Shopper",
+                "cardFee" : 10,
+                "validThruMonth" : "01" ,
+                "validThruYear" : "2020",
+                "cardNumber" : "4444333322221111",
+                "billingAddress" : {
+                               "address" : "47A",
+                               "postalCode" : "CB94BQ",
+                               "city" : "Cambridge",
+                               "countryCode" : "GB"
+                              
+                               },
+                "order" : {
+                               "amount" : 120,
+                               "orderCode" : "8ower9-Ioz7-40vd-cccc-40748dd1cd38",
+                               "description" : "DESCRIPTION",
+                               "shopperEmail" : "shopper@provider.com",
+                               "currency" : "GBP"
+                              
+                               }
+               
+               
+                }

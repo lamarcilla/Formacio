@@ -1,0 +1,244 @@
+{
+   "id": null,
+   "bookingCode": "100H1",
+   "client": null,
+   "agency": null,
+   "paxes": [   {
+      "addresses":       [
+                  {
+            "city": "BARCELONA",
+            "country": "SPAIN",
+            "countryName": "SPAIN",
+            "location": "OFFICE",
+            "mail": "mail@gfi.es",
+            "primary": true,
+            "stateProvince": "MATARO",
+            "street": "ARAGO",
+            "streetAdditional": "122",
+            "addressCode": null,
+            "telephones":             [
+                              {
+                  "number": "66666666666",
+                  "type": "FAX"
+               },
+               {
+                  "number": "99999999999",
+                  "type": "MOBILE"
+               },
+			   {
+                  "number": "88888888888",
+                  "type": "FAX"
+               }
+            ],
+            "zipCode": "00000"
+         },
+                  {
+            "city": "SLIEMA",
+            "country": "MALTA",
+            "countryName": "MALTA",
+            "location": "OFFICE",
+            "mail": "mail2@gfi.es",
+            "primary": false,
+            "stateProvince": "SLIEMA",
+            "street": "MERCIEQA",
+            "streetAdditional": "123",
+            "addressCode": null,
+            "telephones": [            {
+               "number": "11111111",
+               "type": "FAX"
+            }],
+            "zipCode": "11111"
+         }
+      ],
+      "dateOfBirth": "1975-06-28",
+      "age": null,
+      "firstName": "Annaw",
+      "gender": "FEMALE",
+      "lastName": "xxxxrrt",
+      "middleName": "MA",
+      "travelDocumentData":       {
+         "docCustomerName": "ANNA M MARCILLA",
+         "docId": "87654321X",
+         "docIssueAuthority": "BARCELONA",
+         "docIssueLocation": "BARCELONA",
+         "docLimitations": "string",
+         "docType": "DNI",
+         "effectiveDate": "2010-06-28",
+         "expireDate": "2020-06-28"
+      },
+      "salutationType": "MISS",
+      "hasInfant": false,
+      "paxNumber": 1,
+      "personType": "AD",
+      "isChipped": false
+   }],
+   "market": "EN",
+   "category": "Escapadas Invierno",
+   "currency": "GBP",
+   "description": null,
+   "totalPrice": 923.3,
+   "termsAndConditions": null,
+   "transfers": [],
+   "ancillaries": [   {
+      "price": 15.83,
+      "code": "CCB",
+      "description": null,
+      "productMarkup": 0,
+      "status": "ACTIVE",
+      "subStatus": null,
+      "discountLine": 0,
+      "markupName": null,
+      "productSupplier": null,
+      "quantity": 1,
+      "type": "Fee",
+      "units": null,
+      "segmentReference": null,
+      "referenceNumber": null
+   }],
+   "seats": [],
+   "flightHotelPackage":    {
+      "price": 169.06,
+      "code": "string",
+      "description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+      "productMarkup": 0,
+      "status": "ACTIVE",
+      "subStatus": null,
+      "discountLine": 0,
+      "markupName": null,
+      "productSupplier": null,
+      "flights": [      {
+         "price": 169.06,
+         "code": "string",
+         "description": "string",
+         "productMarkup": 0,
+         "status": "ACTIVE",
+         "subStatus": null,
+         "discountLine": 0,
+         "markupName": null,
+         "productSupplier": null,
+         "bookingNumber": "ER8TH32",
+         "itineraries": [         {
+            "segments": [            {
+               "segmentNumber": 0,
+               "airline": "EasyJet",
+               "arrivalAirportIATA": "LGW",
+               "arrivalDateTime": "2016-12-12T08:55",
+               "bookingClass": "Y",
+               "departureAirportIATA": "MAD",
+               "segmentPrice": 169.06,
+               "departureDateTime": "2016-12-12T07:30",
+               "flightCode": null,
+               "flightLabel": null,
+               "flightNumber": "8274"
+            }],
+            "arrivalDateTime": "2016-12-12T08:55",
+            "departureDateTime": "2016-12-12T07:30",
+            "departureAirportIATA": "MAD"
+         }],
+         "active": true
+      }],
+      "hotels": [      {
+         "price": 735.91,
+         "code": "string",
+         "description": null,
+         "productMarkup": 0,
+         "status": "ACTIVE",
+         "subStatus": null,
+         "discountLine": 0,
+         "markupName": null,
+         "productSupplier": null,
+         "arrivalDate": "2016-12-12",
+         "bookingCode": null,
+         "destination": "LON",
+         "hotelCodes":          [
+                        {
+               "code": 79617,
+               "type": "GIATA"
+            },
+                        {
+               "code": 82704,
+               "type": "HOTELBEDS"
+            }
+         ],
+         "hotelProvider": "Hotelbeds",
+         "lengthOfStay": 7,
+         "rooms":          [
+                        {
+               "boardCode": "GT06-AO",
+               "bookingCode": null,
+               "extraBeds": null,
+               "personAssignaments": [1],
+               "roomCode": "FAM-ST",
+               "status": null,
+               "subStatus": null,
+               "tomaBookingCode": null,
+               "TOMABookingCode": null
+            },
+                        {
+               "boardCode": "GT06-AO",
+               "bookingCode": null,
+               "extraBeds": null,
+               "personAssignaments": [1],
+               "roomCode": "FAM-ST",
+               "status": null,
+               "subStatus": null,
+               "tomaBookingCode": null,
+               "TOMABookingCode": null
+            }
+         ],
+         "reference": null,
+         "hotelGroup": null,
+         "idFlightHotelPackage": null,
+         "segmentation": null,
+         "active": null,
+         "hotelName": "BEST WESTERN PLUS Epping Forest",
+         "rateKey": "20161212|20161219|H|164|82704|DBT.ST|BAR|RO||1~1~0||N@2C1DDA18B9394092A34ED5B5A1CE9E3D",
+         "hotelPrice":          {
+            "net": null,
+            "sellingRate": null,
+            "commission": null,
+            "commissionVAT": null,
+            "netByApitude": 735.91,
+            "sellingRateByApitude": 744.92,
+            "commissionByApitude": 7.45,
+            "commissionVATByApitude": 1.56
+         },
+         "apitudeStatus": null,
+         "holder": null,
+         "clientReference": null,
+         "categoryCode": "3EST",
+         "categoryName": "3 STARS",
+         "destinationName": "London",
+         "zoneCode": 78,
+         "zoneName": "Walthamstow",
+         "latitude": "51.603266",
+         "longitude": "0.010833",
+         "giata": null,
+         "keywords": [],
+         "reviews": [],
+         "minRate": 744.92,
+         "maxRate": 989.94,
+         "totalSellingRate": 744.92,
+         "totalNet": 735.91,
+         "pendingAmount": null,
+         "currency": "EUR",
+         "supplier": null,
+         "clientComments": null,
+         "cancellationAmount": null,
+         "holderDTO": null
+      }],
+      "programType": null,
+      "tourOperator": "string",
+      "travelType": null
+   },
+   "promocode": null,
+   "bookingBeginningDate": "2016-12-12",
+   "bookingEndDate": "2016-12-12",
+   "origin": "MAD",
+   "destination": null,
+   "serviceFee": null,
+   "status": "CONFIRMED",
+   "subStatus": "PAID",
+   "codUserCreated": null,
+   "datUserCreated": null
+}

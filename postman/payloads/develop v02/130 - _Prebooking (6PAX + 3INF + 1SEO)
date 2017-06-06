@@ -1,0 +1,129 @@
+{
+	"bookingCode" : "130${#Project#testName}",
+	"description" : "130 - Prebooking (6PAX + 3INF + 1SEO)",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : true,
+			"paxNumber" : 1
+		},
+		{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : true,
+			"paxNumber" : 2
+		},{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : true,
+			"paxNumber" : 3
+		},{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : false,
+			"paxNumber" : 4
+		},{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : false,
+			"paxNumber" : 5
+		},{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : false,
+			"paxNumber" : 6
+		},{
+			"age" : 0,
+			"personType" : "INF",
+			"hasInfant" : false,
+			"paxNumber" : 7
+		},{
+			"age" : 0,
+			"personType" : "INF",
+			"hasInfant" : false,
+			"paxNumber" : 8
+		},{
+			"age" : 0,
+			"personType" : "INF",
+			"hasInfant" : false,
+			"paxNumber" : 9			
+		}
+	],
+	"market": "${#Project#market}",
+	"agency": {
+		"company": "company",
+		"office": "office",
+		"userAgent": "userAgent"
+	},	º
+	"userType": "${#Project#userType}",
+	"category" : "GT03-LIVE Nightlife Hostspots",
+	"currency": "${#Project#currency}",
+	"ancillaries" :  [],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"flightSegments" : [{
+						"flightLegs" : [{
+						        "tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+								}]
+						},{
+						"flightLegs" : [{
+						        "tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null   							
+								}]
+						}]
+		}],
+		
+		"hotels": [{
+			"description": "descripcion del hotel",		
+			"arrivalDate": "${#Project#arrivalDateTime_ida}",
+			"destination": "${#Project#arrivalAirportIATA_ida}",
+			"productSupplier": "HOTELBEDS",
+			"hotelCodes": [{
+				"type": "GIATA",
+				"code": "${#Project#hotelGIATACode}"
+			},{
+				"type": "HOTELBEDS",
+				"code": "${#Project#hotelBedsCode}"
+			}
+		],
+			"lengthOfStay": "${#Project#lengthOfStay}",
+			"rooms": [{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [1,2,7],
+				"roomCode": "DBT.ST"
+			},{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [3,4,8],
+				"roomCode": "DBT.ST"
+			},{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [5,6,9],
+				"roomCode": "DBT.ST"
+			}],
+		"currency": "${#Project#currency}"
+	  }],
+		"tourOperator" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_vuelta}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

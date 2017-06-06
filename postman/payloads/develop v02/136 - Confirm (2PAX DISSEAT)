@@ -1,0 +1,170 @@
+{
+	"client" : {
+		"comments" : [{
+				"commentText":"Vacaciones invierno",
+                "commentType":"H"
+              }
+		],
+		"addresses" : [{
+				"city" : "Barcelona",
+				"country" : "SPAIN",
+				"countryName" : "SPAIN",
+				"location" : "OFFICE",
+				"mail" : "testbarcelona@gfi.es",
+				"primary" : true,
+				"stateProvince" : "Mataro",
+				"street" : "C/Passeig de Gracia 44",
+				"streetAdditional" : "C/Passeig de Gracia 46",
+				"addressCode" : "ssss",
+				"telephones": [{
+				                "number" : "555",
+                                "type" : "HOME"             
+							  }],					
+				"zipCode" : "08015"
+			}, {
+				"city" : "MADRID",
+				"country" : "SPAIN",
+				"countryName" : "SPAIN",
+				"location" : "OFFICE",
+				"mail" : "testmadrid@gfi.es",
+				"primary" : false,
+				"stateProvince" : "Fuenjirola",
+				"street" : "C/ Paseo 44",
+				"streetAdditional" : "C/ Paseo 46",
+				"addressCode" : "ffff",
+				"telephones": [{
+				                "number" : "555",
+                                "type" : "HOME"             
+							  }],									
+				"zipCode" : "08015"
+			}
+		],
+		"dateOfBirth" : "1980-11-01",
+		"firstName" : "Anna",
+		"gender" : "MALE",
+		"lastName" : "TEST",
+		"middleName" : "MA",
+		"travelDocumentData" : {
+			"docCustomerName" : "ANNA TEST",
+			"docId" : "87654321X",
+			"docIssueAuthority" : "string",
+			"docIssueLocation" : "BARCELONA",
+			"docLimitations" : "string",
+			"docType" : "DNI",
+			"effectiveDate" : "2000-06-28",
+			"expireDate" : "2020-06-28"
+		},
+		"paxReferenceNumber": 2
+	},
+	"paxes" : [{
+			"addresses" : [{
+					"city" : "BARCELONA",
+					"country" : "SPAIN",
+					"countryName" : "SPAIN",
+					"location" : "OFFICE",
+					"mail" : "mail@gfi.es",
+					"primary" : true,
+					"stateProvince" : "MATARO",
+					"street" : "ARAGO",
+					"streetAdditional" : 122,
+					"telephones" : [{
+							"type" : "FAX",
+							"number" : "66666666666"
+						}, {
+							"type" : "MOBILE",
+							"number" : "99999999999"
+						}, {
+							"type" : "FAX",
+							"number" : "88888888888"
+						}
+					],
+					"zipCode" : "00000"
+				}, {
+					"city" : "SLIEMA",
+					"country" : "MALTA",
+					"countryName" : "MALTA",
+					"location" : "OFFICE",
+					"mail" : "mail2@gfi.es",
+					"primary" : false,
+					"stateProvince" : "SLIEMA",
+					"street" : "MERCIEQA",
+					"streetAdditional" : 123,
+					"telephones" : [{
+							"type" : "FAX",
+							"number" : "11111111"
+						}
+					],
+					"zipCode" : "11111"
+				}
+			],
+			"dateOfBirth" : "1975-06-28",
+			"age" : null,
+			"personType" : "ADT",
+			"firstName" : "Anna",
+			"gender" : "MALE",
+			"lastName": "apellido${=org.apache.commons.lang.RandomStringUtils.randomAlphabetic(10)}",
+			"middleName" : "MA",
+			"travelDocumentData" : {
+				"docCustomerName" : "ANNA M TEST",
+				"docId" : "87654321X",
+				"docIssueAuthority" : "BARCELONA",
+				"docIssueLocation" : "BARCELONA",
+				"docLimitations" : "string",
+				"docType" : "DNI",
+				"effectiveDate" : "2010-06-28",
+				"expireDate" : "2020-06-28"
+			},
+			"hasInfant" : false,
+			"salutationType" : "MR",
+			"paxNumber" : 1,
+			"customer" : 0
+		}, {
+			"dateOfBirth" : "1980-06-28",
+			"age" : null,
+			"personType" : "ADT",
+			"firstName" : "Marta",
+			"gender" : "MALE",
+			"lastName": "apellido${=org.apache.commons.lang.RandomStringUtils.randomAlphabetic(10)}",
+			"middleName" : "MA",
+			"travelDocumentData" : {
+				"docCustomerName" : "MARTA M TEST",
+				"docId" : "12345678A",
+				"docIssueAuthority" : "BARCELONA",
+				"docIssueLocation" : "BARCELONA",
+				"docLimitations" : "string",
+				"docType" : "DNI",
+				"effectiveDate" : "2010-06-28",
+				"expireDate" : "2020-06-28"
+			},
+			"hasInfant" : false,
+			"salutationType" : "MR",
+			"paxNumber" : 2,
+			"customer" : 0
+		}
+	],	
+    "creditCardInfo" : {
+			 
+			 "creditCardVendorCode" : "${#Project#cardPayMethod}",
+			 "cardDescription" : "${#Project#cardStrDescription}",
+			 "cardFeePercentage" : "${#Project#cardPctPayment}",
+			 "cardHolderName" : "A Shopper",
+			 "cardFee" : "${#cardFee}",
+			 "validThruMonth" : "01" ,
+			 "validThruYear" : "2020", 
+			 "cardNumber" : "4444333322221111",
+			 "billingAddress" : {
+							"address" : "47A",
+							"postalCode" : "CB94BQ",
+							"city" : "Cambridge",
+							"countryCode" : "GB",
+							"phone": "646968857"                
+						   }       
+     },
+	 "order" : {
+				   "amount" : "${#price}0",
+			       "description" : "${#description}",
+				   "shopperEmail" : "shopper@provider.com",
+				   "currency" : "${#Project#currency}"                       
+				   } ,
+    "deposit" : "${#Project#deposit}"
+}

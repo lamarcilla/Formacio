@@ -1,0 +1,26 @@
+[{
+		  "code": "",
+		  "codeType": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 2,	  
+		  "type": null,
+		  "price" : 19,
+		  "flightLegReference" : 0
+		},{
+		  "code": "",
+		  "codeType": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "type": "BICL",
+		  "price" : 35,
+		  "flightLegReference" : 0
+		},{
+		  "code": "",
+		  "codeType": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "type": "BICL",
+		  "price" : 35,
+		  "flightLegReference" : 0
+		}
+	]

@@ -1,0 +1,16 @@
+[{ 	
+	"isAisleSeat" : true,
+	"isAvailable" : true,
+	"isAvailableForChild" : false,
+	"isAvailableForInfant" : false,
+	"isExitRow" : false,
+	"isMiddleSeat" : true,
+	"isWindowSeat" : false,
+	"isDistressedSeat" : true,
+	"priceBand" : "regular",
+	"priceBandId" :1,
+	"seatAccess" : "acc",
+	"flightNumber" : "8276",
+	"seatNumber" : "1A",
+	"price" : 15.99
+}]

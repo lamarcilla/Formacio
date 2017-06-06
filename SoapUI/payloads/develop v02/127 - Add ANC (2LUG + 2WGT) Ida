@@ -1,0 +1,17 @@
+[{
+			"code": "",
+			"codeType": "LUG",
+     		"description": "Each hold bag includes 20kg of weight",
+      		"quantity": 2,
+	  		"type": "",
+	  		"price" : 19
+		},  
+		{
+			"code": "",
+			"codeType": "WGT",
+      		"description": "PRE PAID EXCESS WEIGHT: 20 + 12kg",
+      		"quantity": 2,	  	  
+	  		"type": "",
+	  		"price" : 9
+		}
+	]

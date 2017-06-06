@@ -1,0 +1,80 @@
+{
+	"agency" : {
+		"company" : "company",
+		"office" : "office",
+		"userAgent" : "userAgent"},
+	"formOfPayment" : {
+		"paymentType" : "CC",
+		"creditCardVendorCode" : "VI"
+	},
+"market" : "market",	
+  "paxes" : [ {
+    "addresses" : [ ],
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD",
+    "salutationType" : "Mr"
+  }],
+  "currency" : "GBP",
+  "totalPrice" : 1362.3,
+  "transfers" : [ ],
+  "ancillaries" : [ ],
+  "seats" : [ ],
+  "flightHotelPackage" : {
+    "flights" : [ {
+      "itineraries" : [ {
+        "segments" : [ {
+          "airline" : "U2",
+          "arrivalAirportIATA" : "DTM",
+          "arrivalDateTime" : "2016-10-06T16:10",
+          "bookingClass" : "F",
+          "departureAirportIATA" : "LTN",
+          "segmentPrice" : 1362.3,
+          "departureDateTime" : "2016-10-06T16:10",
+          "flightNumber" : "2175"
+        } ],
+        "arrivalDateTime" : "2016-10-06T18:30",
+        "departureDateTime" : "2016-10-06T16:10",
+        "departureAirportIATA" : "LTN"
+      } ]
+    }, {
+      "itineraries" : [ {
+        "segments" : [ {
+          "airline" : "U2",
+          "arrivalAirportIATA" : "LTN",
+          "arrivalDateTime" : "2016-10-13T19:00",
+          "bookingClass" : "F",
+          "departureAirportIATA" : "DTM",
+          "segmentPrice" : 1362.3,
+          "departureDateTime" : "2016-10-13T19:00",
+          "flightNumber" : "2176"
+        } ],
+        "arrivalDateTime" : "2016-10-13T19:20",
+        "departureDateTime" : "2016-10-13T19:00",
+        "departureAirportIATA" : "DTM"
+      } ]
+    } ],
+    "hotels" : [ {
+	  "proce": 600,
+      "arrivalDate" : "2016-10-06",
+      "destination" : "DE",
+	  "price": 600,
+      "hotelCodes" : [ {
+        "code" : 426623
+      }, {
+        "code" : 409819
+      } ],
+      "hotelProvider" : "Hotelbeds",
+      "rooms" : [ {
+        "boardCode" : "GT06-BB",
+        "personAssignaments" : [ 1 ],
+        "roomCode" : "DBL-ST"
+      } ]
+    } ],
+    "tourOperator" : "YEJHUK"
+  },
+  "bookingBeginningDate" : "2016-10-06",
+  "bookingEndDate" : "2016-10-13",
+  "origin" : "LTN",
+  "destination" : "DTM"
+}

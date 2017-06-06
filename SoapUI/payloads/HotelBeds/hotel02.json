@@ -1,0 +1,103 @@
+{
+"description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+"paxes" : [ {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD"
+  }, {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 30,
+    "paxNumber" : 2,
+    "personType" : "AD"
+  }, {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 20,
+    "paxNumber" : 4,
+    "personType" : "AD"
+  }, {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 23,
+    "paxNumber" : 5,
+    "personType" : "AD"
+  }, {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 1,
+    "paxNumber" : 3,
+    "personType" : "CH"
+  }, {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 3,
+    "paxNumber" : 6,
+    "personType" : "CH"
+  }, {
+    "name" : "Name",
+                "surname" : "Surname2",
+    "age" : 4,
+    "paxNumber" : 7,
+    "personType" : "CH"
+  } ],
+"market": "Market",
+"category": "Escapadas Invierno",
+"currency": "GBP",
+"ancillaries": [],
+"flightHotelPackage": {
+                               "code": "string",
+                               "description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+                               "status": "ACTIVE",
+                               "subStatus": null,
+                               "flights": [{
+                                               "code": "string",
+                                               "description": "string",
+                                               "status": "ACTIVE",
+                                               "subStatus": null,
+                                               "itineraries": [{
+                                                               "segments": [{
+                                                                              "segmentNumber": 0,
+                                                                              "airline": "EasyJet",
+                                                                              "departureAirportIATA": "LTN",
+                                                                              "departureDateTime": "2016-12-12T16:45",
+                                                                              "arrivalAirportIATA": "MUC",
+                                                                              "arrivalDateTime": "2016-12-12T19:35",
+                                                                              "bookingClass": "Y",
+                                                                              "flightNumber": "2081",
+                                                                              "flightCode": null,
+                                                                              "flightLabel": null
+                                                               }]
+                                               }]
+                               }],
+    "hotels" : [ {
+      "arrivalDate" : "2016-12-12T16:45",
+      "lengthOfStay" : 7,
+      "destination" : "DE",
+      "hotelCodes" : [
+                {"code" : 6914}, {"code" : 1067}, {"code" : 1070}, {"code" : 1075}, {"code" : 135813},
+                {"code" : 145214}, {"code" : 1508}, {"code" : 1526}, {"code" : 1533}, {"code" : 1539}
+                ],
+      "hotelProvider" : "Hotelbeds",
+      "rooms" : [ {
+        "boardCode" : "GT06-AO",
+        "personAssignaments" : [ 1, 2, 3 ],
+        "roomCode" : "DBL-BQ"
+      }, {
+        "boardCode" : "GT06-AO",
+        "personAssignaments" : [ 4, 5, 6, 7 ],
+        "roomCode" : "QUA-ST"
+      } ]
+    } ],
+                               "programType": "string",
+                               "tourOperator" : "YEJHUK",
+                               "travelType": "string"
+                },
+                "promocode": null,
+                "bookingBeginningDate": "2016-12-12T16:45",
+                "bookingEndDate": "2016-12-15T16:45",
+                "origin": "MAD",
+                "destination": "LGW"   
+}

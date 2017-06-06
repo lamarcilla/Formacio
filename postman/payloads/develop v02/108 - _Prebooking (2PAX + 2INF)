@@ -1,0 +1,102 @@
+{
+	"bookingCode" : "108${#Project#testName}",
+	"description" : "108 - Prebooking (2PAX + 2INF)",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : true,
+			"paxNumber" : 1
+		},
+		{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : true,
+			"paxNumber" : 2
+		},
+		{
+			"age" : 1,
+			"personType" : "INF",
+			"hasInfant" : false,
+			"paxNumber" : 3
+		},
+		{
+			"age" : 1,
+			"personType" : "INF",
+			"hasInfant" : false,
+			"paxNumber" : 4
+		}
+	],
+	"market": "${#Project#market}",
+	"agency": {
+		"company": "company",
+		"office": "office",
+		"userAgent": "userAgent"
+	},
+	"userType": "${#Project#userType}",
+	"category" : "GT02-HO#ST02-BH Budget Breaks",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"flightSegments" : [{
+						"flightLegs" : [{
+						        "tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+								}]
+						},{
+						"flightLegs" : [{
+						        "tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null   							
+								}]
+						}]
+		}],
+		"hotels": [{
+			"description": "descripcion del hotel",		
+			"arrivalDate": "${#Project#arrivalDateTime_ida}",
+			"destination": "${#Project#arrivalAirportIATA_ida}",
+			"productSupplier": "HOTELBEDS",
+			"hotelCodes": [{
+				"type": "GIATA",
+				"code": "${#Project#hotelGIATACode}"
+			},{
+				"type": "HOTELBEDS",
+				"code": "${#Project#hotelBedsCode}"
+			}
+		],
+			"lengthOfStay": "${#Project#lengthOfStay}",
+			"rooms": [{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [1,3],
+				"roomCode": "DBL.ST"
+			},
+			{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [2,4],
+				"roomCode": "DBL.ST"
+			}],
+		"currency": "${#Project#currency}"
+	  }],
+		"tourOperator" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_vuelta}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

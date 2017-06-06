@@ -1,0 +1,51 @@
+{
+	"id": "c9404fb6-8781-2b22-72c7-3031222ee271",
+	"name": "Content API",
+	"description": "",
+	"order": [
+		"68f48eb1-e0d6-0804-de85-86a51dd95ab6",
+		"14457e2e-3339-6bf6-694d-30e666533531"
+	],
+	"folders": [],
+	"timestamp": 0,
+	"owner": "562877",
+	"public": false,
+	"requests": [
+		{
+			"id": "14457e2e-3339-6bf6-694d-30e666533531",
+			"headers": "Accept: application/json\nContent-Type: application/json\nApi-key: {{Api-key}}\nX-Signature: {{X-Signature}}\n",
+			"url": "https://api.test.hotelbeds.com/hotel-content-api/1.0/hotels/{{hotelCodeContent}}?language=ENG&useSecondaryLanguage=false",
+			"preRequestScript": "//Begin UTC creation\r\nvar utcDate = Math.floor(new Date().getTime() / 1000);\r\n\r\n//Begin Signature Assembly\r\nvar publicKey = \"qaw79bjskd4nrkbtntj3nfe5\";\r\nvar privateKey = \"nK3PYZtFxZ\";\r\nvar assemble = (publicKey+privateKey+utcDate);\r\n\r\n//Begin SHA-256 Encryption\r\nhash = CryptoJS.SHA256(assemble).toString();\r\nencryption = (hash.toString(CryptoJS.enc.Hex));\r\npostman.setEnvironmentVariable(\"Api-key\", publicKey);\r\npostman.setEnvironmentVariable(\"X-Signature\", encryption);\r\n\r\npostman.setEnvironmentVariable(\"hotelCodeContent\", 1);\r\n",
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1491471563295,
+			"name": "Contenido un hotel",
+			"description": "",
+			"collectionId": "c9404fb6-8781-2b22-72c7-3031222ee271",
+			"responses": []
+		},
+		{
+			"id": "68f48eb1-e0d6-0804-de85-86a51dd95ab6",
+			"headers": "Accept: application/json\nContent-Type: application/json\nApi-key: {{Api-key}}\nX-Signature: {{X-Signature}}\n",
+			"url": "https://api.test.hotelbeds.com/hotel-content-api/1.0/hotels?fields=all&language=ENG&from=1&to=100&useSecondaryLanguage=false",
+			"preRequestScript": "//Begin UTC creation\r\nvar utcDate = Math.floor(new Date().getTime() / 1000);\r\n\r\n//Begin Signature Assembly\r\nvar publicKey = \"qaw79bjskd4nrkbtntj3nfe5\";\r\nvar privateKey = \"nK3PYZtFxZ\";\r\nvar assemble = (publicKey+privateKey+utcDate);\r\n\r\n//Begin SHA-256 Encryption\r\nhash = CryptoJS.SHA256(assemble).toString();\r\nencryption = (hash.toString(CryptoJS.enc.Hex));\r\npostman.setEnvironmentVariable(\"Api-key\", publicKey);\r\npostman.setEnvironmentVariable(\"X-Signature\", encryption);",
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1491471472641,
+			"name": "Lista hoteles",
+			"description": "",
+			"collectionId": "c9404fb6-8781-2b22-72c7-3031222ee271",
+			"responses": []
+		}
+	]
+}

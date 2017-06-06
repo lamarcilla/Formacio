@@ -1,0 +1,483 @@
+{
+   "id": 4233,
+   "bookingCode": "102cancelES05",
+   "client":    {
+      "addresses":       [
+                  {
+            "city": "Barcelona",
+            "country": "SPAIN",
+            "countryName": "SPAIN",
+            "location": "OFFICE",
+            "mail": "ggomez.gfi@gmail.com",
+            "primary": true,
+            "stateProvince": "Mataro",
+            "street": "C/Passeig de Gracia 44",
+            "streetAdditional": "C/Passeig de Gracia 46",
+            "addressCode": "ssss",
+            "telephones": [            {
+               "number": "555",
+               "type": "HOME"
+            }],
+            "zipCode": "08015"
+         },
+                  {
+            "city": "MADRID",
+            "country": "SPAIN",
+            "countryName": "SPAIN",
+            "location": "OFFICE",
+            "mail": "testmadrid@gfi.es",
+            "primary": false,
+            "stateProvince": "Fuenjirola",
+            "street": "C/ Paseo 44",
+            "streetAdditional": "C/ Paseo 46",
+            "addressCode": "ffff",
+            "telephones": [            {
+               "number": "555",
+               "type": "HOME"
+            }],
+            "zipCode": "08015"
+         }
+      ],
+      "dateOfBirth": "1980-11-01",
+      "age": null,
+      "firstName": "Anna",
+      "gender": "MALE",
+      "lastName": "TEST",
+      "middleName": "MA",
+      "travelDocumentData":       {
+         "docCustomerName": "ANNA TEST",
+         "docId": "87654321X",
+         "docIssueAuthority": "string",
+         "docIssueLocation": "BARCELONA",
+         "docLimitations": "string",
+         "docType": "DNI",
+         "effectiveDate": "2000-06-28",
+         "expireDate": "2020-06-28"
+      },
+      "comments": [      {
+         "commentText": "Vacaciones invierno",
+         "commentType": "H"
+      }],
+      "paxReferenceNumber": 2
+   },
+   "agency":    {
+      "company": "company",
+      "office": "office",
+      "userAgent": "userAgent"
+   },
+   "paxes":    [
+            {
+         "addresses":          [
+                        {
+               "city": "BARCELONA",
+               "country": "SPAIN",
+               "countryName": "SPAIN",
+               "location": "OFFICE",
+               "mail": "mail@gfi.es",
+               "primary": true,
+               "stateProvince": "MATARO",
+               "street": "ARAGO",
+               "streetAdditional": "122",
+               "addressCode": null,
+               "telephones":                [
+                                    {
+                     "number": "66666666666",
+                     "type": "FAX"
+                  },
+                                    {
+                     "number": "99999999999",
+                     "type": "MOBILE"
+                  },
+                                    {
+                     "number": "88888888888",
+                     "type": "FAX"
+                  }
+               ],
+               "zipCode": "00000"
+            },
+                        {
+               "city": "SLIEMA",
+               "country": "MALTA",
+               "countryName": "MALTA",
+               "location": "OFFICE",
+               "mail": "mail2@gfi.es",
+               "primary": false,
+               "stateProvince": "SLIEMA",
+               "street": "MERCIEQA",
+               "streetAdditional": "123",
+               "addressCode": null,
+               "telephones": [               {
+                  "number": "11111111",
+                  "type": "FAX"
+               }],
+               "zipCode": "11111"
+            }
+         ],
+         "dateOfBirth": "1975-06-28",
+         "age": null,
+         "firstName": "Anna",
+         "gender": "MALE",
+         "lastName": "apellidolVRAZsBpdN",
+         "middleName": "MA",
+         "travelDocumentData":          {
+            "docCustomerName": "ANNA M TEST",
+            "docId": "87654321X",
+            "docIssueAuthority": "BARCELONA",
+            "docIssueLocation": "BARCELONA",
+            "docLimitations": "string",
+            "docType": "DNI",
+            "effectiveDate": "2010-06-28",
+            "expireDate": "2020-06-28"
+         },
+         "salutationType": "MR",
+         "hasInfant": false,
+         "paxNumber": 1,
+         "personType": "ADT",
+         "isChipped": false
+      },
+            {
+         "addresses": [],
+         "dateOfBirth": "1980-06-28",
+         "age": null,
+         "firstName": "Marta",
+         "gender": "MALE",
+         "lastName": "apellidogmhcaCPNhL",
+         "middleName": "MA",
+         "travelDocumentData":          {
+            "docCustomerName": "MARTA M TEST",
+            "docId": "12345678A",
+            "docIssueAuthority": "BARCELONA",
+            "docIssueLocation": "BARCELONA",
+            "docLimitations": "string",
+            "docType": "DNI",
+            "effectiveDate": "2010-06-28",
+            "expireDate": "2020-06-28"
+         },
+         "salutationType": "MR",
+         "hasInfant": false,
+         "paxNumber": 2,
+         "personType": "ADT",
+         "isChipped": false
+      }
+   ],
+   "market": "ES",
+   "category": "GT03-CITR City Breaks",
+   "currency": "EUR",
+   "description": "102 - Prebooking (2PAX)",
+   "totalPrice": 72.11,
+   "totalPricesWithFees": null,
+   "transfers": [],
+   "ancillaries": [],
+   "seats": [],
+   "flightHotelPackage":    {
+      "price": 55.0,
+      "code": "a2f72183-b755-42e2-accb-a0918204defe",
+      "description": null,
+      "productMarkup": 0.0,
+      "status": "CANCELLED",
+      "subStatus": null,
+      "discountLine": 0.0,
+      "markupName": null,
+      "productSupplier": null,
+      "amtMarketPrice": 55.55,
+      "currencyProvider": "GBP",
+      "pairPrice": 0.0,
+      "cardFee": 0.0,
+      "indMarkupDefault": false,
+      "flights": [      {
+         "price": 55.0,
+         "code": "58c0713a-3988-4c74-9e32-e43251dab07a",
+         "description": null,
+         "productMarkup": 0.0,
+         "status": "CANCELLED",
+         "subStatus": null,
+         "discountLine": 0.0,
+         "markupName": null,
+         "productSupplier": "EASYJET",
+         "amtMarketPrice": 55.55,
+         "currencyProvider": "GBP",
+         "pairPrice": 0.0,
+         "cardFee": 0.0,
+         "indMarkupDefault": false,
+         "bookingNumber": "ER8ZZW6",
+         "flightSegments":          [
+                        {
+               "flightLegs": [               {
+                  "flightLegNumber": 0,
+                  "airline": "EasyJet",
+                  "arrivalAirportIATA": "PMI",
+                  "arrivalDateTime": "2017-02-05T21:25",
+                  "bookingClass": "Y",
+                  "departureAirportIATA": "LGW",
+                  "flightLegPrice": 0.0,
+                  "departureDateTime": "2017-02-05T18:10",
+                  "flightCode": "ER8ZZW6",
+                  "flightNumber": "8629",
+                  "amtDsAdjust": 0.0,
+                  "amtCostFee": 26.0,
+                  "amtDsSeat": 3.3,
+                  "tariffClass": "Regular0",
+                  "numSeats": 2,
+                  "numDSSeats": 0,
+                  "selectedSeats": null,
+                  "selectedAncillaries": null,
+                  "paxFees":                   [
+                                          {
+                        "price": 0.0,
+                        "tax": 0.0,
+                        "paxReference": 1
+                     },
+                                          {
+                        "price": 0.0,
+                        "tax": 0.0,
+                        "paxReference": 2
+                     }
+                  ]
+               }],
+               "arrivalDateTime": "2017-02-05T21:25",
+               "departureDateTime": "2017-02-05T18:10",
+               "departureAirportIATA": "LGW",
+               "arrivalAirportIATA": "PMI"
+            },
+                        {
+               "flightLegs": [               {
+                  "flightLegNumber": 1,
+                  "airline": "EasyJet",
+                  "arrivalAirportIATA": "LGW",
+                  "arrivalDateTime": "2017-02-07T16:55",
+                  "bookingClass": "Y",
+                  "departureAirportIATA": "PMI",
+                  "flightLegPrice": 0.0,
+                  "departureDateTime": "2017-02-07T15:20",
+                  "flightCode": "ER8ZZW6",
+                  "flightNumber": "8628",
+                  "amtDsAdjust": 0.0,
+                  "amtCostFee": 0.0,
+                  "amtDsSeat": 0.0,
+                  "tariffClass": "Regular0",
+                  "numSeats": 2,
+                  "numDSSeats": 0,
+                  "selectedSeats": null,
+                  "selectedAncillaries": null,
+                  "paxFees":                   [
+                                          {
+                        "price": 0.0,
+                        "tax": 0.0,
+                        "paxReference": 1
+                     },
+                                          {
+                        "price": 0.0,
+                        "tax": 0.0,
+                        "paxReference": 2
+                     }
+                  ]
+               }],
+               "arrivalDateTime": "2017-02-07T16:55",
+               "departureDateTime": "2017-02-07T15:20",
+               "departureAirportIATA": "PMI",
+               "arrivalAirportIATA": "LGW"
+            }
+         ],
+         "active": true,
+         "flightFees":          [
+                        {
+               "code": "CCB",
+               "price": 14.0,
+               "tax": null,
+               "quantity": 1
+            },
+                        {
+               "code": "NRA",
+               "price": 16.0,
+               "tax": null,
+               "quantity": 0
+            },
+                        {
+               "code": "CXLBB2B",
+               "price": 25.0,
+               "tax": null,
+               "quantity": 1
+            }
+         ],
+         "netPrice": 570.96,
+         "totalAmount": 590.81
+      }],
+      "hotels": [      {
+         "price": 0.0,
+         "code": "17509",
+         "description": "descripcion del hotel",
+         "productMarkup": 0.0,
+         "status": "CANCELLED",
+         "subStatus": null,
+         "discountLine": 0.0,
+         "markupName": "NAME2_L1_4%#L2 ES 4.1 ABS 30.11.2016#L2 ES Majorca DURATION 2ABS 22.12.2016#L2 ES Majorca Mirador 1ABS 22.12.2016",
+         "productSupplier": "HOTELBEDS",
+         "amtMarketPrice": 0.0,
+         "currencyProvider": "GBP",
+         "pairPrice": 0.0,
+         "cardFee": 0.0,
+         "indMarkupDefault": true,
+         "arrivalDate": "2017-02-05",
+         "bookingCode": "1-3342142",
+         "destination": "PMI",
+         "hotelCodes":          [
+                        {
+               "code": 17509,
+               "type": "GIATA"
+            },
+                        {
+               "code": 1533,
+               "type": "HOTELBEDS"
+            }
+         ],
+         "lengthOfStay": 2,
+         "rooms": [         {
+            "boardCode": "BB",
+            "bookingCode": null,
+            "extraBeds": null,
+            "personAssignaments":             [
+               1,
+               2
+            ],
+            "roomCode": "DBT.ST",
+            "status": "PENDING",
+            "subStatus": null,
+            "tomaBookingCode": null,
+            "boardDescription": "BED AND BREAKFAST",
+            "roomDescription": "Double or Twin STANDARD",
+            "rateKey": "20170205|20170207|W|1|1533|DBT.ST|CG- MERCHANT|BB||1~2~0||N@6C36950D6B514FF99FC8BDFD39B2237D",
+            "rateComments": "  Estimated total amount of taxes & fees for this booking:5.54 United Kingdom Pound payable on arrival.  ",
+            "taxes":             {
+               "taxes": [               {
+                  "included": false,
+                  "amount": 5.54,
+                  "currency": "GBP",
+                  "clientAmount": 5.54,
+                  "clientCurrency": "GBP"
+               }],
+               "allIncluded": false
+            },
+            "TOMABookingCode": null
+         }],
+         "reference": null,
+         "hotelGroup": null,
+         "idFlightHotelPackage": null,
+         "segmentation": null,
+         "active": null,
+         "hotelName": "Mirador",
+         "hotelPrice":          {
+            "net": null,
+            "sellingRate": null,
+            "commission": null,
+            "commissionVAT": null,
+            "netByApitude": 156.86,
+            "sellingRateByApitude": null,
+            "commissionByApitude": null,
+            "commissionVATByApitude": null
+         },
+         "apitudeStatus": "CONFIRMED",
+         "holder": null,
+         "clientReference": "ANNA",
+         "categoryCode": "4EST",
+         "categoryName": "4 STARS",
+         "destinationName": "Majorca",
+         "zoneCode": 10,
+         "zoneName": "Palma",
+         "latitude": null,
+         "longitude": null,
+         "giata": null,
+         "keywords": [],
+         "reviews": [],
+         "minRate": null,
+         "maxRate": null,
+         "totalSellingRate": null,
+         "totalNet": null,
+         "pendingAmount": null,
+         "currency": "EUR",
+         "supplier": null,
+         "clientComments": null,
+         "cancellationAmount": null,
+         "globalTypes": [],
+         "atributeCodes": null,
+         "cancellationPolicies": [         {
+            "amount": 78.43,
+            "hotelAmount": null,
+            "hotelCurrency": null,
+            "from": "2017-02-02T23:59"
+         }],
+         "touricoHotelRoomtype": null,
+         "nonRefundable": null,
+         "phone": null,
+         "holderDTO": null
+      }],
+      "programType": null,
+      "tourOperator": "string",
+      "travelType": null
+   },
+   "promocode": null,
+   "atol": null,
+   "bookingBeginningDate": "2017-02-05",
+   "bookingEndDate": "2017-02-07",
+   "origin": "LGW",
+   "destination": "PMI",
+   "serviceFees":    [
+            {
+         "price": 6.56,
+         "code": "E7A48F2F57EE4A33B01D14F022CA9AF4",
+         "description": null,
+         "productMarkup": 0.0,
+         "status": "ACTIVE",
+         "subStatus": null,
+         "discountLine": 0.0,
+         "markupName": null,
+         "productSupplier": null,
+         "amtMarketPrice": 6.56,
+         "currencyProvider": null,
+         "pairPrice": 0.0,
+         "cardFee": 0.0,
+         "indMarkupDefault": null,
+         "codOperationType": "CANCELLATION"
+      },
+            {
+         "price": 10.0,
+         "code": "E3A67AA2D0B844CB8C074395CF5C1043",
+         "description": null,
+         "productMarkup": 0.0,
+         "status": "PENDING",
+         "subStatus": null,
+         "discountLine": 0.0,
+         "markupName": null,
+         "productSupplier": null,
+         "amtMarketPrice": 10.0,
+         "currencyProvider": "EUR",
+         "pairPrice": 0.0,
+         "cardFee": 0.0,
+         "indMarkupDefault": false,
+         "codOperationType": "PHONE"
+      }
+   ],
+   "status": "CANCELLED",
+   "subStatus": "DEPOSIT_PAID",
+   "whitelabelId": "EASYJET",
+   "codLanguage": "en",
+   "codUserCreated": "QA",
+   "datUserCreated": "2017-01-18T16:51:26.874802",
+   "differPrice": 0.0,
+   "codReferrer": null,
+   "checkAncillary": false,
+   "checkFlight": true,
+   "checkHotel": true,
+   "checkTransfer": false,
+   "refundableAmount": 0,
+   "codBuyCurrency": "GBP",
+   "userType": "CRC",
+   "exchange":    {
+      "date": "2017-01-18",
+      "value": 1.01,
+      "currencyFrom": "GBP",
+      "currencyTo": "EUR"
+   },
+   "discount": null,
+   "savedAtAmendment": false,
+   "neededPricing": false
+}

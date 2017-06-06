@@ -1,0 +1,85 @@
+{
+  "paxes" : [ {
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD"
+  }, {
+    "age" : 30,
+    "paxNumber" : 2,
+    "personType" : "AD"
+  }, {
+    "age" : 20,
+    "paxNumber" : 4,
+    "personType" : "AD"
+  }, {
+    "age" : 23,
+    "paxNumber" : 5,
+    "personType" : "AD"
+  }, {
+    "age" : 1,
+    "paxNumber" : 3,
+    "personType" : "CH"
+  }, {
+    "age" : 3,
+    "paxNumber" : 6,
+    "personType" : "CH"
+  }, {
+    "age" : 4,
+    "paxNumber" : 7,
+    "personType" : "CH"
+  } ],
+  "market" : "Market",
+  "currency" : "GBP",
+  "totalPrice" : 1652.02,
+  "flightHotelPackage" : {
+    "flights" : [ {
+      "itineraries" : [ {
+        "segments" : [ {
+		"segmentNumber" : 0,
+		"airline" : "EasyJet",
+		"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+		"departureDateTime" : "${#Project#departureDateTime_ida}",
+		"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+		"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+		"bookingClass" : "Y",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"flightCode" : null,
+		"flightLabel" : null
+        }]
+      } ]
+    } ],
+    "hotels" : [{
+				"code" : "string",
+				"description" : "EL MEJOR HOTEL",
+				"arrivalDate" : "2016-06-28",
+				"bookingCode" : "FFFFFF",
+				"destination" : "LGW",
+				"hotelCodes" : [],
+				"hotelProvider" : "Hotel Beds",
+				"lengthOfStay" : 3,
+				"price" : 600,
+				"rooms" : [{
+						"boardCode" : "Full Board",
+						"bookingCode" : 1,
+						"extraBeds" : 0,
+						"personAssignaments" : [1],
+						"roomCode" : "895",
+						"status": "ACTIVE",
+						"subStatus" : null,
+						"TOMABookingCode" : "string"
+					}
+				],
+				"hotelStatus": "ACTIVE",
+				"hotelSubStatus" : null,
+				"reference" : "CERTAIN",
+				"hotelGroup" : null
+			}
+		],
+    "tourOperator" : "YEJHUK",
+    "travelType" : "HOBEXT"
+  },
+  "bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+  "bookingEndDate" : "${#Project#departureDateTime_ida}",
+  "origin" : "${#Project#departureAirportIATA_ida}",
+  "destination" : "${#Project#arrivalAirportIATA_ida}"
+}

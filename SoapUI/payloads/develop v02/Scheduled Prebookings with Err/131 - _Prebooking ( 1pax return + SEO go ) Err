@@ -1,0 +1,87 @@
+{
+	"bookingCode" : "131${#Project#prebookingCodeGlobal}",
+	"description" : "131 - Prebooking ( 1pax return + SEO go )",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : false,
+			"paxNumber" : 1
+		}
+	],
+	"market": "${#Project#market}",
+	"category" : "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [
+     {
+      "code": "SEO",
+      "description": "BICL",
+      "quantity": 1,
+      "segmentReference": 35
+	 } 
+	],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"flightSegments":[{
+						"flightLegs" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+						        }]
+					    },{
+						"flightLegs" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null     	  							
+								}]
+						}]
+				}],
+		"hotels" : [{
+				"code" : "string",
+				"description" : "EL MEJOR HOTEL",
+				"arrivalDate" : "2016-06-28",
+				"bookingCode" : "ABSFFF",
+				"destination" : "LGW",
+				"hotelCodes" : [],
+				"hotelProvider" : "Hotel Beds",
+				"lengthOfStay" : 30,
+				"price" : 600,
+				"reference" : "CERTAIN",
+				"rooms" : [{
+						"boardCode" : "Full Board",
+						"bookingCode" : 1,
+						"extraBeds" : 0,
+						"personAssignaments" : [1],
+						"roomCode" : "895",
+						"status" : "ACTIVE",
+						"subStatus" : null,
+						"TOMABookingCode" : "string"
+					}
+				],
+				"hotelStatus" : "ACTIVE",
+				"hotelSubStatus" : null,
+				"reference" : "CERTAIN",
+				"hotelGroup" : null
+			}
+		],
+		"programType" : "string",
+		"tourOperator" : "string",
+		"travelType" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_vuelta}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

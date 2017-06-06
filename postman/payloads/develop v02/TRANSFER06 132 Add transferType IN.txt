@@ -1,0 +1,236 @@
+{
+		"price": "${#price}",
+		"code": null,
+		"description": null,
+		"productMarkup": 0,
+		"status": "ACTIVE",
+		"subStatus": null,
+		"discountLine": 0,
+		"markupName": null,
+		"productSupplier": null,
+		"amtMarketPrice": null,
+		"currencyProvider": "${#currencyProvider}",
+		"pairPrice": 0,
+		"cardFee": null,
+		"indMarkupDefault": null,
+		"additionalCost": [],
+		"availToken": "${#availToken}",
+		"cancelationPolicies": null,
+		"contractList": [{
+				"comments": [],
+				"incomingOffice": 1,
+				"name": "PRIV BOL 16-17",
+				"sequence": null
+			}
+		],
+		"dateFrom": "${#dateFrom}",
+		"destination": [{
+				"address": null,
+				"bestMatchOrder": null,
+				"code": "${#Project#arrivalAirportIATA_ida}",
+				"description": null,
+				"distance": null,
+				"fs": null,
+				"giata": "${#Project#hotelGIATACode}",
+				"iata": null,
+				"icao": null,
+				"latitude": null,
+				"longitude": null,
+				"name": "Embat",
+				"number": null,
+				"pickUpType": "HOTEL",
+				"terminalType": null,
+				"town": null,
+				"tti": null,
+				"zip": null,
+				"zoneCode": "CPASTILLA",
+				"zoneName": null,
+				"date": null,
+				"time": null,
+				"order": null
+			}
+		],
+		"guestList": [],
+		"modificationPolicyList": null,
+		"pickUp": [{
+				"address": null,
+				"bestMatchOrder": null,
+				"code": "${#Project#hotelBedsCode}",
+				"description": null,
+				"distance": null,
+				"fs": null,
+				"giata": null,
+				"iata": null,
+				"icao": null,
+				"latitude": null,
+				"longitude": null,
+				"name": "Palma Majorca, Son Sant Joan Airport",
+				"number": null,
+				"pickUpType": "AIRPORT",
+				"terminalType": "A",
+				"town": null,
+				"tti": null,
+				"zip": null,
+				"zoneCode": "AEROPUERTO",
+				"zoneName": null,
+				"date": null,
+				"time": null,
+				"order": null
+			}
+		],
+		"transferPickUpInfo": "Once you have collected your luggage, leave the baggage area through door B/C, proceed to the Destination Services airport Desk located just in front. Here you will be attendend and escorted to the transfer vehicle.-If you are unable to locate the driver/agent, please call DESTINATION SERVICES on +34 620131522.Languages spoken at the call centre: English, Spanish.",
+		"sharedPickupLocations": [],
+		"specificaton": {
+			"generalInfo": [{
+					"description": "Exclusive ride for you",
+					"detailedDescription": null,
+					"bulletPointId": "ER",
+					"metric": null,
+					"order": 1,
+					"type": null,
+					"value": null
+				}, {
+					"description": "Door to door service",
+					"detailedDescription": null,
+					"bulletPointId": "DTDS",
+					"metric": null,
+					"order": 2,
+					"type": null,
+					"value": null
+				}, {
+					"description": "Available 24/7",
+					"detailedDescription": null,
+					"bulletPointId": "AV247",
+					"metric": null,
+					"order": 3,
+					"type": null,
+					"value": null
+				}, {
+					"description": "Meet & Greet service",
+					"detailedDescription": null,
+					"bulletPointId": "M&GS",
+					"metric": null,
+					"order": 4,
+					"type": null,
+					"value": null
+				}, {
+					"description": "1 piece of baggage allowed per person",
+					"detailedDescription": null,
+					"bulletPointId": "BA",
+					"metric": null,
+					"order": 10,
+					"type": null,
+					"value": null
+				}, {
+					"description": "1 item of hand baggage allowed per person",
+					"detailedDescription": null,
+					"bulletPointId": "BAHB",
+					"metric": null,
+					"order": 11,
+					"type": null,
+					"value": null
+				}
+			],
+			"productCode": "PRM",
+			"productName": "Premium",
+			"serviceCode": "PRVT",
+			"serviceName": "Private",
+			"vehicleCode": "MNBS",
+			"vehicleName": "Minibus"
+		},
+		"suplements": [],
+		"transferInfo": {
+			"code": "0|0|0",
+			"descriptionList": [{
+					"description": "Private hire with driver",
+					"languageCode": "ENG",
+					"type": "GENERAL"
+				}, {
+					"description": "Premium product type",
+					"languageCode": "ENG",
+					"type": "PRODUCT"
+				}, {
+					"description": "Minibus",
+					"languageCode": "ENG",
+					"type": "VEHICLE"
+				}
+			],
+			"imageList": [{
+					"type": "S",
+					"url": "http://transferstatic.hotelbeds.com/giata/transfers/TRD/small/prvt-prm-mnbs.png"
+				}, {
+					"type": "M",
+					"url": "http://transferstatic.hotelbeds.com/giata/transfers/TRD/medium/prvt-prm-mnbs.png"
+				}, {
+					"type": "L",
+					"url": "http://transferstatic.hotelbeds.com/giata/transfers/TRD/large/prvt-prm-mnbs.png"
+				}, {
+					"type": "XL",
+					"url": "http://transferstatic.hotelbeds.com/giata/transfers/TRD/extralarge/prvt-prm-mnbs.png"
+				}
+			],
+			"type": "P",
+			"vehicleType": "M",
+			"transferSpecificContent": {
+				"frequency": [],
+				"genericGidelines": [{
+						"description": "SPECIAL LUGGAGE",
+						"detailedDescription": "In the event of extra luggage or sport equipment being checked in, please contact us, as this may carry an extra charge.",
+						"bulletPointId": "SPLU",
+						"metric": null,
+						"order": null,
+						"type": null,
+						"value": null
+					}, {
+						"description": "LUGGAGE PROBLEMS",
+						"detailedDescription": "In the event of a problem with customs or luggage,  please call the emergency number in order to advise of the delay and take the necessary steps.",
+						"bulletPointId": "LGPR",
+						"metric": null,
+						"order": null,
+						"type": null,
+						"value": null
+					}, {
+						"description": "CAN'T FIND DRIVER",
+						"detailedDescription": "In the event of being unable to locate the driver, please call the emergency number indicated in this voucher.",
+						"bulletPointId": "DRVR",
+						"metric": null,
+						"order": null,
+						"type": null,
+						"value": null
+					}, {
+						"description": "CHECK INFORMATION",
+						"detailedDescription": "If the details do not correspond with the reservation, please contact your agency immediately.",
+						"bulletPointId": "CHIN",
+						"metric": null,
+						"order": null,
+						"type": null,
+						"value": null
+					}, {
+						"description": "CHILDBOOSTER / BABY SEAT",
+						"detailedDescription": "Child car seats and boosters are not included unless specified in your booking and can carry an extra cost. Should you need to book them, please contact your point of sale prior to travelling.",
+						"bulletPointId": "CBBS",
+						"metric": null,
+						"order": null,
+						"type": null,
+						"value": null
+					}
+				],
+				"specificContentId": "1340",
+				"maxNumberStops": null,
+				"maxWaitingTime": null,
+				"maxWaitingTimeSupplierDomestic": "minutes",
+				"maxWaitingTimeSupplierInternational": "minutes",
+				"maxWaitingTimeType": null,
+				"maxWaitingTimeSupplierDomesticType": 60,
+				"maxWaitingTimeSupplierInternationalType": 90,
+				"pickupStops": [],
+				"specificInfo": [],
+				"bulletPointType": null
+			}
+		},
+		"transferType": "IN",
+		"contactInfoList": null,
+		"webInfo": null,
+		"daysBeforeConsultingWeb": null,
+		"currency": null
+	}

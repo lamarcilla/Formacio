@@ -1,0 +1,209 @@
+{
+	"bookingCode" : "132",
+	"description" : "132 - 2AD+1CH+2INF+return+2SEO+SEATS+TRANS",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "AD",
+			"hasInfant" : true,
+			"paxNumber" : 1
+		},
+		{
+			"age" : null,
+			"personType" : "AD",			
+			"hasInfant" : true,
+			"paxNumber" : 2
+		},
+		{
+			"age" : 11,
+			"personType" : "CH",			
+			"hasInfant" : false,
+			"paxNumber" : 3
+		},		
+		{
+			"age" : 0,
+			"personType" : "INF",			
+			"hasInfant" : false,
+			"paxNumber" : 4
+		},
+		{
+			"age" : 0,
+			"personType" : "INF",						
+			"hasInfant" : false,
+			"paxNumber" : 5
+		}
+	],
+	"market": "${#Project#market}",
+	"category" : "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [
+		{
+		  "code": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 2,	  
+		  "type": null,
+		  "segmentReference": 0,
+		  "price" : 19
+		},
+		{
+		  "code": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 2,	  
+		  "type": null,
+		  "segmentReference": 1,
+		  "price" : 19	  
+		},	 
+		{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 0,
+		  "type": "BICL",
+		  "price" : 35
+		},
+				{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 0,
+		  "type": "BICL",
+		  "price" : 35
+		},
+		{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 1,
+		  "type": "BICL",
+		  "price" : 35
+		},
+		{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 1,
+		  "type": "BICL",
+		  "price" : 35
+		}	 	 			
+	],
+    "seats": [{
+		"seatNumber" : "14E",
+		"code" : "SSR",
+		"flightNumber" : "8274",
+		"segmentReference" : 0,
+		"price" : 0
+	},{ 	
+		"seatNumber" : "15D",
+		"code" : "SSR",
+		"flightNumber" : "8274",
+		"segmentReference" : 0,
+		"price" : 0
+	},{ 	
+		"seatNumber" : "16F",
+		"code" : "SSR",
+		"flightNumber" : "8274",
+		"segmentReference" : 0,
+		"price" : 0
+	},{	
+		"seatNumber" : "14E",
+		"code" : "SSR",
+		"flightNumber" : "8277",
+		"segmentReference" : 1,
+		"price" : 0
+	},{	
+		"seatNumber" : "15D",
+		"code" : "SSR",
+		"flightNumber" : "8277",
+		"segmentReference" : 1,
+		"price" : 0
+	},{	
+		"seatNumber" : "16F",
+		"code" : "SSR",
+		"flightNumber" : "8277",
+		"segmentReference" : 1,
+		"price" : 0
+	}], 		
+	"flightHotelPackage" : {
+		"code" : "string",
+		"description" : "132 - 2AD+1CH+2INF+return+2SEO+SEATS+TRANS",
+		"status" : "ACTIVE",
+		"subStatus" : null,
+		"flights" : [{
+				"itineraries" : [{
+						"segments" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+						        }]
+					    },{
+						"segments" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null   							
+								}]
+						}]
+				}],
+		"hotels": [{
+			"price": 815.78,
+			"code": "string",
+			"discountLine": 0,
+			"arrivalDate": "${#Project#arrivalDateTime_ida}",
+			"destination": "${#Project#arrivalAirportIATA_ida}",
+			"hotelCodes": [{
+				"type": "GIATA",
+				"code": "79617"
+				},{
+				"type": "HOTELBEDS",
+				"code": "82704"
+			}],
+			"hotelProvider": "Hotelbeds",
+			"lengthOfStay": 9,
+			"rooms": [{
+				"boardCode": "GT06-AO",
+				"personAssignaments": [1,2,3],
+				"roomCode": "FAM-ST"
+			}],
+			"hotelName": "BEST WESTERN PLUS Epping Forest",
+			"rateKey": "20161212|20161219|H|164|82704|FAM.ST|OPAQUE|RO||1~2~2|8~8|N@F36605A4E0AF4A079E30D51D91D59E6D",
+			"hotelPrice": {
+			  "netByApitude": 815.78,
+			  "sellingRateByApitude": 825.77,
+			  "commissionByApitude": 8.26,
+			  "commissionVATByApitude": 1.73
+			},
+			"categoryCode": "3EST",
+			"categoryName": "3 STARS",
+			"destinationName": "London",
+			"zoneCode": 78,
+			"zoneName": "Walthamstow",
+			"latitude": "51.603266",
+			"longitude": "0.010833",
+			"keywords": [],
+			"reviews": [],
+			"minRate": 825.77,
+			"maxRate": 1152.06,
+			"totalSellingRate": 825.77,
+			"totalNet": 815.78,
+			"currency": "${#Project#currency}"
+      }],
+		"programType" : "string",
+		"tourOperator" : "string",
+		"travelType" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_vuelta}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

@@ -1,0 +1,81 @@
+{
+	"bookingCode" : "106",
+	"description" : "106 - Prebooking ( 2 pax 1 way + Infant )",	
+	"paxes" : [{
+			"age" : null,
+			"personType" : "AD",
+			"hasInfant" : true,
+			"paxNumber" : 1
+		}, {
+			"age" : null,
+			"personType" : "AD",
+			"hasInfant" : false,
+			"paxNumber" : 2
+		},
+		{
+			"age" : 0,
+			"personType" : "INF",
+			"hasInfant" : false,
+			"paxNumber" : 3
+		}
+	],
+	"market": "${#Project#market}",
+	"category" : "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"itineraries" : [{
+						"segments" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+							}
+						]
+					}
+				]
+			}
+		],
+		"hotels" : [{
+				"code" : "string",
+				"description" : "EL MEJOR HOTEL",
+				"arrivalDate" : "2016-06-28",
+				"bookingCode" : "AAPFFF",
+				"destination" : "LGW",
+				"hotelCodes" : [],
+				"hotelProvider" : "Hotel Beds",
+				"lengthOfStay" : 30,
+				"price" : 600,
+				"rooms" : [{
+						"boardCode" : "Full Board",
+						"bookingCode" : 1,
+						"extraBeds" : 0,
+						"personAssignaments" : [1,2,3],
+						"roomCode" : "895",
+						"status": "ACTIVE",
+						"subStatus" : null,
+						"TOMABookingCode" : "string"
+					}
+				],
+				"hotelStatus": "ACTIVE",
+				"hotelSubStatus" : null,
+				"reference" : "CERTAIN",
+				"hotelGroup" : null
+			}
+		],
+		"programType" : "string",
+		"tourOperator" : "string",
+		"travelType" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_ida}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

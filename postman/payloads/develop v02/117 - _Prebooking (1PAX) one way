@@ -1,0 +1,66 @@
+{
+	"bookingCode" : "117${#Project#testName}",
+	"description" : "117 - Prebooking (1PAX) one way",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "ADT",						
+			"hasInfant" : false,
+			"paxNumber" : 1
+		}
+	],
+	"market": "${#Project#market}",
+	"agency": {
+		"company": "company",
+		"office": "office",
+		"userAgent": "userAgent"
+	},
+	"userType": "${#Project#userType}",
+	"category" : "GT03-COUP Ideal for Couples",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"flightSegments" : [{
+						"flightLegs" : [{
+						        "tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+								}]
+						}]
+		}],
+		"hotels": [{
+			"description": "descripcion del hotel",		
+			"arrivalDate": "${#Project#arrivalDateTime_ida}",
+			"destination": "${#Project#arrivalAirportIATA_ida}",
+			"productSupplier": "HOTELBEDS",
+			"hotelCodes": [{
+				"type": "GIATA",
+				"code": "${#Project#hotelGIATACode}"
+			},{
+				"type": "HOTELBEDS",
+				"code": "${#Project#hotelBedsCode}"
+			}
+		],
+			"lengthOfStay": 9,
+			"rooms": [{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [1],
+				"roomCode": "DBL.ST"
+			}],
+		"currency": "${#Project#currency}"
+	  }],
+		"tourOperator" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_ida}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

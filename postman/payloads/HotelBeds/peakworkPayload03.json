@@ -1,0 +1,98 @@
+{
+  "paxes" : [ {
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD"
+  }, {
+    "age" : 30,
+    "paxNumber" : 2,
+    "personType" : "AD"
+  }, {
+    "age" : 20,
+    "paxNumber" : 4,
+    "personType" : "AD"
+  }, {
+    "age" : 23,
+    "paxNumber" : 5,
+    "personType" : "AD"
+  }, {
+    "age" : 1,
+    "paxNumber" : 3,
+    "personType" : "CH"
+  }, {
+    "age" : 3,
+    "paxNumber" : 6,
+    "personType" : "CH"
+  }, {
+    "age" : 4,
+    "paxNumber" : 7,
+    "personType" : "CH"
+  } ],
+  "market" : "Market",
+  "currency" : "GBP",
+  "totalPrice" : 1652.02,
+  "flightHotelPackage" : {
+    "flights" : [ {
+      "itineraries" : [ {
+        "segments" : [ {
+		"segmentNumber" : 0,
+		"airline" : "EasyJet",
+		"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+		"departureDateTime" : "${#Project#departureDateTime_ida}",
+		"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+		"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+		"bookingClass" : "Y",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"flightCode" : null,
+		"flightLabel" : null
+        }, {
+		"segmentNumber" : 1,                        
+		"airline" : "EasyJet",
+		"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+		"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+		"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+		"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+		"bookingClass" : "Y",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"flightCode" : null,
+		"flightLabel" : null   							
+        } ]
+      } ]
+    } ],
+    "hotels" : [ {
+      "arrivalDate" : "2016-12-12",
+      "destination" : "DE",
+      "hotelCodes" : [ {
+        "codeType" : "GIATA",
+        "code" : "77085"
+      }, {
+        "codeType" : "YEJHUK",
+        "code" : "99032"
+      } ],
+      "hotelProvider" : "Hotelbeds",
+      "rooms" : [ {
+        "boardCode" : "GT06-AO",
+        "personAssignaments" : [ 1, 2, 3 ],
+        "roomCode" : "DBL-BQ"
+      }, {
+        "boardCode" : "GT06-AO",
+        "personAssignaments" : [ 4, 5, 6, 7 ],
+        "roomCode" : "QUA-ST"
+      } ],
+      "globalTypes" : [ "GT02-HO", "GT03-BARR", "GT03-BASE", "GT03-CAPA", "GT03-COUP", "GT03-DIFR", "GT03-DISK#ST03-10KM", "GT03-DISK#ST03-15KM", "GT03-DISK#ST03-500M", "GT03-DISK#ST03-D1KM", "GT03-DISK#ST03-D2KM", "GT03-DISK#ST03-D5KM", "GT03-DOCO", "GT03-FAFR", "GT03-GARA", "GT03-INTE#ST03-WLAN", "GT03-MOTO", "GT03-PEAL", "GT03-POOL", "GT03-POOL#ST03-INSW", "GT03-REST", "GT03-SAUN", "GT03-SKII", "GT03-SPAA", "GT05-AICO" ],
+      "atributeCodes" : {
+        "FQN" : "true",
+        "codes" : [ "GT03-BARR", "GT03-BASE", "GT03-CAPA", "GT03-COUP", "GT03-DIFR", "GT03-DISK#ST03-10KM", "GT03-DISK#ST03-15KM", "GT03-DISK#ST03-500M", "GT03-DISK#ST03-D1KM", "GT03-DISK#ST03-D2KM", "GT03-DISK#ST03-D5KM", "GT03-DOCO", "GT03-FAFR", "GT03-GARA", "GT03-INTE#ST03-WLAN", "GT03-MOTO", "GT03-PEAL", "GT03-POOL", "GT03-POOL#ST03-INSW", "GT03-REST", "GT03-SAUN", "GT03-SKII", "GT03-SPAA" ],
+        "fqn" : "true"
+      },
+      "typeCode" : "GT02-HO",
+      "hotelKey" : "99032;-17075;MUC"
+    } ],
+    "tourOperator" : "YEJHUK",
+    "travelType" : "HOBEXT"
+  },
+  "bookingBeginningDate" : "2016-12-12",
+  "bookingEndDate" : "2016-12-19",
+  "origin" : "LGW",
+  "destination" : "MUC"
+}

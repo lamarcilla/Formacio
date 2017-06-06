@@ -1,0 +1,103 @@
+{
+	"bookingCode" : "113b",
+	"description" : "113b - Prebooking (1pax + INF assigned twice) - Err",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : true,
+			"paxNumber" : 1
+		},
+		{
+			"age" : 0,
+			"personType" : "INF",
+			"hasInfant" : true,
+			"paxNumber" : 2
+		},
+		{
+			"age" : 16,
+			"personType" : "CHD",
+			"hasInfant" : true,
+			"paxNumber" : 3
+		}
+	],
+	"market": "${#Project#market}",
+	"category" : "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"flightSegments" : [{
+						"flightLegs" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+								}]
+						},{
+						"flightLegs" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null   							
+								}]
+						}]
+			}],
+			"hotels": [{
+				"price": 815.78,
+				"code": "string",
+				"discountLine": 0,
+				"arrivalDate": "${#Project#arrivalDateTime_ida}",
+				"destination": "${#Project#arrivalAirportIATA_ida}",
+				"hotelCodes": [{
+					"type": "GIATA",
+					"code": "79617"
+					},{
+					"type": "HOTELBEDS",
+					"code": "82704"
+				}],
+				"hotelProvider": "Hotelbeds",
+				"lengthOfStay": 9,
+				"rooms": [{
+					"boardCode": "GT06-AO",
+					"personAssignaments": [1],
+					"roomCode": "FAM-ST"
+				}],
+				"hotelName": "BEST WESTERN PLUS Epping Forest",
+				"rateKey": "20161212|20161219|H|164|82704|FAM.ST|OPAQUE|RO||1~2~2|8~8|N@F36605A4E0AF4A079E30D51D91D59E6D",
+				"hotelPrice": {
+				  "netByApitude": 815.78,
+				  "sellingRateByApitude": 825.77,
+				  "commissionByApitude": 8.26,
+				  "commissionVATByApitude": 1.73
+				},
+				"categoryCode": "3EST",
+				"categoryName": "3 STARS",
+				"destinationName": "London",
+				"zoneCode": 78,
+				"zoneName": "Walthamstow",
+				"latitude": "51.603266",
+				"longitude": "0.010833",
+				"keywords": [],
+				"reviews": [],
+				"minRate": 825.77,
+				"maxRate": 1152.06,
+				"totalSellingRate": 825.77,
+				"totalNet": 815.78,
+				"currency": "${#Project#currency}"
+		  }],
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_ida}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

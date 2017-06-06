@@ -1,0 +1,199 @@
+{
+	"bookingCode" : "135${#Project#testName}",
+	"description" : "135 - Prebooking (4PAX+INF+2CHD+LUG+2SEO+SEATS)",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "ADT",
+			"hasInfant" : false,
+			"paxNumber" : 1
+		},
+		{
+			"age" : null,
+			"personType" : "ADT",			
+			"hasInfant" : false,
+			"paxNumber" : 2
+		},
+		{
+			"age" : null,
+			"personType" : "ADT",			
+			"hasInfant" : false,
+			"paxNumber" : 3
+		},
+		{
+			"age" : null,
+			"personType" : "ADT",			
+			"hasInfant" : false,
+			"paxNumber" : 4
+		},
+		{
+			"age" : 0,
+			"personType" : "INF",			
+			"hasInfant" : false,
+			"paxNumber" : 5
+		},
+		{
+			"age" : 11,
+			"personType" : "CHD",			
+			"hasInfant" : false,
+			"paxNumber" : 6
+		},		
+		{
+			"age" : 11,
+			"personType" : "CHD",			
+			"hasInfant" : false,
+			"paxNumber" : 7
+		}
+
+	],
+	"market": "${#Project#market}",
+	"agency": {
+		"company": "company",
+		"office": "office",
+		"userAgent": "userAgent"
+	},
+	"userType": "${#Project#userType}",
+	"category" : "GT03-CITR City Breaks",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [],
+    "seats": [{
+		"seatNumber" : "6A",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"price" : 14.5,
+		"flightLegReference" : 0
+	},{ 	
+		"seatNumber" : "6B",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"price" : 14.5,
+		"flightLegReference" : 0
+	},{ 	
+		"seatNumber" : "6C",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"price" : 14.5,
+		"flightLegReference" : 0
+	},{
+		"seatNumber" : "6D",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"price" : 14.5,
+		"flightLegReference" : 0
+	},{ 	
+		"seatNumber" : "6E",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"price" : 14.5,
+		"flightLegReference" : 0
+	},{ 	
+		"seatNumber" : "6F",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"price" : 14.5,
+		"flightLegReference" : 0
+	},{	
+		"seatNumber" : "6A",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"price" : 14.5,
+		"flightLegReference" : 1
+	},{	
+		"seatNumber" : "6B",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"price" : 14.5,
+		"flightLegReference" : 1
+	},{	
+		"seatNumber" : "6C",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"price" : 14.5,
+		"flightLegReference" : 1
+	},{	
+		"seatNumber" : "6D",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"price" : 14.5,
+		"flightLegReference" : 1
+	},{	
+		"seatNumber" : "6E",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"price" : 14.5,
+		"flightLegReference" : 1
+	},{	
+		"seatNumber" : "6F",
+		"code" : "SSR",
+		"flightNumber" : "${#Project#flightNumber_vuelta}",
+		"price" : 14.5,
+		"flightLegReference" : 1
+	}], 		
+	"flightHotelPackage" : {
+		"flights" : [{
+				"flightSegments" : [{
+						"flightLegs" : [{
+								"tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+								}]
+						},{
+						"flightLegs" : [{
+								"tariffClass" : "${#Project#tariffClass}",
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null   							
+								}]
+						}]
+		}],
+		"hotels": [{
+			"description": "descripcion del hotel",		
+			"arrivalDate": "${#Project#arrivalDateTime_ida}",
+			"destination": "${#Project#arrivalAirportIATA_ida}",
+			"productSupplier": "HOTELBEDS",
+			"hotelCodes": [{
+				"type": "GIATA",
+				"code": "${#Project#hotelGIATACode}"
+			},{
+				"type": "HOTELBEDS",
+				"code": "${#Project#hotelBedsCode}"
+			}
+		],
+			"lengthOfStay": "${#Project#lengthOfStay}",
+			"rooms": [{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [1,4],
+				"roomCode": "DBL.ST"
+			},
+			{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [2,6],
+				"roomCode": "DBL.ST"
+			},
+			{
+				"boardCode": "${#Project#boardCode}",
+				"personAssignaments": [3,7],
+				"roomCode": "DBL.ST"
+			}],
+		"currency": "${#Project#currency}"
+	  }],
+		"tourOperator" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_vuelta}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

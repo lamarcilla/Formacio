@@ -1,0 +1,123 @@
+
+1 Cambiar el nodo Hotel por el siguiente:
+"hotels": [{
+			"code": "string",
+			"arrivalDate": "${#Project#arrivalDateTime_ida}",
+			"destination" : "${#Project#arrivalAirportIATA_ida}",
+			"lengthOfStay" : 7,			
+			"hotelProvider" : "Hotelbeds",
+			"hotelCodes" : [
+                { "type" : "GIATA", "code" : 98893}, 
+				{"GiataCode" : 79617}
+            ],
+			"rooms" : [ {
+					"boardCode" : "GT06-AO",
+					"personAssignaments" : [ 1, 2, 3 ],
+					"roomCode" : "DBL-BQ"
+			}, {
+					"boardCode" : "GT06-AO",
+					"personAssignaments" : [ 4, 5, 6, 7 ],
+					"roomCode" : "QUA-ST"
+			}]
+		}],
+
+1.1 Crear variable general para code 		
+1.2 rooms > personAssignaments... Modificarlo según el paxnumber
+
+
+2 Rellenar datos del booking
+"origin" : "${#Project#departureAirportIATA_vuelta}",
+"destination" : "${#Project#arrivalAirportIATA_ida}"
+
+3 Eliminar "segmentNumber":0   para cada uno de los segmentos
+de "flightHotelPackage" >> "flights" >> "itineraries" >> "segments" 
+
+4 Eliminar
+"code": "string",
+"description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+"status": "ACTIVE",
+"subStatus": null
+de "flightHotelPackage" 
+
+5 Eliminar
+"code": "string",
+"description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+"status": "ACTIVE",
+"subStatus": null
+de "flightHotelPackage" >> "flights" >>
+
+6 discountLine ??? lo añadimos?
+
+7 OJO SOAPui, WhitetLabelId = EASYJET 
+
+8 OJO, repasar que en pax no queden algún campo antiguo
+
+9 hoteles 
+    "hotels": [
+      {
+        "price": 671.28,
+        "code": "string",
+        "productMarkup": 0,
+        "status": "ACTIVE",
+        "discountLine": 0,
+        "arrivalDate": "2016-12-12",
+        "destination": "MAD",
+        "hotelCodes": [
+          {
+            "type": "GIATA",
+            "code": "408661"
+          },
+          {
+            "type": "HOTELBEDS",
+            "code": "175430"
+          }
+        ],
+        "hotelProvider": "Hotelbeds",
+        "lengthOfStay": 7,
+        "rooms": [
+          {
+            "boardCode": "GT06-AO",
+            "personAssignaments": [
+              1,
+              2,
+              3
+            ],
+            "roomCode": "STU-C4"
+          },
+          {
+            "boardCode": "GT06-AO",
+            "personAssignaments": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "roomCode": "STU-C4"
+          }
+        ],
+        "hotelName": "Apart-hotel Serrano Recoletos",
+        "rateKey": "20161212|20161219|H|102|175430|STU.C4|LES-4NOCHES1|RO||1~2~2|8~8|N@C1B0BF4D524A4329BEB30A25B7EA2734",
+        "hotelPrice": {
+          "netByApitude": 671.28,
+          "sellingRateByApitude": 679.5,
+          "commissionByApitude": 6.8,
+          "commissionVATByApitude": 1.43
+        },
+        "categoryCode": "APTH3",
+        "categoryName": "APARTHOTEL 3*",
+        "destinationName": "Madrid",
+        "zoneCode": 46,
+        "zoneName": "Museo del Prado-Retiro",
+        "latitude": "40.422677",
+        "longitude": "-3.690186",
+        "keywords": [],
+        "reviews": [],
+        "minRate": 679.5,
+        "maxRate": 1374,
+        "totalSellingRate": 679.5,
+        "totalNet": 671.28,
+        "currency": "EUR"
+      }
+    ],
+    "tourOperator": "YEJHUK"
+  },

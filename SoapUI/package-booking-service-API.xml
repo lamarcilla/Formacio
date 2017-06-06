@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="101889f7-c44f-4588-b11a-5c07170acd6b" activeEnvironment="Default" name="package-booking-service-API" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" lastOpened="2016-12-23T09:20:35.340+01:00" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="b343dc39-2d27-457f-a7a8-2cc9ec23096b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.209.95:8082" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.185.225.141:8080/</con:endpoint><con:endpoint>http://10.185.225.204:8080</con:endpoint><con:endpoint>http://192.168.209.95:8084</con:endpoint><con:endpoint>http://192.168.209.96:8084</con:endpoint></con:endpoints><con:resource name="confirm" path="/packagebookingapi/1.0/prebookings//confirm" id="e6aa400f-91ac-4272-ab44-5354faa4f06e"><con:settings/><con:parameters/><con:method name="Method 1" id="342e4344-095c-4e1d-a2cd-033ebec893d0" method="POST"><con:settings/><con:parameters><con:parameter><con:name>preBookingId</con:name><con:value>${#Project#packageId}</con:value><con:style>HEADER</con:style><con:default>${#Project#packageId}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Authorization</con:name><con:value>Bearer ${#Project#token}</con:value><con:style>HEADER</con:style><con:default>Bearer ${#Project#token}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Accept-Language</con:name><con:value>${#Project#language}</con:value><con:style>HEADER</con:style><con:default>${#Project#language}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>whiteLabelId</con:name><con:value>easyJET</con:value><con:style>HEADER</con:style><con:default>easyJET</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="73c50f7b-21f5-4a91-a890-262191da50f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.185.225.204:8080</con:endpoint><con:request>{
+  "client": {
+    "firstName": "Martin",
+    "lastName": "aaa",
+    "paxReferenceNumber": 1,
+    "addresses": [{
+      "city": "Hospitalet",
+      "country": "ES",
+      "countryName": "ES",
+      "mail": "gfibarcelona@gmail.com",
+      "primary": true,
+      "street": "C/ pepe",
+      "streetAdditional": "",
+      "addressCode": "abcd",
+      "zipCode": "08860",
+      "stateProvince": "AKTIOS",
+      "telephones": [{
+        "type": "HOME",
+        "number": "444555666"
+      },
+      {
+        "type": "MOBILE",
+        "number": "111222333"
+      }]
+    }],
+    "comments": [{
+      "commentType": "H",
+      "commentText": "Vacaciones desde Front"
+    }]
+  },
+  "paxes": [{
+    "addresses": [{
+      "city": "Hospitalet",
+      "country": "ES",
+      "countryName": "ES",
+      "mail": "gfibarcelona@gmail.com",
+      "primary": true,
+      "street": "C/ pepe",
+      "streetAdditional": "",
+      "addressCode": "abcd",
+      "zipCode": "08860",
+      "stateProvince": "AKTIOS",
+      "telephones": [{
+        "type": "HOME",
+        "number": "444555666"
+      },
+      {
+        "type": "MOBILE",
+        "number": "111222333"
+      }]
+    }],
+    "age": 25,
+    "hasInfant": false,
+    "paxNumber": 1,
+    "personType": "ADT",
+    "isChipped": false,
+    "salutationType": "MR",
+    "firstName": "Martin",
+    "lastName": "aaa"
+  },
+  {
+    "addresses": [],
+    "age": 25,
+    "hasInfant": false,
+    "paxNumber": 2,
+    "personType": "ADT",
+    "isChipped": false,
+    "salutationType": "MS",
+    "firstName": "Inma",
+    "lastName": "bbb"
+  }],
+  "creditCardInfo": {
+    "encryptedData": "eyJhbGciOiJSU0ExXzUiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoiMSIsImNvbS53b3JsZHBheS5hcGlWZXJzaW9uIjoiMS4wIiwiY29tLndvcmxkcGF5LmxpYlZlcnNpb24iOiIxLjAuMSIsImNvbS53b3JsZHBheS5jaGFubmVsIjoiamF2YXNjcmlwdCJ9.J2JthBi5ABgXNCmyHrSle7vS0JY_M_mCQVNyBnigOOjCuebK7s1diLSas8h7xjBkM6Aqjd4HZn6jAP8v5ZYD3eMyOeyjKxNsVwXc538sGEqpT_3ofNyQ1ao00-HAjIni4yQg2_7ohkhz9Zv5Mqy32ulkXbDyyCeUbwoXrFxhXJslVwSFaJ5omegWzEGR2_yvsPZ_vUewzeR8d_XzQrs7wWz5nsX-y7VF7Shd8bUnIDQ6bWFMtIBEQ7mY5Q0f0Ne--WgwR-FRVBBkv5u9ICAofRHEdc5POdleHc4Qg7P5a_zk8qRcQxu1UNbdQ0mpUt2eCE7ODJJaiS95sorOf6Hd0w.uY5QB_y4qfsYLRTx.uKh6tmyjEbBJc_9E5NyhbhUEqW73GzWsxTDsQvaqyGZ1GU1NMcRQt3qiU7FXHvnp9nEFcJMDNgORNBHgMCS2E7FPqJ1g4mWIMyWKupt5SQLfXP3cTiuX7fCyIZNrybOuLXg17dm04EMqy_AzTRg.4aymUJJ5734shGet-t5Bug",
+    "billingAddress": {
+      "address": "C/ pepe ",
+      "city": "Hospitalet",
+      "countryCode": "ES",
+      "postalCode": "08860"
+    },
+    "creditCardVendorCode": "DL",
+    "cardHolderName": "martin"
+  },
+  "order": {
+    "amount": 565.49
+  },
+  "deposit": 0
+}</con:request><con:credentials><con:username/><con:password/><con:domain/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>preBookingId</con:entry><con:entry>Authorization</con:entry><con:entry>Accept-Language</con:entry><con:entry>whiteLabelId</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="prebooking" path="/packagebookingapi/1.0/prebookings/{packageId}" id="9e3a8e75-1854-4aba-a638-344f038db0a4"><con:settings/><con:parameters><con:parameter><con:name>packageId</con:name><con:value>packageId</con:value><con:style>TEMPLATE</con:style><con:default>packageId</con:default></con:parameter></con:parameters><con:method name="Method 1" id="979a8b16-d62b-4a39-abcf-7c2f6c124c2c" method="POST"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value>Bearer ${#Project#token}</con:value><con:style>HEADER</con:style><con:default>Bearer ${#Project#token}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Accept-Language</con:name><con:value>${#Project#language}</con:value><con:style>HEADER</con:style><con:default>${#Project#language}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>whiteLabelId</con:name><con:value>Bearer ${#Project#easyjet}</con:value><con:style>HEADER</con:style><con:default>Bearer ${#Project#easyjet}</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:pac="http://10.185.225.141/packagebookingapi/1.0/prebookings/packageId">pac:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="b2f6b98b-b42b-4b63-bb13-017db2bb5b21" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.185.225.141:8080/</con:endpoint><con:request/><con:originalUri>http://10.185.225.141/packagebookingapi/1.0/prebookings/e6424e6e-eebe-44ec-920d-dbaf59d918f1_25</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="packageId" value="e6424e6e-eebe-44ec-920d-dbaf59d918f1_25" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>packageId</con:entry><con:entry>Authorization</con:entry><con:entry>Accept-Language</con:entry><con:entry>whiteLabelId</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="shoppingcart" path="/packagebookingapi/1.0/prebookings/{preBookingId}/shoppingcart" id="041a7695-116f-4a71-8204-e23e350e545b"><con:settings/><con:parameters><con:parameter><con:name>preBookingId</con:name><con:value>preBookingId</con:value><con:style>TEMPLATE</con:style><con:default>preBookingId</con:default></con:parameter></con:parameters><con:method name="Method 1" id="0892a6ae-f77b-4b78-a187-8f315188938f" method="GET"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value>Bearer ${#Project#token}</con:value><con:style>HEADER</con:style><con:default>Bearer ${#Project#token}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Accept-Language</con:name><con:value>${#Project#language}</con:value><con:style>HEADER</con:style><con:default>${#Project#language}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>whiteLabelId</con:name><con:value>easyjet</con:value><con:style>HEADER</con:style><con:default>easyjet</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:shop="http://10.185.225.141/packagebookingapi/1.0/prebookings/preBookingId/shoppingcart">shop:Fault</con:element></con:representation><con:request name="Request 1" id="48fcfc77-803c-48eb-844a-cc727965f070" mediaType="application/json"><con:settings/><con:endpoint>http://10.185.225.141:8080/</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>preBookingId</con:entry><con:entry>Authorization</con:entry><con:entry>Accept-Language</con:entry><con:entry>whiteLabelId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:savedRecentRuns>1</con:savedRecentRuns><con:testSuite id="23c2405f-34a1-4b4a-bf4f-2b9d824e559a" name="Bateria Basica"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="25ccc487-be63-4fc0-938e-b366312412d2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="102 - Prebooking (2PAX)" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Prebooking" id="9138867e-ab19-4456-a5d9-c4a4f78f0da0"><con:settings/><con:config service="http://192.168.209.95:8082" resourcePath="/packagebookingapi/1.0/prebookings/{packageId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Prebooking" id="b2f6b98b-b42b-4b63-bb13-017db2bb5b21" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.185.225.141:8080/</con:endpoint><con:request/><con:originalUri>http://10.185.225.141/packagebookingapi/1.0/prebookings/packageId</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>packageId</con:entry><con:entry>Authorization</con:entry><con:entry>Accept-Language</con:entry><con:entry>whiteLabelId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Confirm" id="e7d7d8e2-815f-4d42-88de-22e484ecc428"><con:settings/><con:config service="http://192.168.209.95:8082" resourcePath="/packagebookingapi/1.0/prebookings//confirm" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Confirm" id="73c50f7b-21f5-4a91-a890-262191da50f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.185.225.204:8080</con:endpoint><con:request>{
+	"client" : {
+		"comments" : [{
+				"commentText":"Vacaciones invierno",
+                "commentType":"H"
+              }
+		],
+		"addresses" : [{
+				"city" : "Barcelona",
+				"country" : "${#Project#market}",
+				"countryName" : "descCountry",
+				"location" : "OFFICE",
+				"mail" : "ggomez.gfi@gmail.com",
+				"primary" : true,
+				"stateProvince" : "Mataro",
+				"street" : "C/Passeig de Gracia 44",
+				"streetAdditional" : "C/Passeig de Gracia 46",
+				"addressCode" : "ssss",
+				 "telephones":  
+				    [{
+               "number": "",
+               "type": "HOME"
+          		  },{
+               "number": "677445544",
+               "type": "MOBILE"
+            }
+         ],				
+				"zipCode" : "08015"
+			}, {
+				"city" : "MADRID",
+				"country" : "${#Project#market}",
+				"countryName" : "descCountry",
+				"location" : "OFFICE",
+				"mail" : "testmadrid@gfi.es",
+				"primary" : false,
+				"stateProvince" : "Fuenjirola",
+				"street" : "C/ Paseo 44",
+				"streetAdditional" : "C/ Paseo 46",
+				"addressCode" : "ffff",
+				"telephones":
+						[{
+								"number": "",
+								"type": "HOME"
+							},{
+								"number": "677445544",
+								"type": "MOBILE"
+							}
+						],									
+				"zipCode" : "08015"
+			}
+			],
+			"dateOfBirth" : "1980-11-01",
+			"firstName" : "Anna",
+			"gender" : "MALE",
+			"lastName": "apellido${=org.apache.commons.lang.RandomStringUtils.randomAlphabetic(10)}",
+			"middleName" : "MA",
+			"travelDocumentData" : {
+				"docCustomerName" : "ANNA TEST",
+				"docId" : "87654321X",
+				"docIssueAuthority" : "string",
+				"docIssueLocation" : "BARCELONA",
+				"docLimitations" : "string",
+				"docType" : "DNI",
+				"effectiveDate" : "2000-06-28",
+				"expireDate" : "2020-06-28"
+			},
+			"paxReferenceNumber": 2
+	},
+	"paxes" : [{
+			"addresses" : [{
+					"city" : "BARCELONA",
+					"country" : "${#Project#market}",
+					"countryName" : "descCountry",
+					"location" : "OFFICE",
+					"mail" : "mail@gfi.es",
+					"primary" : true,
+					"stateProvince" : "MATARO",
+					"street" : "ARAGO",
+					"streetAdditional" : 122,
+					"telephones" : [{
+							"type" : "FAX",
+							"number" : "66666666666"
+						}, {
+							"type" : "MOBILE",
+							"number" : "99999999999"
+						}, {
+							"type" : "FAX",
+							"number" : "88888888888"
+						}
+					],
+					"zipCode" : "00000"
+				}, {
+					"city" : "SLIEMA",
+					"country" : "MALTA",
+					"countryName" : "MALTA",
+					"location" : "OFFICE",
+					"mail" : "mail2@gfi.es",
+					"primary" : false,
+					"stateProvince" : "SLIEMA",
+					"street" : "MERCIEQA",
+					"streetAdditional" : 123,
+					"telephones" : [{
+							"type" : "FAX",
+							"number" : "11111111"
+						}
+					],
+					"zipCode" : "11111"
+				}
+			],
+			"dateOfBirth" : "1975-06-28",
+			"age" : null,
+			"personType" : "ADT",
+			"firstName" : "aaa",
+			"gender" : "MALE",
+			"lastName": "apellidoPaxUno${=org.apache.commons.lang.RandomStringUtils.randomAlphabetic(10)}",						
+			"middleName" : "MA",
+			"travelDocumentData" : {
+				"docCustomerName" : "ANNA M TEST",
+				"docId" : "87654321X",
+				"docIssueAuthority" : "BARCELONA",
+				"docIssueLocation" : "BARCELONA",
+				"docLimitations" : "string",
+				"docType" : "DNI",
+				"effectiveDate" : "2010-06-28",
+				"expireDate" : "2020-06-28"
+			},
+			"hasInfant" : false,
+			"salutationType" : "MR",
+			"paxNumber" : 1,
+			"customer" : 0
+		}, {
+			"dateOfBirth" : "1980-06-28",
+			"age" : null,
+			"personType" : "ADT",
+			"firstName" : "aaa",
+			"gender" : "MALE",
+			"lastName": "apellidoPaxDos${=org.apache.commons.lang.RandomStringUtils.randomAlphabetic(10)}",
+			"middleName" : "MA",
+			"travelDocumentData" : {
+				"docCustomerName" : "MARTA M TEST",
+				"docId" : "12345678A",
+				"docIssueAuthority" : "BARCELONA",
+				"docIssueLocation" : "BARCELONA",
+				"docLimitations" : "string",
+				"docType" : "DNI",
+				"effectiveDate" : "2010-06-28",
+				"expireDate" : "2020-06-28"
+			},
+			"hasInfant" : false,
+			"salutationType" : "MR",
+			"paxNumber" : 2,
+			"customer" : 0
+		}
+	],	
+    "creditCardInfo" : {		
+			 "cardFee" : "${#cardFee}",
+    	           "ptotalPriceWithFee" : "${#ptotalPriceWithFee}",
+		 	 "cardDescription" : "${#pstrDescription}",    		 	            		 	 
+			 "creditCardVendorCode" : "${#pcodPaymentMethod}",			 
+		 	 "cardFeePercentage" : "${#ppctPayment}",
+			 "cardHolderName" : "A Shopper",
+			 "validThruMonth" : "01" ,
+			 "validThruYear" : "2020", 
+			 "cardNumber" : "4444333322221111",
+			 "billingAddress" : {
+							"address" : "47A",
+							"postalCode" : "CB94BQ",
+							"city" : "Cambridge",
+							"countryCode" : "GB",
+							"phone": "646968857"              
+						   }       
+     },
+	"order" : {
+		   "amount" : "${#price}0",
+		   "description" : "${#description}",
+		   "shopperEmail" : "shopper@provider.com",
+		   "currency" : "${#Project#currency}"
+		   } ,
+    "deposit" : "${#deposit}"
+}</con:request><con:originalUri>http://192.168.209.95/packagebookingapi/1.0/prebookings//confirm</con:originalUri><con:credentials><con:username/><con:password/><con:domain/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Accept-Language" value="${#Project#language}"/>
+  <con:entry key="Authorization" value="Bearer ${#Project#token}"/>
+  <con:entry key="whiteLabelId" value="easyJET"/>
+</con:parameters><con:parameterOrder><con:entry>preBookingId</con:entry><con:entry>Authorization</con:entry><con:entry>Accept-Language</con:entry><con:entry>whiteLabelId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ShoppingCart" id="e5998f4a-ed41-4d1f-826d-fba50a828279"><con:settings/><con:config service="http://192.168.209.95:8082" resourcePath="/packagebookingapi/1.0/prebookings/{preBookingId}/shoppingcart" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ShoppingCart" id="48fcfc77-803c-48eb-844a-cc727965f070" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.185.225.141:8080/</con:endpoint><con:request/><con:originalUri>http://10.185.225.141/packagebookingapi/1.0/prebookings/preBookingId/shoppingcart</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>preBookingId</con:entry><con:entry>Authorization</con:entry><con:entry>Accept-Language</con:entry><con:entry>whiteLabelId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="COMPLEMENT" domain="HOTELbeds">http://10.185.53.61:8081</con:endpoint><con:endpoint mode="COMPLEMENT" domain="YARIEL" username="">http://192.168.209.96:8084</con:endpoint><con:endpoint mode="COMPLEMENT" domain="HBEDS">http://10.185.225.141:8080/</con:endpoint><con:endpoint mode="COMPLEMENT" domain="Booking API">http://10.185.225.204:8080</con:endpoint></con:endpointStrategy><con:properties><con:property><con:name>token</con:name><con:value>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJodW1wZXJkaW5jayIsInNjb3BlIjpbImRwc19pdF9hZG1pbiJdLCJwcm9maWxlIjp7ImFwcElkIjoiZWpoIiwiYXV0aG9yaXRpZXMiOlsiZHBzX2l0X2FkbWluIl0sImRpc3BsYXlOYW1lIjoiUHJpbmNpcGUgSHVtcGVyZGluY2siLCJlbWFpbCI6Imh1bXBlcmRpbmNrQG1vY2t1cC1ob3RlbGJlZHMuY29tIiwiZmlyc3ROYW1lIjoiUHJpbmNlIiwibGFzdE5hbWUiOiJIdW1wZXJkaW5jayIsIm90aGVycyI6eyJkaXZpc2lvbiI6Ik1vY2t1cHMiLCJsYXN0TG9naW4iOjE0OTMyNzQ2MDk0NDgsImNpdHkiOiJQYWxtYSBkZSBNYWxsb3JjYSIsImNvbXBhbnkiOiJIb3RlbGJlZHMiLCJkZXBhcnRtZW50IjoiVGVzdCIsInJlZ2lvbiI6IkJhbGVhcmVzIiwicmVtYWluaW5nTG9naW5zIjoyMTQ3NDgzNjQ3fSwicGhvdG8iOiJodHRwOi8vcHJpbmNlc3NicmlkZXF1b3Rlcy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTEvMDcvaHVtcGVyZGluY2stOTZ4OTYuanBnIiwicHJvdmlkZXIiOiJoYmctY29ycG9yYXRlIiwidXNlck5hbWUiOiJodW1wZXJkaW5jayJ9LCJleHAiOjE0OTMzMTc4MDksImF1dGhvcml0aWVzIjpbXSwianRpIjoiMzZiOTZhOTEtMDk0MS00OTg3LTk3ZWMtNTA2ZTEyYjczNGQ2IiwiY2xpZW50X2lkIjoiZWpoIn0.fBCBDUPDP-3wftRiKYl4vEHvvmEzGM-whXSviY9cETLfzXahR9XNU1UhuMuzs3Uztz9iZB8GT8aXngrfxIzoM8_IcK8MMzqyFSitcWE2GFfPdh5ba7jW5x_St4NiNJZGTd--sTiyHBFK0GYlEWqsk8gwKE0S-58eBMYWhkEnjqFF1mVrshw8zTJ7whRbgvt_sj1G_spFjLDKLJdsSCY7g1zn3uSL_iaeTf8HzN0nB9IVimpaBni-U0WRSMTeGwS5tFuU_2tNx-Su9NXe291WBK6crsWc8JRsPgAgqes3LZ3LwKrjmtsDXNM4zndSRuIzRzR0kxC_CxfT_Pfodb31oQ</con:value></con:property><con:property><con:name>language</con:name><con:value>en</con:value></con:property><con:property><con:name>whiteLabelId</con:name><con:value>easyjet</con:value></con:property></con:properties><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/><con:authRepository/><con:tags/></con:soapui-project>

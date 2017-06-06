@@ -1,0 +1,485 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Booking-102",
+		"_postman_id": "adef2f9b-2778-e2c7-8bdd-2a945a442954",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "102 - Prebooking (2PAX)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"postman.setGlobalVariable(\"price\", jsonData.totalPrice+\"0\");",
+							"postman.setGlobalVariable(\"bookingCode\", jsonData.bookingCode);",
+							"postman.setGlobalVariable(\"description\", jsonData.description);"
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var namePax = \"\";",
+							"var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\";",
+							"for( var i=0; i < 5; i++ )",
+							"    namePax += possible.charAt(Math.floor(Math.random() * possible.length));",
+							"",
+							"postman.setGlobalVariable(\"namePax1\", \"martin \"+namePax+\" uno\");",
+							"postman.setGlobalVariable(\"namePax2\", \"martin \"+namePax+\" dos\");",
+							"postman.setGlobalVariable(\"namePax3\", \"martin \"+namePax+\" tres\");",
+							"postman.setGlobalVariable(\"namePax4\", \"martin \"+namePax+\" cuatro\");",
+							"",
+							"postman.setGlobalVariable(\"bookingCode\", \"102\"+namePax);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"bookingCode\" : \"{{bookingCode}}\",\r\n\t\"description\" : \"102 - Prebooking (2PAX)\",\t\r\n\t\"paxes\" : [{\r\n\t\t\t\"age\" : null,\r\n\t\t\t\"personType\" : \"ADT\",\r\n\t\t\t\"paxNumber\" : 1\r\n\t\t}, {\r\n\t\t\t\"age\" : null,\r\n\t\t\t\"personType\" : \"ADT\",\r\n\t\t\t\"paxNumber\" : 2\r\n\t\t}\r\n\t],\r\n\t\"market\": \"{{market}}\",\r\n\t\"category\" : \"GT03-CITR City Breaks\",\r\n\t\"currency\": \"{{currency}}\",\r\n\t\"ancillaries\" : [],\r\n\t\"flightHotelPackage\" : {\r\n\t\t\"flights\" : [{\r\n\t\t\t\t\"flightSegments\" : [{\r\n\t\t\t\t\t\t\"flightLegs\" : [{\r\n\t\t\t\t\t\t        \"tariffClass\" : \"Regular0\",\r\n\t\t\t\t\t\t\t\t\"airline\" : \"EasyJet\",\r\n\t\t\t\t\t\t\t\t\"departureAirportIATA\" : \"{{departureAirportIATA_ida}}\",\r\n\t\t\t\t\t\t\t\t\"departureDateTime\" : \"{{departureDateTime_ida}}\",\r\n\t\t\t\t\t\t\t\t\"arrivalAirportIATA\" : \"{{arrivalAirportIATA_ida}}\",\r\n\t\t\t\t\t\t\t\t\"arrivalDateTime\" : \"{{arrivalDateTime_ida}}\",\r\n\t\t\t\t\t\t\t\t\"bookingClass\" : \"Y\",\r\n\t\t\t\t\t\t\t\t\"flightNumber\" : \"{{flightNumber_ida}}\",\r\n\t\t\t\t\t\t\t\t\"flightCode\" : null,\r\n\t\t\t\t\t\t\t\t\"flightLabel\" : null\r\n\t\t\t\t\t\t\t\t}]\r\n\t\t\t\t\t\t},{\r\n\t\t\t\t\t\t\"flightLegs\" : [{\r\n\t\t\t\t\t\t        \"tariffClass\" : \"Regular0\",\r\n\t\t\t\t\t\t\t\t\"airline\" : \"EasyJet\",\r\n\t\t\t\t\t\t\t\t\"departureAirportIATA\" : \"{{departureAirportIATA_vuelta}}\",\r\n\t\t\t\t\t\t\t\t\"departureDateTime\" : \"{{departureDateTime_vuelta}}\",\r\n\t\t\t\t\t\t\t\t\"arrivalAirportIATA\" : \"{{arrivalAirportIATA_vuelta}}\",\r\n\t\t\t\t\t\t\t\t\"arrivalDateTime\" : \"{{arrivalDateTime_vuelta}}\",\r\n\t\t\t\t\t\t\t\t\"bookingClass\" : \"Y\",\r\n\t\t\t\t\t\t\t\t\"flightNumber\" : \"{{flightNumber_vuelta}}\",\r\n\t\t\t\t\t\t\t\t\"flightCode\" : null,\r\n\t\t\t\t\t\t\t\t\"flightLabel\" : null   \t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t}]\r\n\t\t\t\t\t\t}]\r\n\t\t}],\r\n\t\t\"hotels\": [{\r\n\t\t\t\"arrivalDate\": \"{{arrivalDateTime_ida}}\",\r\n\t\t\t\"destination\": \"{{arrivalAirportIATA_ida}}\",\r\n\t\t\t\"hotelProvider\": \"hotelbeds\",\r\n\t\t\t\"hotelCodes\": [{\r\n\t\t\t\t\"type\": \"GIATA\",\r\n\t\t\t\t\"code\": \"{{hotelGIATACode}}\"\r\n\t\t\t},{\r\n\t\t\t\t\"type\": \"HOTELBEDS\",\r\n\t\t\t\t\"code\": \"{{hotelBedsCode}}\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\t\"lengthOfStay\": 9,\r\n\t\t\t\"rooms\": [{\r\n\t\t\t\t\"boardCode\": \"RO\",\r\n\t\t\t\t\"personAssignaments\": [1,2],\r\n\t\t\t\t\"roomCode\": \"DBT.ST\"\r\n\t\t\t}],\r\n\t\t\"currency\": \"{{currency}}\"\r\n\t  }],\r\n\t  \"tourOperator\" : \"string\"\r\n\t},\r\n\t\"promocode\" : null,\r\n\t\"bookingBeginningDate\" : \"{{departureDateTime_ida}}\",\r\n\t\"bookingEndDate\" : \"{{departureDateTime_vuelta}}\",\r\n\t\"origin\" : \"{{departureAirportIATA_ida}}\",\r\n\t\"destination\" : \"{{arrivalAirportIATA_ida}}\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - add ancillaries ida",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_ida}}/ancillaries",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n\t\"price\": 35,\r\n      \"code\": \"\",\r\n      \"codeType\": \"SEO\",\r\n    \"description\": \"Windsurfer\",\r\n    \"quantity\": 1,\r\n    \"type\": \"WDSF\"\r\n   },{\r\n   \t \"price\": 35,\r\n      \"code\": \"\",\r\n      \"codeType\": \"SEO\",\r\n     \"description\": \"Canoe/Kayak\",\r\n     \"quantity\": 1,\r\n     \"type\": \"CANO\"\r\n   }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - add ancillaries vuelta",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_vuelta}}/ancillaries",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n\t\"price\": 35,\r\n      \"code\": \"\",\r\n      \"codeType\": \"SEO\",\r\n    \"description\": \"Windsurfer\",\r\n    \"quantity\": 1,\r\n    \"type\": \"WDSF\"\r\n   },{\r\n   \t \"price\": 35,\r\n      \"code\": \"\",\r\n      \"codeType\": \"SEO\",\r\n     \"description\": \"Canoe/Kayak\",\r\n     \"quantity\": 1,\r\n     \"type\": \"CANO\"\r\n   }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - seatplant ida",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_ida}}/seatplan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"child\": \"N\",\r\n  \"currency\": \"GBP\",\r\n  \"disability\": \"N\",\r\n  \"fareClass\": \"Y\",\r\n  \"fragile\": \"N\",\r\n  \"hasejPlusCard\": \"Y\",\r\n  \"infantOnLap\": \"N\",\r\n  \"physicalDisorder\": \"N\",\r\n  \"pregnant\": \"N\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - add seats ida",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_ida}}/seats",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \r\n\t\"seatNumber\" : \"1A\",\r\n\t\"price\" : 16.99\r\n},{ \t\r\n\t\"seatNumber\" : \"1B\",\r\n\t\"price\" : 16.99\r\n}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - seatplant vuelta",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_vuelta}}/seatplan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"child\": \"N\",\r\n  \"currency\": \"GBP\",\r\n  \"disability\": \"N\",\r\n  \"fareClass\": \"Y\",\r\n  \"fragile\": \"N\",\r\n  \"hasejPlusCard\": \"Y\",\r\n  \"infantOnLap\": \"N\",\r\n  \"physicalDisorder\": \"N\",\r\n  \"pregnant\": \"N\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - add seats vuelta",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_vuelta}}/seats",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \r\n\t\"seatNumber\" : \"6A\",\r\n\t\"price\" : 15.99\r\n},{ \t\r\n\t\"seatNumber\" : \"6B\",\r\n\t\"price\" : 15.99\r\n}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - Confirm ( 2pax)",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/confirm",
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"client\" : {\r\n\t\t\"comments\" : [{\r\n\t\t\t\t\"commentText\":\"Vacaciones invierno\",\r\n                \"commentType\":\"H\"\r\n              }\r\n\t\t],\r\n\t\t\"addresses\" : [{\r\n\t\t\t\t\"city\" : \"Barcelona\",\r\n\t\t\t\t\"country\" : \"SPAIN\",\r\n\t\t\t\t\"countryName\" : \"SPAIN\",\r\n\t\t\t\t\"location\" : \"OFFICE\",\r\n\t\t\t\t\"mail\" : \"testbarcelona@gfi.es\",\r\n\t\t\t\t\"primary\" : true,\r\n\t\t\t\t\"stateProvince\" : \"Mataro\",\r\n\t\t\t\t\"street\" : \"C/Passeig de Gracia 44\",\r\n\t\t\t\t\"streetAdditional\" : \"C/Passeig de Gracia 46\",\r\n\t\t\t\t\"addressCode\" : \"ssss\",\r\n\t\t\t\t\"telephones\": [{\r\n\t\t\t\t                \"number\" : \"555\",\r\n                                \"type\" : \"HOME\"             \r\n\t\t\t\t\t\t\t  }],\t\t\t\t\t\r\n\t\t\t\t\"zipCode\" : \"08015\"\r\n\t\t\t}, {\r\n\t\t\t\t\"city\" : \"MADRID\",\r\n\t\t\t\t\"country\" : \"SPAIN\",\r\n\t\t\t\t\"countryName\" : \"SPAIN\",\r\n\t\t\t\t\"location\" : \"OFFICE\",\r\n\t\t\t\t\"mail\" : \"testmadrid@gfi.es\",\r\n\t\t\t\t\"primary\" : false,\r\n\t\t\t\t\"stateProvince\" : \"Fuenjirola\",\r\n\t\t\t\t\"street\" : \"C/ Paseo 44\",\r\n\t\t\t\t\"streetAdditional\" : \"C/ Paseo 46\",\r\n\t\t\t\t\"addressCode\" : \"ffff\",\r\n\t\t\t\t\"telephones\": [{\r\n\t\t\t\t                \"number\" : \"555\",\r\n                                \"type\" : \"HOME\"             \r\n\t\t\t\t\t\t\t  }],\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\"zipCode\" : \"08015\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"dateOfBirth\" : \"1980-11-01\",\r\n\t\t\"firstName\" : \"Anna\",\r\n\t\t\"gender\" : \"MALE\",\r\n\t\t\"lastName\" : \"TEST\",\r\n\t\t\"middleName\" : \"MA\",\r\n\t\t\"travelDocumentData\" : {\r\n\t\t\t\"docCustomerName\" : \"ANNA TEST\",\r\n\t\t\t\"docId\" : \"87654321X\",\r\n\t\t\t\"docIssueAuthority\" : \"string\",\r\n\t\t\t\"docIssueLocation\" : \"BARCELONA\",\r\n\t\t\t\"docLimitations\" : \"string\",\r\n\t\t\t\"docType\" : \"DNI\",\r\n\t\t\t\"effectiveDate\" : \"2000-06-28\",\r\n\t\t\t\"expireDate\" : \"2020-06-28\"\r\n\t\t},\r\n\t\t\"paxReferenceNumber\": 2\r\n\t},\r\n\t\"paxes\" : [{\r\n\t\t\t\"addresses\" : [{\r\n\t\t\t\t\t\"city\" : \"BARCELONA\",\r\n\t\t\t\t\t\"country\" : \"SPAIN\",\r\n\t\t\t\t\t\"countryName\" : \"SPAIN\",\r\n\t\t\t\t\t\"location\" : \"OFFICE\",\r\n\t\t\t\t\t\"mail\" : \"mail@gfi.es\",\r\n\t\t\t\t\t\"primary\" : true,\r\n\t\t\t\t\t\"stateProvince\" : \"MATARO\",\r\n\t\t\t\t\t\"street\" : \"ARAGO\",\r\n\t\t\t\t\t\"streetAdditional\" : 122,\r\n\t\t\t\t\t\"telephones\" : [{\r\n\t\t\t\t\t\t\t\"type\" : \"FAX\",\r\n\t\t\t\t\t\t\t\"number\" : \"66666666666\"\r\n\t\t\t\t\t\t}, {\r\n\t\t\t\t\t\t\t\"type\" : \"MOBILE\",\r\n\t\t\t\t\t\t\t\"number\" : \"99999999999\"\r\n\t\t\t\t\t\t}, {\r\n\t\t\t\t\t\t\t\"type\" : \"FAX\",\r\n\t\t\t\t\t\t\t\"number\" : \"88888888888\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"zipCode\" : \"00000\"\r\n\t\t\t\t}, {\r\n\t\t\t\t\t\"city\" : \"SLIEMA\",\r\n\t\t\t\t\t\"country\" : \"MALTA\",\r\n\t\t\t\t\t\"countryName\" : \"MALTA\",\r\n\t\t\t\t\t\"location\" : \"OFFICE\",\r\n\t\t\t\t\t\"mail\" : \"mail2@gfi.es\",\r\n\t\t\t\t\t\"primary\" : false,\r\n\t\t\t\t\t\"stateProvince\" : \"SLIEMA\",\r\n\t\t\t\t\t\"street\" : \"MERCIEQA\",\r\n\t\t\t\t\t\"streetAdditional\" : 123,\r\n\t\t\t\t\t\"telephones\" : [{\r\n\t\t\t\t\t\t\t\"type\" : \"FAX\",\r\n\t\t\t\t\t\t\t\"number\" : \"11111111\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"zipCode\" : \"11111\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"dateOfBirth\" : \"1975-06-28\",\r\n\t\t\t\"age\" : null,\r\n\t\t\t\"personType\" : \"ADT\",\r\n\t\t\t\"firstName\" : \"Anna\",\r\n\t\t\t\"gender\" : \"MALE\",\r\n\t\t\t\"lastName\": \"{{namePax1}}\",\r\n\t\t\t\"middleName\" : \"MA\",\r\n\t\t\t\"travelDocumentData\" : {\r\n\t\t\t\t\"docCustomerName\" : \"ANNA M TEST\",\r\n\t\t\t\t\"docId\" : \"87654321X\",\r\n\t\t\t\t\"docIssueAuthority\" : \"BARCELONA\",\r\n\t\t\t\t\"docIssueLocation\" : \"BARCELONA\",\r\n\t\t\t\t\"docLimitations\" : \"string\",\r\n\t\t\t\t\"docType\" : \"DNI\",\r\n\t\t\t\t\"effectiveDate\" : \"2010-06-28\",\r\n\t\t\t\t\"expireDate\" : \"2020-06-28\"\r\n\t\t\t},\r\n\t\t\t\"hasInfant\" : false,\r\n\t\t\t\"salutationType\" : \"MR\",\r\n\t\t\t\"paxNumber\" : 1,\r\n\t\t\t\"customer\" : 0\r\n\t\t}, {\r\n\t\t\t\"dateOfBirth\" : \"1980-06-28\",\r\n\t\t\t\"age\" : null,\r\n\t\t\t\"personType\" : \"ADT\",\r\n\t\t\t\"firstName\" : \"Marta\",\r\n\t\t\t\"gender\" : \"MALE\",\r\n\t\t\t\"lastName\": \"{{namePax2}}\",\r\n\t\t\t\"middleName\" : \"MA\",\r\n\t\t\t\"travelDocumentData\" : {\r\n\t\t\t\t\"docCustomerName\" : \"MARTA M TEST\",\r\n\t\t\t\t\"docId\" : \"12345678A\",\r\n\t\t\t\t\"docIssueAuthority\" : \"BARCELONA\",\r\n\t\t\t\t\"docIssueLocation\" : \"BARCELONA\",\r\n\t\t\t\t\"docLimitations\" : \"string\",\r\n\t\t\t\t\"docType\" : \"DNI\",\r\n\t\t\t\t\"effectiveDate\" : \"2010-06-28\",\r\n\t\t\t\t\"expireDate\" : \"2020-06-28\"\r\n\t\t\t},\r\n\t\t\t\"hasInfant\" : false,\r\n\t\t\t\"salutationType\" : \"MR\",\r\n\t\t\t\"paxNumber\" : 2,\r\n\t\t\t\"customer\" : 0\r\n\t\t}\r\n\t],\t\r\n    \"creditCardInfo\" : {\r\n\t\t\t \"paymentType\" : \"CC\",\r\n\t\t\t \"creditCardVendorCode\" : \"VI\",\r\n\t\t\t \"cardHolderName\" : \"A Shopper\",\r\n\t\t\t \"cardFee\" : 10,\r\n\t\t\t \"validThruMonth\" : \"01\" ,\r\n\t\t\t \"validThruYear\" : \"2020\", \r\n\t\t\t \"cardNumber\" : \"4444333322221111\",\r\n\t\t\t \"billingAddress\" : {\r\n\t\t\t\t\t\t\t\"address\" : \"47A\",\r\n\t\t\t\t\t\t\t\"postalCode\" : \"CB94BQ\",\r\n\t\t\t\t\t\t\t\"city\" : \"Cambridge\",\r\n\t\t\t\t\t\t\t\"countryCode\" : \"GB\"               \r\n\t\t\t\t\t\t   }       \r\n     },\r\n\t \"order\" : {\r\n\t\t\t\t   \"amount\" : \"{{price}}\",\r\n\t\t\t       \"description\" : \"{{description}}\",\r\n\t\t\t\t   \"shopperEmail\" : \"shopper@provider.com\",\r\n\t\t\t\t   \"currency\" : \"{{currency}}\"                       \r\n\t\t\t\t   },\r\n     \"deposit\" : \"{{deposit}}\"\t\t\t\t   \r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "102 - delete seat",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}/flights/{{flightNumber_vuelta}}/seats/8622-2A",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get prebooking",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/prebookings/{{bookingCode}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get booking",
+			"request": {
+				"url": "http://{{server}}:8082/packagebookingservice/1.0/bookings/{{bookingCode}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "whiteLabelId",
+						"value": "EASYJET",
+						"description": ""
+					},
+					{
+						"key": "language",
+						"value": "en",
+						"description": ""
+					},
+					{
+						"key": "userIdentifier",
+						"value": "admin",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

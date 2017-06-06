@@ -1,0 +1,382 @@
+{
+   "id": 2634,
+   "bookingCode": "101MKespanya03",
+   "client":    {
+      "addresses":       [
+                  {
+            "city": "Barcelona",
+            "country": "SPAIN",
+            "countryName": "SPAIN",
+            "location": "OFFICE",
+            "mail": "testbarcelona@gfi.es",
+            "primary": true,
+            "stateProvince": "Mataro",
+            "street": "C/Passeig de Gracia 44",
+            "streetAdditional": "C/Passeig de Gracia 46",
+            "addressCode": "ssss",
+            "telephones": [            {
+               "number": "555",
+               "type": "HOME"
+            }],
+            "zipCode": "08015"
+         },
+                  {
+            "city": "MADRID",
+            "country": "SPAIN",
+            "countryName": "SPAIN",
+            "location": "OFFICE",
+            "mail": "testmadrid@gfi.es",
+            "primary": false,
+            "stateProvince": "Fuenjirola",
+            "street": "C/ Paseo 44",
+            "streetAdditional": "C/ Paseo 46",
+            "addressCode": "ffff",
+            "telephones": [            {
+               "number": "555",
+               "type": "HOME"
+            }],
+            "zipCode": "08015"
+         }
+      ],
+      "dateOfBirth": "1983-12-26",
+      "age": null,
+      "firstName": "Anna",
+      "gender": "MALE",
+      "lastName": "Marcilla",
+      "middleName": "MA",
+      "travelDocumentData":       {
+         "docCustomerName": "ANNA MARCILLA",
+         "docId": "87654321X",
+         "docIssueAuthority": "string",
+         "docIssueLocation": "BARCELONA",
+         "docLimitations": "string",
+         "docType": "DNI",
+         "effectiveDate": "2000-06-28",
+         "expireDate": "2020-06-28"
+      },
+      "comments": [      {
+         "commentText": "Vacaciones invierno",
+         "commentType": "H"
+      }],
+      "paxReferenceNumber": 1
+   },
+   "agency":    {
+      "company": "company",
+      "office": "office",
+      "userAgent": "userAgent"
+   },
+   "paxes": [   {
+      "addresses":       [
+                  {
+            "city": "BARCELONA",
+            "country": "SPAIN",
+            "countryName": "SPAIN",
+            "location": "OFFICE",
+            "mail": "mail@gfi.es",
+            "primary": true,
+            "stateProvince": "MATARO",
+            "street": "ARAGO",
+            "streetAdditional": "122",
+            "addressCode": null,
+            "telephones":             [
+                              {
+                  "number": "66666666666",
+                  "type": "FAX"
+               },
+                              {
+                  "number": "99999999999",
+                  "type": "MOBILE"
+               },
+                              {
+                  "number": "88888888888",
+                  "type": "FAX"
+               }
+            ],
+            "zipCode": "00000"
+         },
+                  {
+            "city": "SLIEMA",
+            "country": "MALTA",
+            "countryName": "MALTA",
+            "location": "OFFICE",
+            "mail": "mail2@gfi.es",
+            "primary": false,
+            "stateProvince": "SLIEMA",
+            "street": "MERCIEQA",
+            "streetAdditional": "123",
+            "addressCode": null,
+            "telephones": [            {
+               "number": "11111111",
+               "type": "FAX"
+            }],
+            "zipCode": "11111"
+         }
+      ],
+      "dateOfBirth": "1975-06-28",
+      "age": null,
+      "firstName": "Anna",
+      "gender": "MALE",
+      "lastName": "apellidoBWuevGDido",
+      "middleName": "MA",
+      "travelDocumentData":       {
+         "docCustomerName": "ANNA M MARCILLA",
+         "docId": "87654321X",
+         "docIssueAuthority": "BARCELONA",
+         "docIssueLocation": "BARCELONA",
+         "docLimitations": "string",
+         "docType": "DNI",
+         "effectiveDate": "2010-06-28",
+         "expireDate": "2020-06-28"
+      },
+      "salutationType": "MR",
+      "hasInfant": false,
+      "paxNumber": 1,
+      "personType": "ADT",
+      "isChipped": false
+   }],
+   "market": "ES",
+   "category": "GT03-BEAC Beach Holidays",
+   "currency": "EUR",
+   "description": "101 - Prebooking (1PAX)",
+   "totalPrice": 39.05,
+   "totalPricesWithFees": null,
+   "transfers": [],
+   "ancillaries": [],
+   "seats": [],
+   "flightHotelPackage":    {
+      "price": 160.57,
+      "code": "68786892-eb6c-4444-9f55-d9b592edfa81",
+      "description": null,
+      "productMarkup": 0,
+      "status": "PENDING",
+      "subStatus": null,
+      "discountLine": 0,
+      "markupName": null,
+      "productSupplier": null,
+      "amtMarketPrice": 436.421,
+      "currencyProvider": null,
+      "pairPrice": 0,
+      "cardFee": null,
+      "indMarkupDefault": true,
+      "flights": [      {
+         "price": 160.57,
+         "code": "ef3c7e24-746e-4886-a8d9-667667ff734f",
+         "description": null,
+         "productMarkup": 0,
+         "status": "CONFIRMED",
+         "subStatus": null,
+         "discountLine": 0,
+         "markupName": null,
+         "productSupplier": null,
+         "amtMarketPrice": 162.176,
+         "currencyProvider": null,
+         "pairPrice": 0,
+         "cardFee": null,
+         "indMarkupDefault": true,
+         "bookingNumber": "ER8X92P",
+         "flightSegments":          [
+                        {
+               "flightLegs": [               {
+                  "flightLegNumber": 0,
+                  "airline": "EasyJet",
+                  "arrivalAirportIATA": "PMI",
+                  "arrivalDateTime": "2017-01-21T09:30",
+                  "bookingClass": "Y",
+                  "departureAirportIATA": "LGW",
+                  "flightLegPrice": 67.99,
+                  "departureDateTime": "2017-01-21T06:15",
+                  "flightCode": "ER8X92P",
+                  "flightNumber": "8621",
+                  "amtDsAdjust": 0,
+                  "amtCostFee": 26,
+                  "amtDsSeat": 3,
+                  "tariffClass": "Regular0",
+                  "numSeats": 1,
+                  "numDSSeats": 0,
+                  "selectedSeats": null,
+                  "selectedAncillaries": null,
+                  "paxFees": [                  {
+                     "price": 67.99,
+                     "tax": 13,
+                     "paxReference": 1
+                  }]
+               }],
+               "arrivalDateTime": "2017-01-21T09:30",
+               "departureDateTime": "2017-01-21T06:15",
+               "departureAirportIATA": "LGW",
+               "arrivalAirportIATA": "PMI"
+            },
+                        {
+               "flightLegs": [               {
+                  "flightLegNumber": 1,
+                  "airline": "EasyJet",
+                  "arrivalAirportIATA": "LGW",
+                  "arrivalDateTime": "2017-01-23T12:40",
+                  "bookingClass": "Y",
+                  "departureAirportIATA": "PMI",
+                  "flightLegPrice": 76.99,
+                  "departureDateTime": "2017-01-23T11:05",
+                  "flightCode": "ER8X92P",
+                  "flightNumber": "8622",
+                  "amtDsAdjust": 0,
+                  "amtCostFee": 0,
+                  "amtDsSeat": 2,
+                  "tariffClass": "Regular0",
+                  "numSeats": 1,
+                  "numDSSeats": 0,
+                  "selectedSeats": null,
+                  "selectedAncillaries": null,
+                  "paxFees": [                  {
+                     "price": 76.99,
+                     "tax": 0,
+                     "paxReference": 1
+                  }]
+               }],
+               "arrivalDateTime": "2017-01-23T12:40",
+               "departureDateTime": "2017-01-23T11:05",
+               "departureAirportIATA": "PMI",
+               "arrivalAirportIATA": "LGW"
+            }
+         ],
+         "active": true,
+         "flightFees": [         {
+            "code": "CCB",
+            "price": 15.59,
+            "tax": null,
+            "quantity": 1
+         }],
+         "netPrice": 144.98,
+         "totalAmount": 160.57
+      }],
+      "hotels": [      {
+         "price": 271.53,
+         "code": "297570",
+         "description": null,
+         "productMarkup": 35.5,
+         "status": "IN_PROGRESS",
+         "subStatus": null,
+         "discountLine": 0,
+         "markupName": "#L1 ES 33ABS 30.11.2016#L2 ES 2.5ABS 30.11.2016#NAME2_L2_10%",
+         "productSupplier": "HOTELBEDS",
+         "amtMarketPrice": 274.245,
+         "currencyProvider": null,
+         "pairPrice": 0,
+         "cardFee": null,
+         "indMarkupDefault": true,
+         "arrivalDate": "2017-01-21",
+         "bookingCode": null,
+         "destination": "PMI",
+         "hotelCodes":          [
+                        {
+               "code": 297570,
+               "type": "GIATA"
+            },
+                        {
+               "code": 1550,
+               "type": "HOTELBEDS"
+            }
+         ],
+         "lengthOfStay": 3,
+         "rooms": [         {
+            "boardCode": "RO",
+            "bookingCode": null,
+            "extraBeds": null,
+            "personAssignaments": [1],
+            "roomCode": "DUS.ST",
+            "status": "PENDING",
+            "subStatus": null,
+            "tomaBookingCode": null,
+            "boardDescription": null,
+            "roomDescription": null,
+            "rateKey": "20170121|20170124|W|1|1550|DUS.ST|CG-TODOS|RO||1~1~0||N@7B9B9FE255584C1F9129B1B822346BF4",
+            "TOMABookingCode": null
+         }],
+         "reference": null,
+         "hotelGroup": null,
+         "idFlightHotelPackage": null,
+         "segmentation": null,
+         "active": null,
+         "hotelName": null,
+         "hotelPrice":          {
+            "net": null,
+            "sellingRate": null,
+            "commission": null,
+            "commissionVAT": null,
+            "netByApitude": 271.53,
+            "sellingRateByApitude": null,
+            "commissionByApitude": null,
+            "commissionVATByApitude": null
+         },
+         "apitudeStatus": null,
+         "holder": null,
+         "clientReference": "Anna",
+         "categoryCode": null,
+         "categoryName": null,
+         "destinationName": null,
+         "zoneCode": null,
+         "zoneName": null,
+         "latitude": null,
+         "longitude": null,
+         "giata": null,
+         "keywords": [],
+         "reviews": [],
+         "minRate": null,
+         "maxRate": null,
+         "totalSellingRate": null,
+         "totalNet": null,
+         "pendingAmount": null,
+         "currency": "EUR",
+         "supplier": null,
+         "clientComments": null,
+         "cancellationAmount": null,
+         "globalTypes": [],
+         "atributeCodes": null,
+         "touricoHotelRoomtype": null,
+         "nonRefundable": null,
+         "phone": null,
+         "holderDTO": null
+      }],
+      "programType": null,
+      "tourOperator": "string",
+      "travelType": null
+   },
+   "promocode": null,
+   "atol": null,
+   "bookingBeginningDate": "2017-01-21",
+   "bookingEndDate": "2017-01-23",
+   "origin": "LGW",
+   "destination": "PMI",
+   "serviceFees": [   {
+      "price": 3.55,
+      "code": "62196B70ADED4BE3AF9B5BEC4C8331B7",
+      "description": null,
+      "productMarkup": 0,
+      "status": "CONFIRMED",
+      "subStatus": null,
+      "discountLine": 0,
+      "markupName": null,
+      "productSupplier": null,
+      "amtMarketPrice": 3.55,
+      "currencyProvider": null,
+      "pairPrice": 0,
+      "cardFee": null,
+      "indMarkupDefault": true,
+      "codOperationType": "CREATION"
+   }],
+   "status": "IN_PROGRESS",
+   "subStatus": null,
+   "whitelabelId": "EASYJET",
+   "codLanguage": "en",
+   "codUserCreated": "admin",
+   "datUserCreated": "2016-12-13T12:18:14.251918",
+   "differPrice": 0,
+   "codReferrer": null,
+   "checkAncillary": false,
+   "checkFlight": true,
+   "checkHotel": true,
+   "checkTransfer": null,
+   "refundableAmount": 0,
+   "codBuyCurrency": "GBP",
+   "userType": "AGENCY",
+   "exchange": null
+}

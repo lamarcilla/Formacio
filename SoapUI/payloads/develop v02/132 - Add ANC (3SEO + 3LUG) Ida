@@ -1,0 +1,44 @@
+[{
+		  "code": "",
+		  "codeType": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 1,	  
+		  "type": null,
+		  "price" : 19
+		},{
+		  "code": "",
+		  "codeType": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 1,	  
+		  "type": null,
+		  "price" : 19
+		},{
+		  "code": "",
+		  "codeType": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 1,	  
+		  "type": null,
+		  "price" : 19
+		},{	 
+		  "code": "",
+		  "codeType": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "type": "BICL",
+		  "price" : 35
+		},{	 
+		  "code": "",
+		  "codeType": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "type": "BICL",
+		  "price" : 35
+		},{	 
+		  "code": "",
+		  "codeType": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "type": "BICL",
+		  "price" : 35
+		}
+	]

@@ -1,0 +1,58 @@
+{
+	"description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+	"paxes" : [{
+		"age": null ,
+		"personType": "AD",
+		"hasInfant" : false,
+		"paxNumber" : 1
+	}],
+	"market": "${#Project#market}",
+	"category": "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries": [],
+	"flightHotelPackage": {
+		"code": "string",
+		"description": "100 - Prebooking ( 1pax Miss 1way ) to LONDON",
+		"status": "ACTIVE",
+		"subStatus": null,
+		"flights": [{
+			"code": "string",
+			"description": "string",
+			"status": "ACTIVE",
+			"subStatus": null,
+			"itineraries": [{
+				"segments": [{
+					"segmentNumber": 0,
+					"airline": "EasyJet",
+					"departureAirportIATA": "${#Project#departureAirportIATA_ida}",
+					"departureDateTime": "${#Project#departureDateTime_ida}",
+					"arrivalAirportIATA": "${#Project#arrivalAirportIATA_ida}",
+					"arrivalDateTime": "${#Project#arrivalDateTime_ida}",
+					"bookingClass": "Y",
+					"flightNumber": "${#Project#flightNumber_ida}",
+					"flightCode": null,
+					"flightLabel": null
+				}]
+			}]
+		}],
+    "hotels" : [ {
+      "arrivalDate" : "${#Project#arrivalDateTime_ida}",
+      "destination" : "${#Project#arrivalAirportIATA_ida}",
+      "hotelCodes" : [{"code" : 426623}],
+      "hotelProvider" : "Hotelbeds",
+      "rooms" : [ {
+        "boardCode" : "GT06-BB",
+        "personAssignaments" : [ 1 ],
+        "roomCode" : "DBL-ST"
+      } ]
+    } ],
+		"programType": "string",
+		"tourOperator" : "YEJHUK",
+		"travelType": "string"
+	},
+	"promocode": null,
+	"bookingBeginningDate": "${#Project#departureDateTime_ida}",
+	"bookingEndDate": "${#Project#departureDateTime_ida}",
+	"origin": "MAD",
+	"destination": "LGW"	
+}

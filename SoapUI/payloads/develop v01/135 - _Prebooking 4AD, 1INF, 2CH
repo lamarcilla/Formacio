@@ -1,0 +1,216 @@
+{
+	"bookingCode" : "134",
+	"description" : "134 - Valida Datos",
+	"paxes" : [{
+			"age" : null,
+			"personType" : "AD",
+			"hasInfant" : true,
+			"paxNumber" : 1
+		},
+		{
+			"age" : null,
+			"personType" : "AD",			
+			"hasInfant" : true,
+			"paxNumber" : 2
+		},
+		{
+			"age" : 11,
+			"personType" : "CH",			
+			"hasInfant" : false,
+			"paxNumber" : 3
+		},		
+		{
+			"age" : 0,
+			"personType" : "INF",			
+			"hasInfant" : false,
+			"paxNumber" : 4
+		},
+		{
+			"dateOfBirth" : "2016-06-28",
+			"age" : 0,
+			"personType" : "INF",						
+			"firstName" : "bebe 2",
+			"gender" : "Male",
+			"lastName" : "TEST",
+			"middleName" : "MA",
+			"travelDocumentData" : {
+				"docCustomerName" : "bebe 2 M TEST",
+				"docId" : "111111111M",
+				"docIssueAuthority" : "BARCELONA",
+				"docIssueLocation" : "BARCELONA",
+				"docLimitations" : "string",
+				"docType" : "DNI",
+				"effectiveDate" : "2016-06-28",
+				"expireDate" : "2020-06-28"
+			},
+			"hasInfant" : false,
+			"salutationType" : "Mr",
+			"paxNumber" : 5,
+			"customer" : 0
+		}
+	],
+	"market": "${#Project#market}",
+	"category" : "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [
+		{
+		  "code": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 2,	  
+		  "type": null,
+		  "segmentReference": 0,
+		  "price" : 19
+		},
+		{
+		  "code": "LUG",
+		  "description": "Each hold bag includes 20kg of weight",
+		  "quantity": 2,	  
+		  "type": null,
+		  "segmentReference": 1,
+		  "price" : 19	  
+		},	 
+		{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 0,
+		  "type": "BICL",
+		  "price" : 35
+		},
+				{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 0,
+		  "type": "BICL",
+		  "price" : 35
+		},
+		{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 1,
+		  "type": "BICL",
+		  "price" : 35
+		},
+		{	 
+		  "code": "SEO",
+		  "description": "Bicycle",
+		  "quantity": 1,	  	  
+		  "segmentReference": 1,
+		  "type": "BICL",
+		  "price" : 35
+		}	 	 			
+	],
+    "seats": [{
+		"seatNumber" : "23E",
+		"code" : "SSR",
+		"flightNumber" : "8274",
+		"segmentReference" : 0,
+		"price" : 14.5
+	},{ 	
+		"seatNumber" : "2D",
+		"code" : "SSR",
+		"flightNumber" : "8274",
+		"segmentReference" : 0,
+		"price" : 14.5
+	},{ 	
+		"seatNumber" : "2F",
+		"code" : "SSR",
+		"flightNumber" : "8274",
+		"segmentReference" : 0,
+		"price" : 14.5
+	},{	
+		"seatNumber" : "23E",
+		"code" : "SSR",
+		"flightNumber" : "8277",
+		"segmentReference" : 1,
+		"price" : 14.5
+	},{	
+		"seatNumber" : "2D",
+		"code" : "SSR",
+		"flightNumber" : "8277",
+		"segmentReference" : 1,
+		"price" : 14.5
+	},{	
+		"seatNumber" : "2F",
+		"code" : "SSR",
+		"flightNumber" : "8277",
+		"segmentReference" : 1,
+		"price" : 14.5
+	}], 		
+	"flightHotelPackage" : {
+		"code" : "string",
+		"description" : "132 - 2AD+1CH+2INF+return+2SEO+SEATS+TRANS",
+		"status" : "ACTIVE",
+		"subStatus" : null,
+		"flights" : [{
+				"code" : "string",
+				"description" : "string",
+				"status" : "ACTIVE",
+				"subStatus" : null,
+				"itineraries" : [{
+						"segments" : [{
+								"segmentNumber" : 0,
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+						        }]
+					    },{
+						"segments" : [{
+								"segmentNumber" : 1,                        
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_vuelta}",
+								"departureDateTime" : "${#Project#departureDateTime_vuelta}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_vuelta}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_vuelta}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_vuelta}",
+								"flightCode" : null,
+								"flightLabel" : null     							
+								}]
+						}]
+				}],
+		"hotels" : [{
+				"code" : "string",
+				"description" : "EL MEJOR HOTEL",
+				"arrivalDate" : "2016-06-28",
+				"bookingCode" : "FFFFFF",
+				"destination" : "LGW",
+				"hotelCodes" : [],
+				"hotelProvider" : "Hotel Beds",
+				"lengthOfStay" : 30,
+				"price" : 600,
+				"rooms" : [{
+						"boardCode" : "Full Board",
+						"bookingCode" : 1,
+						"extraBeds" : 0,
+						"personAssignaments" : [1,2,3,4,5],
+						"roomCode" : "895",
+						"status" : "ACTIVE",
+						"subStatus" : null,
+						"TOMABookingCode" : "string"
+					}
+				],
+				"hotelStatus": "ACTIVE",
+				"hotelSubStatus" : null,
+				"reference" : "CERTAIN",
+				"hotelGroup" : null
+			}
+		],
+		"programType" : "string",
+		"tourOperator" : "string",
+		"travelType" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_vuelta}",
+	"origin" : "BCN",
+	"destination" : "LGW"
+}

@@ -1,0 +1,17 @@
+[{
+			"code": "",
+			"codeType": "LUG",
+			"description": "Each hold bag includes 32kg of weight",
+			"quantity": 1,
+			"type": "32kg",
+			"price": 19
+		},  
+		{
+			"code": "",
+			"codeType": "SEO",
+			"description": "Bicycle",
+			"quantity": 1,
+			"type": "BICL",
+			"price": 35
+		}
+	]

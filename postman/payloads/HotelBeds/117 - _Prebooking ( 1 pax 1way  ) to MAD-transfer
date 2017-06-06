@@ -1,0 +1,109 @@
+{
+	"bookingCode" : "117",
+	"description" : "117 - Prebooking ( 1 pax 1way  ) to BCN-transfer",
+	"paxes" : [{
+			"age" : 0,
+			"personType" : "AD",						
+			"hasInfant" : false,
+			"paxNumber" : 1
+		}
+	],
+	"market": "${#Project#market}",
+	"category" : "Escapadas Invierno",
+	"currency": "${#Project#currency}",
+	"ancillaries" : [],
+	"flightHotelPackage" : {
+		"flights" : [{
+				"itineraries" : [{
+						"segments" : [{
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null  											
+							}
+						]
+					}
+				]
+			}
+		],
+    "hotels": [
+      {
+        "price": 547.69,
+        "code": "string",
+        "productMarkup": 0,
+        "status": "ACTIVE",
+        "discountLine": 0,
+        "arrivalDate": "2016-12-13",
+        "destination": "MAD",
+        "hotelCodes": [
+          {
+            "type": "GIATA",
+            "code": "60627"
+          },
+          {
+            "type": "HOTELBEDS",
+            "code": "19460"
+          }
+        ],
+        "hotelProvider": "Hotelbeds",
+        "lengthOfStay": 7,
+        "rooms": [
+          {
+            "boardCode": "GT06-AO",
+            "personAssignaments": [
+              1,
+              2,
+              3
+            ],
+            "roomCode": "APT-FM"
+          },
+          {
+            "boardCode": "GT06-AO",
+            "personAssignaments": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "roomCode": "APT-FM"
+          }
+        ],
+        "hotelName": "G3 Galeon Aparthotel",
+        "rateKey": "20161213|20161220|H|102|19460|APT.ST-1|OFE-LES|RO||1~2~1|8|N@9DAC15505B794D2EAC5C3AACB5F1AC02",
+        "hotelPrice": {
+          "netByApitude": 547.69,
+          "sellingRateByApitude": 554.4,
+          "commissionByApitude": 5.54,
+          "commissionVATByApitude": 1.16
+        },
+        "categoryCode": "APTH3",
+        "categoryName": "APARTHOTEL 3*",
+        "destinationName": "Madrid",
+        "zoneCode": 53,
+        "zoneName": "Santiago Bernabeu-Castellana",
+        "latitude": "40.458745",
+        "longitude": "-3.69939",
+        "keywords": [],
+        "reviews": [],
+        "minRate": 554.4,
+        "maxRate": 1058.6,
+        "totalSellingRate": 554.4,
+        "totalNet": 547.69,
+        "currency": "EUR"
+      }
+    ],
+		"programType" : "string",
+		"tourOperator" : "string",
+		"travelType" : "string"
+	},
+	"promocode" : null,
+	"bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+	"bookingEndDate" : "${#Project#departureDateTime_ida}",
+	"origin" : "${#Project#departureAirportIATA_ida}",
+	"destination" : "${#Project#arrivalAirportIATA_ida}"
+}

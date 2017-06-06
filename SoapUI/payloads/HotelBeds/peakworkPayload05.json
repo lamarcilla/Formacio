@@ -1,0 +1,74 @@
+{
+  "bookingCode" : "444",
+  "description" : "peakwork",
+  "paxes" : [ {
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD"
+  } ],
+  "market": "${#Project#market}",
+  "category": "Escapadas Invierno",
+  "currency": "${#Project#currency}",
+  "ancillaries" : [],
+  "flightHotelPackage" : {
+    "code" : "string",
+	"description" : "peakwork",
+	"status": "ACTIVE",
+	"subStatus" : null,
+    "flights" : [ {
+	  "code" : "string",
+	  "description" : "string",
+	  "status": "ACTIVE",
+	  "subStatus" : null,
+      "itineraries" : [ {
+        "segments" : [ {
+		"segmentNumber" : 0,
+		"airline" : "EasyJet",
+		"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+		"departureDateTime" : "${#Project#departureDateTime_ida}",
+		"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+		"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+		"bookingClass" : "Y",
+		"flightNumber" : "${#Project#flightNumber_ida}",
+		"flightCode" : null,
+		"flightLabel" : null
+        }]
+      } ]
+    } ],
+    "hotels" : [{
+				"code" : "string",
+				"description" : "EL MEJOR HOTEL",
+				"arrivalDate" : "2016-06-28",
+				"bookingCode" : "FFFFFF",
+				"destination" : "LGW",
+				"hotelCodes" : [],
+				"hotelProvider" : "Hotel Beds",
+				"lengthOfStay" : 3,
+				"price" : 600,
+				"rooms" : [{
+						"boardCode" : "Full Board",
+						"bookingCode" : 1,
+						"extraBeds" : 0,
+						"personAssignaments" : [1],
+						"roomCode" : "895",
+						"status": "ACTIVE",
+						"subStatus" : null,
+						"TOMABookingCode" : "string"
+					}
+				],
+				"hotelStatus": "ACTIVE",
+				"hotelSubStatus" : null,
+				"reference" : "CERTAIN",
+				"hotelGroup" : null
+			}
+		],
+	"programType" : "string",	
+    "tourOperator" : "YEJHUK",
+    "travelType" : "HOBEXT"
+  },
+  "promocode" : null,
+  "bookingBeginningDate" : "${#Project#departureDateTime_ida}",
+  "bookingEndDate" : "${#Project#departureDateTime_ida}",
+  "origin" : "${#Project#departureAirportIATA_ida}",
+  "destination" : "${#Project#arrivalAirportIATA_ida}"
+}

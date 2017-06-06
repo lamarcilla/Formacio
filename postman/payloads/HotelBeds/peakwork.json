@@ -1,0 +1,117 @@
+{
+"market" : "market",	
+  "paxes" : [ {
+    "addresses" : [ ],
+    "age" : 30,
+    "paxNumber" : 1,
+    "personType" : "AD",
+    "salutationType" : "MR"
+  }, {
+    "addresses" : [ ],
+    "age" : 30,
+    "paxNumber" : 2,
+    "personType" : "AD"
+    ,
+    "salutationType" : "MR"
+  }, {
+    "addresses" : [ ],
+    "age" : 20,
+    "paxNumber" : 4,
+    "personType" : "AD"
+    ,
+    "salutationType" : "MR"
+  }, {
+    "addresses" : [ ],
+    "age" : 23,
+    "paxNumber" : 5,
+    "personType" : "AD"
+    ,
+    "salutationType" : "MR"
+  }, {
+    "addresses" : [ ],
+    "age" : 1,
+    "paxNumber" : 3,
+    "personType" : "CH"
+    ,
+    "salutationType" : "MR"
+  }, {
+    "addresses" : [ ],
+    "age" : 3,
+    "paxNumber" : 6,
+    "personType" : "CH"
+    ,
+    "salutationType" : "MR"
+  }, {
+    "addresses" : [ ],
+    "age" : 4,
+    "paxNumber" : 7,
+    "personType" : "CH"
+    ,
+    "salutationType" : "MR"
+  } ],
+  "currency" : "GBP",
+  "totalPrice" : 1362.3,
+  "transfers" : [ ],
+  "ancillaries" : [ ],
+  "seats" : [ ],
+  "flightHotelPackage" : {
+    "flights" : [ {
+      "itineraries" : [ {
+       "segments" : [{
+								"segmentNumber" : 0,
+								"airline" : "EasyJet",
+								"departureAirportIATA" : "${#Project#departureAirportIATA_ida}",
+								"departureDateTime" : "${#Project#departureDateTime_ida}",
+								"arrivalAirportIATA" : "${#Project#arrivalAirportIATA_ida}",
+								"arrivalDateTime" : "${#Project#arrivalDateTime_ida}",
+								"bookingClass" : "Y",
+								"flightNumber" : "${#Project#flightNumber_ida}",
+								"flightCode" : null,
+								"flightLabel" : null
+						        }],
+        "arrivalDateTime" : "2016-10-06T18:30",
+        "departureDateTime" : "2016-10-06T16:10",
+        "departureAirportIATA" : "LTN"
+      } ]
+    }, {
+      "itineraries" : [ {
+        "segments" : [ {
+          "airline" : "U2",
+          "arrivalAirportIATA" : "LTN",
+          "arrivalDateTime" : "2016-10-13T19:00",
+          "bookingClass" : "F",
+          "departureAirportIATA" : "DTM",
+          "departureDateTime" : "2016-10-13T19:00",
+          "flightNumber" : "2176"
+        } ],
+        "arrivalDateTime" : "2016-10-13T19:20",
+        "departureDateTime" : "2016-10-13T19:00",
+        "departureAirportIATA" : "DTM"
+      } ]
+    } ],
+    "hotels" : [ {
+      "arrivalDate" : "2016-10-06",
+      "destination" : "DE",
+      "hotelCodes" : [ {
+        "code" : 426623
+      }, {
+        "code" : 409819
+      } ],
+      "hotelProvider" : "Hotelbeds",
+      "rooms" : [ {
+        "boardCode" : "GT06-BB",
+        "personAssignaments" : [ 1, 2, 3 ],
+        "roomCode" : "DBL-ST"
+      }, {
+        "boardCode" : "GT06-BB",
+        "personAssignaments" : [ 4, 5, 6, 7 ],
+        "roomCode" : "DBL-ST"
+      } ]
+    } ],
+    "tourOperator" : "YEJHUK"
+  },
+  "bookingBeginningDate" : "2016-10-06",
+  "bookingEndDate" : "2016-10-13",
+  "origin" : "LTN",
+  "destination" : "DTM"
+}

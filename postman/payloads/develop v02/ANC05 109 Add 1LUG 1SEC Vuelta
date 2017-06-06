@@ -1,0 +1,17 @@
+[	
+	    {
+	     "price": 19,
+	      "code": "",
+	      "codeType": "LUG",
+         "description": "Each hold bag includes 32kg of weight",
+         "quantity": 2,
+         "type": "32kg"
+	    },{	 
+		 "price": 30,
+	      "code": "",
+	      "codeType": "SEC",
+		 "description": "Snowboard",
+		 "quantity": 1,
+		 "type": "SNBD"
+	    }	
+]
